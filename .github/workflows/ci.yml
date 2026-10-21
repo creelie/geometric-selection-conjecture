@@ -25,4 +25,6 @@ jobs:
           sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-latex-recommended \
             texlive-latex-extra texlive-fonts-recommended texlive-science poppler-utils zip
       - name: Build the release assets as a check
-        run: bash .github/release/build.sh "$(sed -n 's/^version: *//p' CITATION.cff | tr -d '"')" dist
+        run: |
+          version="$(sed -n 's/^version: *//p' CITATION.cff | tr -d '"')"
+          bash .github/release/build.sh "$version" dist
