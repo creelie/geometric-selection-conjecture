@@ -1,0 +1,30 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  checks:
+    name: Python check and LaTeX build
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run the check
+        run: |
+          bash code/run_checks.sh | tee checks.log
+          test "${PIPESTATUS[0]}" -eq 0
+          grep -q '^511 checks passed, 0 failed$' checks.log
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-latex-recommended \
+            texlive-latex-extra texlive-fonts-recommended texlive-science poppler-utils zip
+      - name: Build the release assets as a check
+        run: |
+          version="$(sed -n 's/^version: *//p' CITATION.cff | tr -d '"')"
+          bash .github/release/build.sh "$version" dist

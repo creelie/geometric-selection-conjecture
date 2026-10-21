@@ -1,0 +1,398 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage{mathptmx}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{microtype}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\WP}{\mathrm{WP}}
+
+% The archive id of the strings paper on hexagonmath.org and the release of this note.
+\newcommand{\hexagonid}{\href{https://hexagonmath.org/2610.00446v1}{2610.00446v1}}
+\newcommand{\ownrelease}{https://github.com/creelie/geometric-selection-conjecture/releases/tag/v1.0.0}
+
+\title{The Mirror Clause of the Geometric Selection Conjecture Is Empty}
+
+\author{Deep Bhattacharjee}
+\address{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India}
+\address{Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India}
+\email{itsdeep@live.com}
+\urladdr{\href{https://orcid.org/0000-0003-0466-750X}{https://orcid.org/0000-0003-0466-750X}}
+\thanks{Corresponding author; second e-mail address \nolinkurl{d.bhattacharjee@erl-forschung.de}}
+
+\author{Ushashi Bhattacharya}
+\address{Formerly, National Taiwan University, Taipei 106319, Taiwan}
+\email{rai.bhattacharya.in@gmail.com}
+\urladdr{\href{https://orcid.org/0009-0002-2254-3914}{https://orcid.org/0009-0002-2254-3914}}
+
+\subjclass[2020]{Primary 81T30, 14J32; Secondary 14J33, 32G20}
+\keywords{heterotic string, Calabi--Yau threefold, mirror symmetry, generations, Geometric Selection Conjecture}
+
+\begin{document}
+
+\begin{abstract}
+The Geometric Selection Conjecture asks for a functional on the heterotic
+landscape, built from the Weil--Petersson metric and invariant under mirror
+symmetry, whose unique minimum is a phenomenologically viable vacuum. It was
+shown in our paper on the Dwork quintic that the functional carries no
+information beyond its minimum: the conjecture holds if and only if there is a
+viable vacuum fixed by the mirror involution wherever that involution is
+defined. We prove that the fixed-point clause is never satisfied. A vacuum fixed
+by the mirror involution has a threefold isomorphic to its own mirror, hence
+equal Hodge numbers $h^{1,1}=h^{2,1}$, vanishing Euler number and, on its
+component of the landscape, a bundle with $c_3=0$; its net number of families is
+therefore zero and it violates the three-family condition. Consequently no
+vacuum built on the tangent bundle of any Calabi--Yau threefold, or on any
+deformation of it, can be selected, and the conjecture is equivalent to the
+bare statement that one viable vacuum exists on a component of the landscape
+not of standard-embedding type, with no condition involving mirror
+symmetry. The same holds when invariance under any compact group of
+isometries containing the mirror involution is demanded. The existence
+statement itself remains open.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+
+The heterotic string on a product of four-dimensional space-time with a
+Calabi--Yau threefold $X$ and a holomorphic bundle $V$ on $X$ gives a
+four-dimensional gauge theory whose charged chiral multiplets are counted by
+the cohomology of $V$~\cite{CHSW85,Wit85}. A conjecture of Bhattacharjee,
+Bhattacharya and Ghosh~\cite{Bha26a}, the Geometric Selection Conjecture,
+proposes that the vacuum of the real world is singled out among all such pairs
+$(X,V)$ by a functional constructed from the natural metric on their moduli,
+proper on every component, with a unique minimum, invariant under mirror
+symmetry, and attaining its minimum at a vacuum that meets nine
+phenomenological conditions (C1)--(C9). In~\cite{BB26} we proved that the
+functional is determined by the vacuum it selects: the conjecture holds if and
+only if there is a viable vacuum $\cV^\star$ with $\mu(\cV^\star)=\cV^\star$
+whenever $\cV^\star$ lies in the domain $\cL^\mu$ of the mirror involution
+$\mu$ (Theorem~D there, proved as Theorem~22). The content of the conjecture is therefore an
+existence statement with one clause attached to it, the clause on mirror
+symmetry.
+
+This note removes that clause. The argument is short. A vacuum fixed by $\mu$
+is isomorphic to its mirror, so its threefold has $h^{1,1}=h^{2,1}$ and Euler
+number zero. The domain $\cL^\mu$ is made of the components of the landscape
+that contain a vacuum of the standard embedding $V=T_X$, on which the Chern
+classes of $V$ are constant, so $c_3(V)=c_3(T_X)=\chi(X)=0$ there. The index
+theorem then gives zero net families, and condition (C2), three net families,
+fails. So no fixed point of $\mu$ is viable, every viable vacuum lies outside
+$\cL^\mu$, and the clause is vacuous.
+
+\begin{theorem}\label{thm:main}
+The Geometric Selection Conjecture holds if and only if the heterotic
+landscape contains a viable vacuum outside the domain $\cL^\mu$ of the mirror
+involution, that is, on a component that contains no vacuum of the standard
+embedding. No vacuum of the form $(X,V)$ with $V$ a deformation of the
+tangent bundle of $X$, on any Calabi--Yau threefold $X$ or any free quotient
+of one, is the minimum of a functional with the properties the conjecture
+demands, whether or not it is viable.
+\end{theorem}
+
+Remark~24 of~\cite{BB26} already noted that for a viable vacuum off the
+standard embedding the clause on $\mu$ is empty. The new point is that the
+clause can never be met inside $\cL^\mu$, so the vacua of standard type drop
+out of the conjecture altogether and what remains is existence on the other
+components. Section~\ref{sec:setting} recalls the setting
+of~\cite{Bha26a,BB26}, Section~\ref{sec:proof} proves the theorem, and
+Section~\ref{sec:remains} states what is left of the conjecture.
+
+\section{The landscape, the mirror involution and viability}\label{sec:setting}
+
+We use the setting of~\cite{Bha26a} as recalled in~\cite[Section~9]{BB26}.
+A heterotic vacuum is a pair $(X,V)$ of a Calabi--Yau threefold $X$, that is a
+compact K\"ahler threefold with $K_X\cong\cO_X$ and $h^{1,0}=h^{2,0}=0$, and a
+slope-polystable holomorphic vector bundle $V$ on $X$ with $c_1(V)=0$ for which
+$c_2(T_X)-c_2(V)$ is effective. The landscape $\cL$ is the set of isomorphism
+classes of vacua, where $(X,V)\cong(X',V')$ when there is an isomorphism
+$X\to X'$ carrying $V'$ to $V$. It is the disjoint union of its components
+$\cL_\tau$ of fixed topological type $\tau$; the type records the
+diffeomorphism type of $X$ together with the rank and the Chern classes of
+$V$. Each component carries the metric $g=G^{\WP}\oplus G^V$ made of the
+Weil--Petersson metric on the complex structures of $X$ and the $L^2$ metric
+on the bundle moduli. Two facts about a component are used below: the Euler
+number $\chi(X)=2\big(h^{1,1}(X)-h^{2,1}(X)\big)$ is constant on it, since $X$
+only deforms, and the Chern classes of $V$ are constant on it, since they are
+part of $\tau$.
+
+The \emph{standard embedding} is the vacuum $(X,T_X)$. Its component is the
+component of \emph{standard type} of $X$; it contains the deformations of
+$T_X$ as a polystable bundle, and on all of it $c_3(V)=c_3(T_X)=\chi(X)$.
+
+The mirror involution $\mu$ is defined on the union $\cL^\mu$ of the
+components of standard type and sends a vacuum to its mirror: the threefold of
+$\mu(X,V)$ is a mirror $\widehat X$ of $X$, so that
+\[
+h^{1,1}(\widehat X)=h^{2,1}(X),\qquad h^{2,1}(\widehat X)=h^{1,1}(X),
+\]
+and $\mu$ is an isometry of $g$. This is the involution of~\cite{Bha26a},
+recorded there for the Weil--Petersson metric, and it is the mirror map of
+$(2,2)$ vacua of~\cite{GP90,CDGP91} extended along the components they lie
+on; nothing below depends on how the extension is made, only on the two
+displayed equalities for the underlying threefolds.
+
+A vacuum is \emph{viable} when it satisfies the nine conditions (C1)--(C9)
+of~\cite{Bha26a}. Only the second is used here:
+\begin{enumerate}[label=\textup{(C2)},leftmargin=*]
+\item the vacuum has three net families, that is, the index of the Dirac
+operator coupled to $V$ on $X$, counted with the Wilson line if $X$ is a free
+quotient, equals three in absolute value.
+\end{enumerate}
+In every case of the heterotic dictionary the index in question is the
+holomorphic Euler characteristic $\chi(X,V)=\sum_q(-1)^q h^q(X,V)$, up to
+sign; for the standard embedding this is~\cite[Theorem~6]{BB26} and in general
+it is the index formula of~\cite[Chapter~14]{GSW87}. A Wilson line on a free
+quotient $Y=X/H$ breaks the gauge group but does not change the index of $V_Y$
+on $Y$, which is $\chi(X,V)/|H|$; and $(Y,V_Y)$ is itself a point of $\cL$,
+so it is enough to treat an arbitrary vacuum and let $X$ stand for $Y$.
+
+The conjecture, in the form stated in~\cite{Bha26a} and recalled
+in~\cite{BB26}, reads as follows.
+
+\begin{conjecture}[Geometric Selection Conjecture]\label{conj:gsc}
+There is a functional $\cS:\cL\to[0,\infty)$, constructed from the metric
+$g$, such that \textup{(G1)} $\cS$ is smooth and proper on each component
+$\cL_\tau$; \textup{(G2)} $\cS$ has a unique global minimum
+$\cV^\star\in\cL$; \textup{(G3)} $\cV^\star$ is viable; \textup{(G4)}
+$\cS\circ\mu=\cS$ on $\cL^\mu$.
+\end{conjecture}
+
+\begin{theorem}[{\cite[Theorem~22]{BB26}}]\label{thm:D}
+Conjecture~\ref{conj:gsc} holds if and only if there is a viable vacuum
+$\cV^\star$ with $\mu(\cV^\star)=\cV^\star$ whenever $\cV^\star\in\cL^\mu$.
+\end{theorem}
+
+\section{Fixed points of the mirror involution have no families}\label{sec:proof}
+
+\begin{lemma}\label{lem:index}
+Let $X$ be a Calabi--Yau threefold and $V$ a holomorphic vector bundle on $X$
+with $c_1(V)=0$. Then $\chi(X,V)=\tfrac12\int_Xc_3(V)$.
+\end{lemma}
+
+\begin{proof}
+By Hirzebruch--Riemann--Roch, $\chi(X,V)=\int_X\operatorname{ch}(V)\,
+\operatorname{td}(X)$, and in degree six the integrand is
+$\operatorname{ch}_3(V)+\operatorname{ch}_1(V)\operatorname{td}_2(X)+
+\operatorname{rk}(V)\operatorname{td}_3(X)$. Here
+$\operatorname{ch}_1(V)=c_1(V)=0$, $\operatorname{td}_3(X)=
+\tfrac1{24}c_1(X)c_2(X)=0$ since $c_1(X)=0$, and
+$\operatorname{ch}_3(V)=\tfrac16\big(c_1^3-3c_1c_2+3c_3\big)(V)=
+\tfrac12c_3(V)$.
+\end{proof}
+
+\begin{lemma}\label{lem:fixed}
+Let $(X,V)\in\cL^\mu$ satisfy $\mu(X,V)=(X,V)$. Then $h^{1,1}(X)=h^{2,1}(X)$,
+$\chi(X)=0$, $c_3(V)=0$ and $\chi(X,V)=0$. In particular $(X,V)$ has no net
+families and is not viable.
+\end{lemma}
+
+\begin{proof}
+Since $\mu(X,V)=(X,V)$ in $\cL$, the two vacua are isomorphic, so the
+threefold $\widehat X$ of $\mu(X,V)$ is isomorphic to $X$. Therefore
+$h^{1,1}(X)=h^{1,1}(\widehat X)=h^{2,1}(X)$, and
+$\chi(X)=2\big(h^{1,1}(X)-h^{2,1}(X)\big)=0$. The vacuum lies in $\cL^\mu$, so
+its component is of standard type and contains a vacuum $(X_0,T_{X_0})$ with
+$X_0$ a deformation of $X$. Chern classes are constant on the component, so
+$c_3(V)=c_3(T_{X_0})=\chi(X_0)$, and Euler numbers are constant on it, so
+$\chi(X_0)=\chi(X)=0$. Hence $c_3(V)=0$, and $\chi(X,V)=0$ by
+Lemma~\ref{lem:index}. The net number of families is $|\chi(X,V)|=0\ne3$, so
+(C2) fails.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+By Theorem~\ref{thm:D} the conjecture is equivalent to the existence of a
+viable vacuum $\cV^\star$ that is fixed by $\mu$ if it lies in $\cL^\mu$. By
+Lemma~\ref{lem:fixed} a vacuum in $\cL^\mu$ fixed by $\mu$ is not viable. So a
+viable $\cV^\star$ satisfies the clause exactly when $\cV^\star\notin\cL^\mu$,
+and the conjecture holds if and only if there is a viable vacuum outside
+$\cL^\mu$. This is the first statement.
+
+For the second, let $\cS$ be any functional satisfying (G1)--(G4) and let
+$\cV^\star$ be its minimum. If $\cV^\star\in\cL^\mu$ then
+$\cS(\mu\cV^\star)=\cS(\cV^\star)$ by (G4), so $\mu\cV^\star$ is also a global
+minimum and $\mu\cV^\star=\cV^\star$ by (G2); by Lemma~\ref{lem:fixed}
+$\cV^\star$ then has no families, against (G3). So the minimum of every such
+functional lies outside $\cL^\mu$, and no vacuum of standard type, which is to
+say no $(X,V)$ with $V$ a deformation of $T_X$ on $X$ or on a free quotient, is
+ever selected. This holds whether or not such a vacuum is viable: a vacuum of
+standard type has $|\chi(X)|/2$ net families by Lemmas~\ref{lem:index}
+and~\ref{lem:fixed}, and the quotient of the Tian--Yau threefold by its free
+$\Z/3$ has $\chi=-6$, so three families of standard type do occur in the
+landscape; they are never the minimum.
+\end{proof}
+
+\begin{corollary}\label{cor:two}
+If mirror pairs are identified in $\cL$, each pair counted as a single point
+on the ground that both members define the same superconformal field theory,
+then $\mu$ is the identity on $\cL^\mu$, condition \textup{(G4)} is empty, and
+Conjecture~\ref{conj:gsc} holds if and only if there is a viable vacuum of any
+type.
+\end{corollary}
+
+\begin{proof}
+When mirror pairs are one point every point of $\cL^\mu$ is fixed by $\mu$, the
+clause of Theorem~\ref{thm:D} is satisfied by every vacuum, and
+Theorem~\ref{thm:D} gives the equivalence with existence. Lemma~\ref{lem:fixed}
+does not apply, because a point that is a pair is a class of two vacua, not a
+vacuum isomorphic to its mirror.
+\end{proof}
+
+\begin{remark}[The compact-group reading]\label{rem:group}
+In~\cite[Remark~23]{BB26} the words ``constructed from the metric'' were
+read as invariance under a compact group $G$ of isometries of $(\cL,g)$
+containing $\mu$, and the conjecture in that reading was shown equivalent to
+the existence of a viable vacuum fixed by $G$ wherever $G$ acts. A $G$-fixed
+vacuum in $\cL^\mu$ is $\mu$-fixed, so by Lemma~\ref{lem:fixed} it is not
+viable, and the same argument gives: in the compact-group reading the
+conjecture holds if and only if there is a viable vacuum outside $\cL^\mu$
+fixed by $G$ wherever $G$ acts on the components outside $\cL^\mu$. If $G$
+acts only on $\cL^\mu$, as $\mu$ does, this is again the bare existence of a
+viable vacuum outside $\cL^\mu$.
+\end{remark}
+
+\begin{remark}[Self-mirror threefolds]
+Lemma~\ref{lem:fixed} does not say that a fixed point of $\mu$ is impossible,
+only that it is not viable. Threefolds isomorphic to their mirrors exist; the
+Schoen threefold with $h^{1,1}=h^{2,1}=19$ and its free quotient by
+$\Z/3\times\Z/3$ with $h^{1,1}=h^{2,1}=3$ are examples, and on each of them the
+standard embedding has zero net families, as the lemma requires. The vacua of
+the standard embedding on the quintic pencil, on the three weighted pencils of
+Fermat type and on their free quotients, which were studied in~\cite{BB26},
+have $\chi\ne0$ and are therefore never fixed by $\mu$; they fail (C2) for
+the independent reason computed there, namely that $|\chi|/2$ is $100/|H|$ on
+quintic quotients and never three on the weighted pencils.
+\end{remark}
+
+\section{What remains of the conjecture}\label{sec:remains}
+
+After Theorem~\ref{thm:main} the Geometric Selection Conjecture is the
+sentence: \emph{there is a heterotic vacuum, on a component that contains no
+standard embedding, satisfying \textup{(C1)}--\textup{(C9)}}. Nothing in it refers to a
+functional, to the Weil--Petersson metric or to mirror symmetry. The
+conditions divide into two groups.
+
+Conditions (C1)--(C6), anomaly cancellation and stability, three net
+families, a Wilson line breaking to the Standard Model group, three families
+without chiral exotics, masses for the vectorlike exotics and doublet--triplet
+splitting, are satisfied by known vacua: (C1)--(C4) by the heterotic standard
+models of Braun, He, Ovrut and Pantev~\cite{BHOP05} and of Bouchard and
+Donagi~\cite{BD06}, and (C1)--(C6) by line-bundle models of Anderson, Gray,
+Lukas and Palti~\cite{AGLP11,AGLP12}. All of these have $V$ of rank four or
+five with $c_3(V)\ne\chi(X)$, so they lie outside $\cL^\mu$, as
+Theorem~\ref{thm:main} requires of any candidate.
+
+Conditions (C7)--(C9), stabilised moduli, an acceptable rank and hierarchy of
+the Yukawa masses, and consistent supersymmetry breaking, are stated
+in~\cite{Bha26a} by comparison with measurement. For none of the vacua above
+are all three established, and until the three conditions are given as
+inequalities with named constants there is no mathematical statement to
+prove or refute in them. The conjecture therefore stands exactly where
+Theorem~\ref{thm:main} leaves it: equivalent to the existence of one vacuum
+satisfying (C1)--(C9), with the knowledge that the vacuum, if it exists, is
+not a deformation of the standard embedding, and with its remaining content
+entirely in the three conditions that are not yet mathematical.
+
+\section*{Data availability}
+
+No data were generated. The source of this note and a program that checks the
+lemma and the corollary on the Hodge numbers of self-mirror and three-family
+threefolds are in release 1.0.0 of the repository
+\url{https://github.com/creelie/geometric-selection-conjecture}
+(\url{\ownrelease}); the same check is the module
+\texttt{construct/gsc\_mirror\_fixed.py} of the Anaxia engine,
+\url{https://github.com/creelie/eBLLM}.
+
+\section*{Declarations}
+
+\textbf{Competing interests.} The authors declare no competing interests.
+\textbf{Funding.} No funding was received.
+\textbf{Use of AI tools.} The authors used Claude Code (Anthropic) to draft
+the text of this note and the checking module from the authors' argument;
+the authors verified every statement and take full responsibility for the
+content.
+
+\emergencystretch=1.5em
+\begin{thebibliography}{AGLP12}\raggedright
+
+\bibitem{AGLP11}
+L.~B.~Anderson, J.~Gray, A.~Lukas and E.~Palti, Two hundred heterotic
+standard models on smooth Calabi--Yau threefolds, Phys. Rev. D \textbf{84}
+(2011), 106005,
+\href{https://doi.org/10.1103/PhysRevD.84.106005}{doi:10.1103/PhysRevD.84.106005}.
+
+\bibitem{AGLP12}
+L.~B.~Anderson, J.~Gray, A.~Lukas and E.~Palti, Heterotic line bundle
+standard models, J. High Energy Phys. \textbf{2012}, no.~6, 113,
+\href{https://doi.org/10.1007/JHEP06(2012)113}{doi:10.1007/JHEP06(2012)113}.
+
+\bibitem{Bha26a}
+D.~Bhattacharjee, U.~Bhattacharya and S.~Ghosh, One missing axiom for the
+complete closure of the heterotic landscape: resonance classifier of a
+vibrating string creates the typical particle classes, Preprints.org (2026),
+\href{https://doi.org/10.20944/preprints202603.0792.v2}{doi:10.20944/preprints202603.0792.v2}.
+
+\bibitem{BB26}
+D.~Bhattacharjee and U.~Bhattacharya, Which string vibrations become which
+generations on the Dwork quintic, hexagonmath.org (2026), archive
+\hexagonid; code and checks at
+\url{https://github.com/creelie/strings/releases/tag/v1.2.0}.
+
+\bibitem{BD06}
+V.~Bouchard and R.~Donagi, An $SU(5)$ heterotic standard model, Phys. Lett.
+B \textbf{633} (2006), 783--791,
+\href{https://doi.org/10.1016/j.physletb.2005.12.042}{doi:10.1016/j.physletb.2005.12.042}.
+
+\bibitem{BHOP05}
+V.~Braun, Y.-H.~He, B.~A.~Ovrut and T.~Pantev, A heterotic standard model,
+Phys. Lett. B \textbf{618} (2005), 252--258,
+\href{https://doi.org/10.1016/j.physletb.2005.05.007}{doi:10.1016/j.physletb.2005.05.007}.
+
+\bibitem{CDGP91}
+P.~Candelas, X.~C.~de la Ossa, P.~S.~Green and L.~Parkes, A pair of
+Calabi--Yau manifolds as an exactly soluble superconformal theory, Nucl.
+Phys. B \textbf{359} (1991), 21--74,
+\href{https://doi.org/10.1016/0550-3213(91)90292-6}{doi:10.1016/0550-3213(91)90292-6}.
+
+\bibitem{CHSW85}
+P.~Candelas, G.~T.~Horowitz, A.~Strominger and E.~Witten, Vacuum
+configurations for superstrings, Nucl. Phys. B \textbf{258} (1985), 46--74,
+\href{https://doi.org/10.1016/0550-3213(85)90602-9}{doi:10.1016/0550-3213(85)90602-9}.
+
+\bibitem{GP90}
+B.~R.~Greene and M.~R.~Plesser, Duality in Calabi--Yau moduli space, Nucl.
+Phys. B \textbf{338} (1990), 15--37,
+\href{https://doi.org/10.1016/0550-3213(90)90622-K}{doi:10.1016/0550-3213(90)90622-K}.
+
+\bibitem{GSW87}
+M.~B.~Green, J.~H.~Schwarz and E.~Witten, \emph{Superstring Theory, Volume 2:
+Loop Amplitudes, Anomalies and Phenomenology}, Cambridge University Press,
+Cambridge, 1987.
+
+\bibitem{Wit85}
+E.~Witten, Symmetry breaking patterns in superstring models, Nucl. Phys. B
+\textbf{258} (1985), 75--100,
+\href{https://doi.org/10.1016/0550-3213(85)90603-0}{doi:10.1016/0550-3213(85)90603-0}.
+
+\end{thebibliography}
+
+\end{document}
