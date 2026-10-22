@@ -13,10 +13,10 @@ abstract: >-
   LaTeX source and the check of the lemma on Hodge data.
 type: software
 license: MIT
-version: 1.0.0
-date-released: "2026-10-21"
+version: 1.0.1
+date-released: "2026-10-22"
 repository-code: "https://github.com/creelie/geometric-selection-conjecture"
-url: "https://github.com/creelie/geometric-selection-conjecture/releases/tag/v1.0.0"
+url: "https://github.com/creelie/geometric-selection-conjecture/releases/tag/v1.0.1"
 keywords:
   - heterotic string
   - Calabi-Yau threefolds
