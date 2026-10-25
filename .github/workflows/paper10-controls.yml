@@ -28,9 +28,17 @@ jobs:
           PY
       - name: Recompute smoothness, cohomology, singlet and integer certificates
         run: |
-          p='[Paper_10] package/Annals-review-draft/tex-source'
-          python "$p/anc/smoothness.py"
-          python "$p/anc/spectrum.py"
-          python "$p/anc/matrix_certificate.py"
-          python "$p/anc/controls.py"
-          git diff --exit-code -- "$p/anc" "$p/matrix-certificates.tex"
+          python - <<'PY'
+          from pathlib import Path
+          import json,subprocess,sys
+          p=Path('[Paper_10] package/Annals-review-draft/tex-source')
+          names=['smoothness-results.json','spectrum-results.json','matrix-certificates.json','control-results.json']
+          expected={name:json.loads((p/'anc'/name).read_text()) for name in names}
+          matrix=(p/'matrix-certificates.tex').read_text()
+          for name in ['smoothness.py','spectrum.py','matrix_certificate.py','controls.py']:
+              subprocess.run([sys.executable,'-B',str(p/'anc'/name)],check=True)
+          for name in names:
+              assert json.loads((p/'anc'/name).read_text())==expected[name],name
+          assert (p/'matrix-certificates.tex').read_text()==matrix
+          print('Every exact result and matrix certificate reproduced; platform line endings ignored.')
+          PY
