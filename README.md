@@ -33,3 +33,5 @@ no public v2 upload has been performed. New author review is pending.
 The original Python mirror-clause check is retained. New exact controls
 run with Python 3 and symbolic controls with Sympy 1.14.0. See the package
 verification files and source folders for reproduction instructions.
+
+Zenodo version DOI: [10.5281/zenodo.23646340](https://doi.org/10.5281/zenodo.23646340).

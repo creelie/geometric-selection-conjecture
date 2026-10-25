@@ -1,0 +1,17 @@
+{
+  "status": "published-and-archive-verified",
+  "version": "2.0.0",
+  "doi": "10.5281/zenodo.23646340",
+  "doi_url": "https://doi.org/10.5281/zenodo.23646340",
+  "conceptdoi": "10.5281/zenodo.23567114",
+  "record_id": 23646340,
+  "release": "https://github.com/creelie/geometric-selection-conjecture/releases/tag/v2.0.0",
+  "archived_commit": "190b7668d7ca0cd7b3d81820ed5676c21cae8edd",
+  "verified_changed_files": 34,
+  "archive_sha256": "8387b3356469d3974fd9dc1f0d1fb5d0cac14ea92dff15a43b9c8f31749e2dfa",
+  "archive_size": 851200,
+  "verified_at_utc": "2026-10-25T16:53:12.206002+00:00",
+  "GSC_proved": false,
+  "Hexagon_v2_uploaded": false,
+  "journal_submission_performed": false
+}

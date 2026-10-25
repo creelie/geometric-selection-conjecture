@@ -1,0 +1,137 @@
+[
+  {
+    "path": "AI_PROVENANCE.md",
+    "bytes": 1238,
+    "sha256": "91091f7eb0444325d286e0eec5358aa710044cb9769ac87716f5a7d55714d79e"
+  },
+  {
+    "path": "Annals-review-draft/ExplicitStringVacuaGSC.pdf",
+    "bytes": 298686,
+    "sha256": "d5f1e331825ed6460e6d76a6dd1f04587aedfdd793b8581048b7e201db519427"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/construction-controls.json",
+    "bytes": 1489,
+    "sha256": "2cb203050580f23e971e4a7794cd2e44bd0a8e6b49bdb5816c3b1bc53392a759"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/symbolic-controls.json",
+    "bytes": 380,
+    "sha256": "18ce64c3dff35e0f559a6a18144f01b1a6f5a47d80574b30a681afb1f6f977f6"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/verify_controls.py",
+    "bytes": 4003,
+    "sha256": "2e5bf079f7fae3023181ad9e23faa34080e256156d682efe465559a3cf6c7a6e"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/verify_symbolic.py",
+    "bytes": 1280,
+    "sha256": "95125b3db18a0d02c836fdf291deb3cd03792636e37f9d631795f9dd526f1a4b"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/aomart.cls",
+    "bytes": 27024,
+    "sha256": "3d8a0526a3a4efc17b3c14c7dde8009f63f0bf00770e99de941b46052068ab46"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/main.tex",
+    "bytes": 1594,
+    "sha256": "b75bf19afbbe1996677d1d2f3b10edf7a70d42c635931d22eab434acc4285a07"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/paper-body.tex",
+    "bytes": 27133,
+    "sha256": "b03f9f88eee0d52bd63d0db941f4348e2a75c3d7e547fbcfd2da8c3e1cc77400"
+  },
+  {
+    "path": "DOI-BEFORE-ZIP-STATUS.md",
+    "bytes": 304,
+    "sha256": "d4513bd934a61989b62d3a5311e9123bdb5588843f3202eb3d0c4e0f60dde876"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/ExplicitStringVacuaGSC.pdf",
+    "bytes": 313318,
+    "sha256": "85d70dfc06e836ac3a0a85e386d8f8afc8ee543ee579caa8e6dcdf05534d4c54"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/construction-controls.json",
+    "bytes": 1489,
+    "sha256": "2cb203050580f23e971e4a7794cd2e44bd0a8e6b49bdb5816c3b1bc53392a759"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/symbolic-controls.json",
+    "bytes": 380,
+    "sha256": "18ce64c3dff35e0f559a6a18144f01b1a6f5a47d80574b30a681afb1f6f977f6"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/verify_controls.py",
+    "bytes": 4003,
+    "sha256": "2e5bf079f7fae3023181ad9e23faa34080e256156d682efe465559a3cf6c7a6e"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/verify_symbolic.py",
+    "bytes": 1280,
+    "sha256": "95125b3db18a0d02c836fdf291deb3cd03792636e37f9d631795f9dd526f1a4b"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/main.tex",
+    "bytes": 1270,
+    "sha256": "f5f688e41d2757375ab9e19f22e72d20583355ed6368427b56fb9cdb0e7e33a4"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/paper-body.tex",
+    "bytes": 27133,
+    "sha256": "b03f9f88eee0d52bd63d0db941f4348e2a75c3d7e547fbcfd2da8c3e1cc77400"
+  },
+  {
+    "path": "hexagonsubmissionform.md",
+    "bytes": 3347,
+    "sha256": "6c1d11db844e7da3bb921d101a01025617396036b7557f0db974f7d568332868"
+  },
+  {
+    "path": "journalsubmissiondetails.md",
+    "bytes": 1450,
+    "sha256": "4a2b70e1ac83fff64930bebfa39ceaae583964f318c166ee17465b1b8508f0e8"
+  },
+  {
+    "path": "proof-status.json",
+    "bytes": 2718,
+    "sha256": "ab397c0fb10f4e2b0c057973f19c5d68d5b678a1e8f9d574241466731a16a0a0"
+  },
+  {
+    "path": "PUBLICATION-SCOPE.md",
+    "bytes": 1369,
+    "sha256": "42d4491a5360350f00a3a3a800ab1b2915864ee9d601cd6b215a338e34d90f14"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2834,
+    "sha256": "2d69af9ac41cfaa48e896a14d77d890b416eb43af6ead7780209fa1bf48a050b"
+  },
+  {
+    "path": "verification/build-verification.json",
+    "bytes": 1226,
+    "sha256": "a3fa733e416bb017d6b3edac4a09aefaaef8f5bcbce8b78dc60f3b0336865f2c"
+  },
+  {
+    "path": "verification/construction-controls.json",
+    "bytes": 1489,
+    "sha256": "2cb203050580f23e971e4a7794cd2e44bd0a8e6b49bdb5816c3b1bc53392a759"
+  },
+  {
+    "path": "verification/symbolic-controls.json",
+    "bytes": 380,
+    "sha256": "18ce64c3dff35e0f559a6a18144f01b1a6f5a47d80574b30a681afb1f6f977f6"
+  },
+  {
+    "path": "verification/verify_controls.py",
+    "bytes": 4003,
+    "sha256": "2e5bf079f7fae3023181ad9e23faa34080e256156d682efe465559a3cf6c7a6e"
+  },
+  {
+    "path": "verification/verify_symbolic.py",
+    "bytes": 1280,
+    "sha256": "95125b3db18a0d02c836fdf291deb3cd03792636e37f9d631795f9dd526f1a4b"
+  }
+]
