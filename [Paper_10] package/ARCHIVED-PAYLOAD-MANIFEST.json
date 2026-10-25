@@ -1,0 +1,178 @@
+[
+  {
+    "path": "aiprovenance.md",
+    "sha256": "81df65c1dbe1760e34174467a0cb01112bfd3a33955b5d10391a3ec15a98c71b"
+  },
+  {
+    "path": "Annals-review-draft/ExplicitStringVacuaGSC.pdf",
+    "sha256": "6b092ea8708cf0384cbf8c16d3235bc6843a98098aac0ff0bf62593dea364400"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/control-results.json",
+    "sha256": "09957366c0c2f79d0b5535a00c66cac3f600c21985d11b3c1979ee621d1c994f"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/controls.py",
+    "sha256": "563f8c5bbd6ecf3d715be53bf0a133c24c0a3d48a2b4ca3e789d0d3e12a53146"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/matrix-certificates.json",
+    "sha256": "023650dd21b3a0cc25d66e9d06b99d58e280d885503c8cfea16b3ce13b25c799"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/matrix_certificate.py",
+    "sha256": "40ac6beb5dbb5a06d932ca44ebb5e5f9f0ec1abb0ec45070d5366239f6002d4a"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/smoothness-results.json",
+    "sha256": "bd10681c115bc9aeeefb9e134401f191bc548febbb8da05bfd8109376ef3fa9a"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/smoothness.py",
+    "sha256": "b9218a500409007a62113e2c7b7caba006383da9caf9c9f6426b8fe0dffacd41"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/spectrum-results.json",
+    "sha256": "9d7f1235dc8428ce213910d1c1460f12de3d3f74dd01c1d05d384c797941b40b"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/anc/spectrum.py",
+    "sha256": "7c1221c4815ce48c288a7a7be34450dfd4fd15a05b84eafd48fbd6e889e9f141"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/aomart.cls",
+    "sha256": "3d8a0526a3a4efc17b3c14c7dde8009f63f0bf00770e99de941b46052068ab46"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/figures/fig_hodge.png",
+    "sha256": "eecff2fcd3cdda7b3ea79166c4be947ff96e09b2af1cb82884b3d4c47f9283bc"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/figures/fig_labels.png",
+    "sha256": "aa6c093d30075f4fe2f5bcff6b6fa76ad0f1402ea18e685bd755e5d2e4e0a375"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/figures/fig_landscape.png",
+    "sha256": "f6c517daec485fb025e819891be8499bde8923275df0afa827d947f2fa6c2a65"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/figures/fig_masses.png",
+    "sha256": "a128ca473917e23a7366d70149f60f0bd4b4a13a98033ccce6d6c3aff3dd3724"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/figures/fig_weighted.png",
+    "sha256": "4492c0c7eb167451ec77984e33b776d61f86f5ebb09bcaf0901b4d048222563e"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/main.tex",
+    "sha256": "5455764c3ad25fe70d36c6b8f2bebf7946a6db3a0dae7eec52a25e430bc91efd"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/matrix-certificates.tex",
+    "sha256": "af03fa971a5bbbb95efc119a0ec46262642730a4e542a417b2641c16b61de449"
+  },
+  {
+    "path": "Annals-review-draft/tex-source/paper-body.tex",
+    "sha256": "47d90bed635d1068777b23956c93b06a0c76b1e261ca18c02902ec874b0287c0"
+  },
+  {
+    "path": "DOI-BEFORE-ZIP-STATUS.md",
+    "sha256": "80a299383331b0fef12585bb763497726a5f3b44b93ae7c0bbf3dd5848a0eac2"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/ExplicitStringVacuaGSC.pdf",
+    "sha256": "6b092ea8708cf0384cbf8c16d3235bc6843a98098aac0ff0bf62593dea364400"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/control-results.json",
+    "sha256": "09957366c0c2f79d0b5535a00c66cac3f600c21985d11b3c1979ee621d1c994f"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/controls.py",
+    "sha256": "563f8c5bbd6ecf3d715be53bf0a133c24c0a3d48a2b4ca3e789d0d3e12a53146"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/matrix-certificates.json",
+    "sha256": "023650dd21b3a0cc25d66e9d06b99d58e280d885503c8cfea16b3ce13b25c799"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/matrix_certificate.py",
+    "sha256": "40ac6beb5dbb5a06d932ca44ebb5e5f9f0ec1abb0ec45070d5366239f6002d4a"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/smoothness-results.json",
+    "sha256": "bd10681c115bc9aeeefb9e134401f191bc548febbb8da05bfd8109376ef3fa9a"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/smoothness.py",
+    "sha256": "b9218a500409007a62113e2c7b7caba006383da9caf9c9f6426b8fe0dffacd41"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/spectrum-results.json",
+    "sha256": "9d7f1235dc8428ce213910d1c1460f12de3d3f74dd01c1d05d384c797941b40b"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/anc/spectrum.py",
+    "sha256": "7c1221c4815ce48c288a7a7be34450dfd4fd15a05b84eafd48fbd6e889e9f141"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/aomart.cls",
+    "sha256": "3d8a0526a3a4efc17b3c14c7dde8009f63f0bf00770e99de941b46052068ab46"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/figures/fig_hodge.png",
+    "sha256": "eecff2fcd3cdda7b3ea79166c4be947ff96e09b2af1cb82884b3d4c47f9283bc"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/figures/fig_labels.png",
+    "sha256": "aa6c093d30075f4fe2f5bcff6b6fa76ad0f1402ea18e685bd755e5d2e4e0a375"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/figures/fig_landscape.png",
+    "sha256": "f6c517daec485fb025e819891be8499bde8923275df0afa827d947f2fa6c2a65"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/figures/fig_masses.png",
+    "sha256": "a128ca473917e23a7366d70149f60f0bd4b4a13a98033ccce6d6c3aff3dd3724"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/figures/fig_weighted.png",
+    "sha256": "4492c0c7eb167451ec77984e33b776d61f86f5ebb09bcaf0901b4d048222563e"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/main.tex",
+    "sha256": "5455764c3ad25fe70d36c6b8f2bebf7946a6db3a0dae7eec52a25e430bc91efd"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/matrix-certificates.tex",
+    "sha256": "af03fa971a5bbbb95efc119a0ec46262642730a4e542a417b2641c16b61de449"
+  },
+  {
+    "path": "Hexagon-v2-review-draft/tex-source/paper-body.tex",
+    "sha256": "47d90bed635d1068777b23956c93b06a0c76b1e261ca18c02902ec874b0287c0"
+  },
+  {
+    "path": "hexagonsubmissionform.md",
+    "sha256": "805c7b795576d3ff34133277d93949729c3cab38d5887874ad231e0a5381cee4"
+  },
+  {
+    "path": "journalsubmissiondetails.md",
+    "sha256": "eb7a86718922a51e78914803978f0f0a4830474e42394c0a3a72141a1f478739"
+  },
+  {
+    "path": "proof-status.json",
+    "sha256": "1d2f3be7718e0165ac4bcc070fe1fd3164d48e3f6bdfc8eb0ec8a81fd103b1a9"
+  },
+  {
+    "path": "PUBLICATION-SCOPE.md",
+    "sha256": "24df668e4f8dc5f3cf744ae9246cee388dabfc2e4c79d70463a747d36d8b867d"
+  },
+  {
+    "path": "README.md",
+    "sha256": "bdc2bee168e2e9a0a7f6d37e876350df8ce45fa0101f0fc7a7778f23844b256d"
+  },
+  {
+    "path": "verification.json",
+    "sha256": "7263de697001cbae5c45c6879e33ff5596a9cf06599cf1219b9ec7ca907fe3b1"
+  }
+]

@@ -1,20 +1,25 @@
-# Paper 10 - published research revision v2.0.0
+# Paper 10 research revision v2.1.0
 
 Title: Explicit String Vacua and the Geometric Selection Conjecture.
-Authors: Deep Bhattacharjee and Ushashi Bhattacharya.
+Author: Deep Bhattacharjee. Prior work with Ushashi Bhattacharya is credited
+in the manuscript footnote and the original source references.
 
-- Version DOI: [10.5281/zenodo.23646340](https://doi.org/10.5281/zenodo.23646340)
+- Version DOI: [10.5281/zenodo.23647986](https://doi.org/10.5281/zenodo.23647986)
 - Concept DOI: [10.5281/zenodo.23567114](https://doi.org/10.5281/zenodo.23567114)
-- GitHub release: https://github.com/creelie/geometric-selection-conjecture/releases/tag/v2.0.0
-- Archived source commit: `190b7668d7ca0cd7b3d81820ed5676c21cae8edd`
-- Changed files checked against Zenodo: 34
+- Release: https://github.com/creelie/geometric-selection-conjecture/releases/tag/v2.1.0
+- Archived source commit: `6b0a5b88731b3a7c6bd994c42a5c44d3e5968f22`
+- Current payload files checked against the Zenodo archive: 50
 
-The full GSC remains unproved. No single heterotic vacuum satisfying all
-nine conditions is constructed. This archive contains accurately scoped
-partial constructions and review manuscripts, not an accepted Annals paper.
-New author review remains pending. No Hexagon v2 or journal submission has
-been performed.
+**The full GSC remains unproved.** This is the consolidated research revision
+with the explicit construction, exact cohomology and nine-condition audit.
+It is not a proof that a single vacuum passes all nine conditions, an accepted
+Annals paper, or a fully formalized result. New author review is pending.
+No Hexagon or journal submission has been made.
 
-The final TeX ZIPs and combined package were created after this DOI was
-issued, as requested. The DOI receipt and ZIPs are post-archive release
-attachments. Their mathematical sources and PDFs match the archived files.
+The previous DOI 10.5281/zenodo.23646340 identifies only the earlier v2.0.0
+source revision. The current version has the distinct DOI above.
+
+The final TeX ZIPs and the combined package were created AFTER this version
+DOI was published and verified. Their PDF and mathematical sources match
+the archived files. The DOI receipt and final ZIPs are post-archive GitHub
+release attachments; the Zenodo DOI archives the tagged source snapshot.

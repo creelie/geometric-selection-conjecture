@@ -10,3 +10,5 @@ version: "2.1.0"
 url: "https://github.com/creelie/geometric-selection-conjecture"
 abstract: "Consolidated research draft with credited prior joint work with Ushashi Bhattacharya. Explicit geometry and cohomology are certified; no vacuum satisfies all nine GSC conditions in this draft."
 date-released: "2026-10-25"
+
+doi: "10.5281/zenodo.23647986"

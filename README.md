@@ -1,4 +1,4 @@
-# Paper 10 — Explicit String Vacua and the Geometric Selection Conjecture
+# Paper 10 â€” Explicit String Vacua and the Geometric Selection Conjecture
 
 **Research revision v2.1.0. The full GSC is not proved.**
 
@@ -81,3 +81,5 @@ No journal or Hexagon submission is performed by this release.
 Current package: [`[Paper_10] package`](%5BPaper_10%5D%20package).
 Current release: [v2.1.0](https://github.com/creelie/geometric-selection-conjecture/releases/tag/v2.1.0).
 Earlier v2.0.0 payload is preserved in `archive/paper10-v2.0.0`.
+
+Version 2.1.0 DOI: [10.5281/zenodo.23647986](https://doi.org/10.5281/zenodo.23647986).
