@@ -71,5 +71,5 @@ result={'Dwork_labels':101,'Dwork_distinct_characters':101,'Dwork_couplings_by_p
  'Dwork_mass_entries_by_power':mass,'Dwork_holomorphic_det_power':70,
  'free_quotient_table':table,'line_indices':indices,'c2_V_pairings':c2pairs,
  'residual_U1':[-4,1,6,-4,1],'full_GSC_proved':False}
-(ROOT/'checks/control-results.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf8')
+Path(__file__).with_name('control-results.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf8')
 print('PASS: Dwork 101 labels, 1431 couplings, mass multiplicities; 13 Chern/index rows; bundle arithmetic.')

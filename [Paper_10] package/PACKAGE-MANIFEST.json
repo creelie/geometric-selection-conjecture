@@ -13,7 +13,7 @@
   },
   {
     "path": "Annals-review-draft/tex-source/anc/controls.py",
-    "sha256": "63468251d7711165c49abe380c7de2e8a9ec9b5474a9b6e5be7c38904b43ef33"
+    "sha256": "563f8c5bbd6ecf3d715be53bf0a133c24c0a3d48a2b4ca3e789d0d3e12a53146"
   },
   {
     "path": "Annals-review-draft/tex-source/anc/matrix-certificates.json",
@@ -21,7 +21,7 @@
   },
   {
     "path": "Annals-review-draft/tex-source/anc/matrix_certificate.py",
-    "sha256": "6bf686733b08a86cec1a34b7ead0aa7fb7b4e2ed11ed2dc1bc523e108e2a995f"
+    "sha256": "40ac6beb5dbb5a06d932ca44ebb5e5f9f0ec1abb0ec45070d5366239f6002d4a"
   },
   {
     "path": "Annals-review-draft/tex-source/anc/smoothness-results.json",
@@ -89,7 +89,7 @@
   },
   {
     "path": "Hexagon-v2-review-draft/tex-source/anc/controls.py",
-    "sha256": "63468251d7711165c49abe380c7de2e8a9ec9b5474a9b6e5be7c38904b43ef33"
+    "sha256": "563f8c5bbd6ecf3d715be53bf0a133c24c0a3d48a2b4ca3e789d0d3e12a53146"
   },
   {
     "path": "Hexagon-v2-review-draft/tex-source/anc/matrix-certificates.json",
@@ -97,7 +97,7 @@
   },
   {
     "path": "Hexagon-v2-review-draft/tex-source/anc/matrix_certificate.py",
-    "sha256": "6bf686733b08a86cec1a34b7ead0aa7fb7b4e2ed11ed2dc1bc523e108e2a995f"
+    "sha256": "40ac6beb5dbb5a06d932ca44ebb5e5f9f0ec1abb0ec45070d5366239f6002d4a"
   },
   {
     "path": "Hexagon-v2-review-draft/tex-source/anc/smoothness-results.json",

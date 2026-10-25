@@ -34,5 +34,5 @@ assert productdet==393460125696
 # verify against the full lexicographic-basis matrix as well.
 assert M.det()==productdet
 (root/'matrix-certificates.tex').write_text('\n'.join(tex),encoding='utf8')
-(root/'checks/matrix-certificates.json').write_text(json.dumps(cert,indent=2)+'\n',encoding='utf8')
+Path(__file__).with_name('matrix-certificates.json').write_text(json.dumps(cert,indent=2)+'\n',encoding='utf8')
 print('PASS: four character blocks, determinants', [x['determinant'] for x in cert])
