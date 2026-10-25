@@ -1,11 +1,11 @@
 # Paper 10 — Explicit String Vacua and the Geometric Selection Conjecture
 
-**Unpublished author-review revision. The full GSC is not proved.**
+**Research revision v2.1.0. The full GSC is not proved.**
 
 Author of this revision: Deep Bhattacharjee. Ushashi Bhattacharya is credited in the manuscript footnote and the original coauthored references.
 
 This is one coherent manuscript consolidating the two supplied Hexagon TeX
-archives and Paper 10, with a new fixed-complex-structure construction, an analytic singlet obstruction, and
+archives and Paper 10, with a new fixed-complex-structure construction and
 an explicit audit of the nine conditions. No outside paper PDF is embedded.
 There is one title page and one bibliography, and no margin line numbering.
 
@@ -70,12 +70,14 @@ Independent expert review and novelty assessment are pending.
 - Bundle data credited to Buchbinder, Constantin and Lukas,
   JHEP 03 (2014) 025, https://doi.org/10.1007/JHEP03(2014)025
 
-The existing Paper 10 DOI is a source citation, **not a DOI for Paper 10**.
-No new release, DOI, public Hexagon version or journal submission has been made.
-No final ZIP is created before a new DOI, as previously requested by the author.
+The existing v2.0.0 DOI is a citation to the earlier source revision.
+The current version-specific DOI is recorded in `DOI-RECEIPT.json` and
+`RELEASE-DOI.md` when the integration confirms publication. Final source
+ZIPs and the complete package are supplied only after that receipt.
 
-Mathematical and physical closure is not implied by use of the Annals class.
+Archiving is a research publication, not a proof of the nine conditions.
+No journal or Hexagon submission is performed by this release.
 
-
-Current files: [`[Paper_10] package`](%5BPaper_10%5D%20package).
-Earlier immutable release: [v2.0.0](https://github.com/creelie/geometric-selection-conjecture/releases/tag/v2.0.0).
+Current package: [`[Paper_10] package`](%5BPaper_10%5D%20package).
+Current release: [v2.1.0](https://github.com/creelie/geometric-selection-conjecture/releases/tag/v2.1.0).
+Earlier v2.0.0 payload is preserved in `archive/paper10-v2.0.0`.

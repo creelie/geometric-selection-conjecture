@@ -1,7 +1,7 @@
-# DOI and ZIP status
+# Archival sequence
 
-Current consolidated draft: no new version DOI; no new final ZIP.
-Prior release 2.0.0: https://doi.org/10.5281/zenodo.23646340
-That DOI identifies only the previous archived files. It must not be reused
-as if it archived the present revised PDF. Older ZIPs and receipts are in
-the prior-version archive, not the current active package.
+Version: 2.1.0. Publish the reviewed PDF and raw TeX first, verify the
+Zenodo version-specific DOI and archive, and only then create final ZIPs.
+DOI-RECEIPT.json, RELEASE-DOI.md and ZIP-CREATION-RECEIPT.md are post-archive
+release attachments recording completion of that sequence.
+The archived raw manuscript and PDF are not altered after DOI issuance.

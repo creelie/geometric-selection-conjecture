@@ -1,6 +1,6 @@
 # Paper 10 — Explicit String Vacua and the Geometric Selection Conjecture
 
-**Unpublished author-review revision. The full GSC is not proved.**
+**Research revision v2.1.0. The full GSC is not proved.**
 
 Author of this revision: Deep Bhattacharjee. Ushashi Bhattacharya is credited in the manuscript footnote and the original coauthored references.
 
@@ -46,7 +46,7 @@ potential audit. It is not silently substituted into the fixed-point ledger.
 
 ## Files and reproduction
 
-The PDF is the review copy. In `TeX-source`, compile `main.tex` with pdfLaTeX
+The PDF is the review copy. In either edition folder's `tex-source`, compile `main.tex` with pdfLaTeX
 three times. The class, body, four matrix certificates and all figures are
 included. No shell escape, external article PDF, network access, bibliography
 download or Lean installation is required for TeX compilation.
@@ -70,9 +70,10 @@ Independent expert review and novelty assessment are pending.
 - Bundle data credited to Buchbinder, Constantin and Lukas,
   JHEP 03 (2014) 025, https://doi.org/10.1007/JHEP03(2014)025
 
-The existing Paper 10 DOI is a source citation, **not a DOI for Paper 10**.
-No new release, DOI, public Hexagon version or journal submission has been made.
-No final ZIP is created before a new DOI, as previously requested by the author.
+The existing v2.0.0 DOI is a citation to the earlier source revision.
+The current version-specific DOI is recorded in `DOI-RECEIPT.json` and
+`RELEASE-DOI.md` when the integration confirms publication. Final source
+ZIPs and the complete package are supplied only after that receipt.
 
-Mathematical and physical closure is not implied by use of the Annals class.
-
+Archiving is a research publication, not a proof of the nine conditions.
+No journal or Hexagon submission is performed by this release.

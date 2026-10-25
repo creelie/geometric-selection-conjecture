@@ -1,6 +1,6 @@
 {
   "pdf_pages": 57,
-  "pdf_sha256": "21ea92e4e44b9e0e7e184682f370ca4b25990472c9a7ec0b80b010c7c13ac40f",
+  "pdf_sha256": "6b092ea8708cf0384cbf8c16d3235bc6843a98098aac0ff0bf62593dea364400",
   "title_pages": 1,
   "bibliographies": 1,
   "margin_line_numbers": false,
@@ -15,10 +15,10 @@
     "controls.py"
   ],
   "full_GSC_proved": false,
-  "new_DOI": null,
-  "final_ZIP_created": false,
   "authors": [
     "Deep Bhattacharjee"
   ],
-  "prior_coauthor_credit": "Ushashi Bhattacharya in manuscript footnote and original references"
+  "prior_coauthor_credit": "Ushashi Bhattacharya in manuscript footnote and original references",
+  "verification_scope": "pre-archive PDF and raw sources",
+  "version": "2.1.0"
 }

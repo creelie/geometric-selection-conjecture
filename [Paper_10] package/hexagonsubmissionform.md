@@ -16,4 +16,4 @@ Provenance: aiprovenance.md.
 Source: upload the raw files under tex-source with main.tex as the root.
 The two edition folders currently contain identical Annals-format sources.
 No new public Hexagon identifier or version is asserted.
-Final source ZIP: pending a new DOI, in accordance with the author's order.
+Final source ZIP: attached after the verified DOI receipt, in accordance with the author's order.

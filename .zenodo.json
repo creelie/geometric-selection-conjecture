@@ -1,10 +1,10 @@
 {
   "title": "Explicit String Vacua and the Geometric Selection Conjecture",
-  "description": "<p>Unpublished consolidated Paper 10 research draft by Deep Bhattacharjee, with prior coauthored source work with Ushashi Bhattacharya credited in the manuscript footnote and bibliography. Explicit smooth tetraquadric geometry and equivariant charged spectrum are certified. The full GSC remains unproved: the fixed candidate has a residual U(1), perturbative Yukawa obstructions and no controlled stabilized supersymmetry-breaking completion. This draft has no new version DOI; the previous 2.0.0 DOI archives earlier files.</p>",
+  "description": "<p>Consolidated Paper 10 research revision v2.1.0 by Deep Bhattacharjee, with prior coauthored source work with Ushashi Bhattacharya credited in the manuscript footnote and bibliography. Explicit smooth tetraquadric geometry and equivariant charged spectrum are certified. The full GSC remains unproved: the fixed candidate has a residual U(1), perturbative Yukawa obstructions and no controlled stabilized supersymmetry-breaking completion. The prior 2.0.0 DOI archives the earlier source revision. The full GSC is not proved.</p>",
   "upload_type": "publication",
   "license": "MIT",
   "access_right": "open",
-  "version": "2.1.0-draft",
+  "version": "2.1.0",
   "language": "eng",
   "keywords": [
     "heterotic string",
@@ -27,5 +27,6 @@
       "relation": "isSupplementTo"
     }
   ],
-  "publication_type": "preprint"
+  "publication_type": "preprint",
+  "publication_date": "2026-10-25"
 }

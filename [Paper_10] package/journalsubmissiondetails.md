@@ -1,7 +1,7 @@
 # Journal preparation status
 
 Requested format: Annals of Mathematics, using aomart.cls, no margin line numbering.
-Current status: unpublished consolidated research draft, not a full GSC proof.
+Current status: archived research revision, not a full GSC proof.
 No journal submission, acceptance guarantee, novelty verdict, or independent
 referee verification is claimed. The authorship line follows Deep
 Bhattacharjee's latest instruction; original coauthored source references and

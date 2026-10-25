@@ -54,10 +54,11 @@
   "novelty_independently_reviewed": false,
   "Lean_full_formalization": false,
   "author_review_of_new_material": "pending",
-  "new_DOI": null,
-  "public_release_created": false,
   "author": "Deep Bhattacharjee",
   "prior_source_coauthor": "Ushashi Bhattacharya",
   "paper_number": 10,
-  "local_analytic_singlet_obstruction_proved": true
+  "local_analytic_singlet_obstruction_proved": true,
+  "version": "2.1.0",
+  "publication_scope": "partial research revision; not a full GSC proof",
+  "archival_status": "See the version-specific DOI receipt supplied after publication."
 }

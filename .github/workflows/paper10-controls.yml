@@ -23,8 +23,12 @@ jobs:
           for e in json.loads((p/'PACKAGE-MANIFEST.json').read_text()):
               assert hashlib.sha256((p/e['path']).read_bytes()).hexdigest()==e['sha256'],e['path']
           assert not json.loads((p/'proof-status.json').read_text())['full_GSC_proved']
-          assert not (p/'DOI-RECEIPT.json').exists()
-          assert not list(p.rglob('*.zip'))
+          if (p/'DOI-RECEIPT.json').exists():
+              receipt=json.loads((p/'DOI-RECEIPT.json').read_text())
+              assert receipt['status']=='published-and-archive-verified'
+              assert receipt['version']=='2.1.0' and receipt['doi'].startswith('10.5281/zenodo.')
+          else:
+              assert not list(p.rglob('*.zip'))
           PY
       - name: Recompute smoothness, cohomology, singlet and integer certificates
         run: |
