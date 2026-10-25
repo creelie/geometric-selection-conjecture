@@ -7,6 +7,5 @@ authors:
     given-names: Deep
     orcid: "https://orcid.org/0000-0003-0466-750X"
 version: "2.1.0-draft"
-date-released: "2026-10-25"
 url: "https://github.com/creelie/geometric-selection-conjecture"
 abstract: "Consolidated research draft with credited prior joint work with Ushashi Bhattacharya. Explicit geometry and cohomology are certified; no vacuum satisfies all nine GSC conditions in this draft."

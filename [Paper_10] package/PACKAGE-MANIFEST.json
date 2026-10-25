@@ -160,10 +160,6 @@
     "sha256": "094b9324f30a99eb3e2df8b7677d92c9441ee35140cf628b3bd61206dbbcff88"
   },
   {
-    "path": "PACKAGE-MANIFEST.json",
-    "sha256": "8100a545a744d38dde237101f9b29af51f402f545297248abc16d3c8fdd3cea5"
-  },
-  {
     "path": "proof-status.json",
     "sha256": "cc8644c1b46eb97a5da5d4628fafb5725f5409c790f87b2034bc6e13c73fe0f8"
   },
