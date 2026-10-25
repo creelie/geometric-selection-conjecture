@@ -1,0 +1,31 @@
+name: Paper 10 construction controls
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  construction-controls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned symbolic checker
+        run: python -m pip install sympy==1.14.0
+      - name: Verify archived payload hashes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          p=Path('[Paper_10] package')
+          for e in json.loads((p/'PACKAGE-MANIFEST.json').read_text()):
+              assert hashlib.sha256((p/e['path']).read_bytes()).hexdigest()==e['sha256'],e['path']
+          assert not json.loads((p/'proof-status.json').read_text())['GSC_proved']
+          PY
+      - name: Recompute exact and symbolic controls
+        run: |
+          python '[Paper_10] package/verification/verify_controls.py'
+          python '[Paper_10] package/verification/verify_symbolic.py'
+          git diff --exit-code -- '[Paper_10] package/verification/construction-controls.json' '[Paper_10] package/verification/symbolic-controls.json'

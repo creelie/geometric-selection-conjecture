@@ -27,4 +27,4 @@ jobs:
       - name: Build the release assets as a check
         run: |
           version="$(sed -n 's/^version: *//p' CITATION.cff | tr -d '"')"
-          bash .github/release/build.sh "$version" dist
+          CHECK_ONLY=1 bash .github/release/build.sh "$version" dist

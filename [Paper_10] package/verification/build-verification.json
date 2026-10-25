@@ -1,0 +1,28 @@
+[
+  {
+    "edition": "annals",
+    "pdf": "C:\\CLAUDE PAPERS\\gsc-paper10-2026-10-25\\output\\pdf\\ExplicitStringVacuaGSC-annals.pdf",
+    "sha256": "d5f1e331825ed6460e6d76a6dd1f04587aedfdd793b8581048b7e201db519427",
+    "source_body_sha256": "b03f9f88eee0d52bd63d0db941f4348e2a75c3d7e547fbcfd2da8c3e1cc77400",
+    "compiler_exit": 0,
+    "layout_warnings": [],
+    "margin_line_numbers_enabled": false,
+    "full_GSC_proved": false,
+    "visual_review_complete": true,
+    "visual_review_method": "all pages inspected in contact sheets; changed final pages inspected at full rendered size",
+    "pages": 11
+  },
+  {
+    "edition": "hexagon",
+    "pdf": "C:\\CLAUDE PAPERS\\gsc-paper10-2026-10-25\\output\\pdf\\ExplicitStringVacuaGSC-hexagon.pdf",
+    "sha256": "85d70dfc06e836ac3a0a85e386d8f8afc8ee543ee579caa8e6dcdf05534d4c54",
+    "source_body_sha256": "b03f9f88eee0d52bd63d0db941f4348e2a75c3d7e547fbcfd2da8c3e1cc77400",
+    "compiler_exit": 0,
+    "layout_warnings": [],
+    "margin_line_numbers_enabled": false,
+    "full_GSC_proved": false,
+    "visual_review_complete": true,
+    "visual_review_method": "all pages inspected in contact sheets; changed final pages inspected at full rendered size",
+    "pages": 8
+  }
+]

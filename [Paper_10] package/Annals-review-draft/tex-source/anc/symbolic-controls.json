@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "sympy_version": "1.14.0",
+  "local_EFT_gradient_at_origin": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "local_EFT_Hessian_diagonal": [
+    "4*F**2*a",
+    "4*F**2*a",
+    "m1**2",
+    "m1**2",
+    "m2**2",
+    "m2**2"
+  ],
+  "no_scale_identity": "n1 + n2",
+  "physical_heterotic_superpotential_realised": false,
+  "GSC_proved": false
+}

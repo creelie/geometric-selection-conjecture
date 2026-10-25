@@ -1,22 +1,17 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite the note below."
-title: "The Mirror Clause of the Geometric Selection Conjecture Is Empty: note, source and check"
+title: "Explicit String Vacua and the Geometric Selection Conjecture: research manuscript and construction checks"
 abstract: >-
-  The note proves that the fixed-point clause of the Geometric Selection
-  Conjecture is never satisfied: a heterotic vacuum fixed by the mirror
-  involution has a threefold isomorphic to its mirror, hence equal Hodge
-  numbers, vanishing Euler number and a bundle with c_3 = 0 on its component,
-  so it has no net families and fails the three-family condition. The
-  conjecture is therefore equivalent to the existence of one viable vacuum on
-  a component of the landscape carrying no standard embedding, with no
-  condition involving mirror symmetry. The repository holds the note, its
-  LaTeX source and the check of the lemma on Hodge data.
+  Research revision with explicit partial geometric constructions,
+  normalization bounds, a quantitative stability criterion and a local
+  effective-theory example. The full GSC remains unproved and no common
+  nine-condition vacuum is constructed. New author review is pending.
 type: software
 license: MIT
-version: 1.0.1
-date-released: "2026-10-22"
+version: 2.0.0
+date-released: "2026-10-25"
 repository-code: "https://github.com/creelie/geometric-selection-conjecture"
-url: "https://github.com/creelie/geometric-selection-conjecture/releases/tag/v1.0.1"
+url: "https://github.com/creelie/geometric-selection-conjecture/releases/tag/v2.0.0"
 keywords:
   - heterotic string
   - Calabi-Yau threefolds

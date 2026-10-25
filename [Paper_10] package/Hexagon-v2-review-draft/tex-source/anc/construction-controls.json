@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact integers and rational fractions",
+  "bundle_columns": [
+    [
+      -1,
+      0,
+      0,
+      1
+    ],
+    [
+      -1,
+      -3,
+      2,
+      2
+    ],
+    [
+      0,
+      1,
+      -1,
+      0
+    ],
+    [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      1,
+      0,
+      -2
+    ]
+  ],
+  "c1_zero": true,
+  "c2_pairings": [
+    24,
+    8,
+    20,
+    12
+  ],
+  "c3_integral": -24,
+  "line_bundle_indices": [
+    0,
+    -8,
+    0,
+    0,
+    -4
+  ],
+  "total_index": -12,
+  "degree_four_quotient_index": -3,
+  "slopes_at_equal_Kahler_parameters": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "anomaly_pairings": [
+    0,
+    16,
+    4,
+    12
+  ],
+  "effective_cover_representative": "6 J1 J3 + 2 J1 J4",
+  "invariant_linear_system_support_checks": 256,
+  "ambient_Gamma_action_nonidentity_fixed_points": 48,
+  "quotient_integral_anomaly_torsion_audited": false,
+  "holomorphic_Yukawa_diagonal": [
+    "1/100000000",
+    "1/10000",
+    "1"
+  ],
+  "right_matter_metric_diagonal": [
+    "1/10000000000000000",
+    "1/100000000",
+    "1"
+  ],
+  "normalised_Yukawa_diagonal": [
+    "1",
+    "1",
+    "1"
+  ],
+  "robust_minimum_control": {
+    "kappa": "7/4",
+    "actual_root": "-2/225",
+    "distance_bound": "2/175",
+    "ball_radius": "1/10"
+  },
+  "positive_local_EFT_Hessian_parameter_tests": 9,
+  "one_vacuum_satisfying_all_nine_conditions_constructed": false,
+  "GSC_proved": false,
+  "Lean_formalisation_claimed": false
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Explicit String Vacua and the Geometric Selection Conjecture",
+  "date": "2026-10-25",
+  "kind": "author_review_construction_attempt",
+  "GSC_proved": false,
+  "one_vacuum_satisfying_all_nine_conditions_constructed": false,
+  "Annals_level_novelty_established": false,
+  "proposed_Hexagon_revision_of": "2610.00493v1",
+  "new_Hexagon_version_published": false,
+  "conditions": [
+    {
+      "id": "C1",
+      "status": "partial",
+      "established": "Polystability and effective anomaly class on the cover; rational anomaly effectiveness on the quotient",
+      "missing": "Integral quotient anomaly torsion and a complete hidden-sector certificate"
+    },
+    {
+      "id": "C2",
+      "status": "exact_index_result",
+      "established": "Degree-four descent of the specified bundle has index -3",
+      "missing": "This index is not a complete projected spectrum calculation"
+    },
+    {
+      "id": "C3",
+      "status": "partial",
+      "established": "A Wilson homomorphism has Standard Model centralizer in the SU(5) factor",
+      "missing": "Full visible gauge group and all additional gauge-factor mass conditions"
+    },
+    {
+      "id": "C4",
+      "status": "unproved_for_this_construction",
+      "missing": "Complete equivariant cohomology and projected spectrum on the same vacuum"
+    },
+    {
+      "id": "C5",
+      "status": "unproved_for_this_construction",
+      "missing": "Allowed exotic mass terms and their values at the stabilized point"
+    },
+    {
+      "id": "C6",
+      "status": "unproved_for_this_construction",
+      "missing": "Projected Higgs pair and triplet-mass calculation"
+    },
+    {
+      "id": "C7",
+      "status": "criterion_only",
+      "established": "A quantitative sufficient theorem for a specified potential; an explicit local EFT example",
+      "missing": "A compactification-derived potential and controlled corrections for all physical moduli"
+    },
+    {
+      "id": "C8",
+      "status": "unproved_for_this_construction",
+      "established": "Normalization counterexample and a perturbation criterion",
+      "missing": "Actual matter metrics, physical Yukawas and acceptance margins at the same stabilized point"
+    },
+    {
+      "id": "C9",
+      "status": "local_EFT_only",
+      "established": "Broken supersymmetry and positive scalar Hessian in the specified global EFT",
+      "missing": "String realization, gravity and visible-sector consistency"
+    }
+  ],
+  "new_Lean_formalisation_claimed": false,
+  "human_review_of_new_text_confirmed": false,
+  "journal_submission_performed": false,
+  "release_or_DOI_minted": true,
+  "release_version": "2.0.0",
+  "publication_status": "See the v2.0.0 release and verified DOI receipt"
+}

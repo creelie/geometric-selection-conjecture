@@ -1,14 +1,36 @@
 {
-  "title": "The Mirror Clause of the Geometric Selection Conjecture Is Empty: note, source and check",
-  "description": "<p>Note, LaTeX source and check for <strong>The Mirror Clause of the Geometric Selection Conjecture Is Empty</strong> by Deep Bhattacharjee and Ushashi Bhattacharya.</p><p>The Geometric Selection Conjecture asks for a functional on the heterotic landscape, built from the Weil-Petersson metric and invariant under mirror symmetry, whose unique minimum is a phenomenologically viable vacuum. The paper on the Dwork quintic (hexagonmath.org 2610.00446v1) showed that the conjecture holds if and only if there is a viable vacuum fixed by the mirror involution wherever it is defined. The note proves that the fixed-point clause is never satisfied: a vacuum fixed by the mirror involution has a threefold isomorphic to its own mirror, hence equal Hodge numbers, vanishing Euler number and, on its component of the landscape, a bundle with c_3 = 0; by Hirzebruch-Riemann-Roch it has zero net families and violates the three-family condition. Consequently no vacuum built on the tangent bundle of any Calabi-Yau threefold, or on a deformation of it, is ever selected, and the conjecture is equivalent to the existence of one viable vacuum on a component of the landscape carrying no standard embedding, with no condition involving mirror symmetry; the same holds for invariance under any compact group of isometries containing the mirror involution. The existence statement itself remains open.</p><p>The archive holds the compiled note, its source as one zip, and a Python check of the lemma and the corollary on the Hodge data of self-mirror and three-family threefolds (514 checks).</p>",
+  "title": "Explicit String Vacua and the Geometric Selection Conjecture: research manuscript, source and construction checks",
+  "description": "<p>Research revision by Deep Bhattacharjee and Ushashi Bhattacharya.\nAnnals-format and Hexagon-format manuscripts have the same mathematical body.\nThe archive includes a marked-point selection-functional construction,\nindependent Chern/slope/index checks of a published tetraquadric example,\na free invariant-family construction, matter-normalization bounds,\na quantitative stability criterion, and a local global-supersymmetry\neffective model with its missing string realization stated explicitly.</p>\n<p><strong>The full Geometric Selection Conjecture remains unproved.\nNo single heterotic vacuum satisfying all nine viability conditions is\nconstructed. The local effective potential is not derived from the\ncompactification; projected spectra, physical masses, stabilization and\nsupersymmetry breaking still require the recorded joint certificates.\nNo Annals-level novelty or acceptance is claimed.</strong></p>\n<p>The package includes exact Python controls, symbolic Sympy checks,\ncompilation and visual-review records, AI provenance and a proof-status\nledger. The geometric model is credited to Buchbinder, Constantin and Lukas,\nJHEP 03 (2014) 025. Earlier sources are cited for formulation and provenance;\nno unrefereed existence theorem supplies a viable vacuum. The v1 note is\nretained for context. New author review remains pending. GitHub/Zenodo\npublication does not constitute a Hexagon v2 upload or journal submission.</p>",
   "upload_type": "software",
   "license": "MIT",
   "access_right": "open",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "language": "eng",
-  "keywords": ["heterotic string", "Calabi-Yau threefolds", "mirror symmetry", "generations", "Geometric Selection Conjecture"],
+  "keywords": [
+    "heterotic string",
+    "Calabi-Yau threefolds",
+    "mirror symmetry",
+    "generations",
+    "Geometric Selection Conjecture"
+  ],
   "creators": [
-    {"name": "Bhattacharjee, Deep", "orcid": "0000-0003-0466-750X", "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India"},
-    {"name": "Bhattacharya, Ushashi", "orcid": "0009-0002-2254-3914", "affiliation": "Formerly, National Taiwan University, Taipei 106319, Taiwan"}
+    {
+      "name": "Bhattacharjee, Deep",
+      "orcid": "0000-0003-0466-750X",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India"
+    },
+    {
+      "name": "Bhattacharya, Ushashi",
+      "orcid": "0009-0002-2254-3914",
+      "affiliation": "Formerly, National Taiwan University, Taipei 106319, Taiwan"
+    }
+  ],
+  "publication_date": "2026-10-25",
+  "related_identifiers": [
+    {
+      "identifier": "https://hexagonmath.org/2610.00493v1",
+      "scheme": "url",
+      "relation": "isSupplementTo"
+    }
   ]
 }

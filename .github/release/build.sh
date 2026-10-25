@@ -7,6 +7,35 @@
 set -euo pipefail
 
 version=$1
+root=$(cd "$(dirname "$0")/../.." && pwd)
+if [ -d "$root/[Paper_10] package" ]; then
+  mkdir -p "$2"
+  out=$(cd "$2" && pwd)
+  for edition in Annals-review-draft Hexagon-v2-review-draft; do
+    src="$root/[Paper_10] package/$edition"
+    work=$(mktemp -d)
+    cp -r "$src/tex-source/." "$work/"
+    (
+      cd "$work"
+      for pass in 1 2 3; do
+        pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape main.tex > /dev/null
+      done
+      pages() { pdfinfo "$1" | awk '/^Pages:/ {print $2}'; }
+      test "$(pages main.pdf)" = "$(pages "$src/ExplicitStringVacuaGSC.pdf")"
+      if grep -iE 'undefined|overfull' main.log; then exit 1; fi
+    )
+    if [ "${CHECK_ONLY:-0}" != 1 ]; then
+      test -f "$root/[Paper_10] package/DOI-RECEIPT.json" || {
+        echo 'Obtain and record the Zenodo version DOI before creating final ZIPs.' >&2
+        exit 1
+      }
+      python3 -c 'import json,sys; assert json.load(open(sys.argv[1]))["version"]==sys.argv[2]' "$root/[Paper_10] package/DOI-RECEIPT.json" "$version"
+      cp "$src/ExplicitStringVacuaGSC.pdf" "$out/ExplicitStringVacuaGSC-$edition-v$version.pdf"
+      (cd "$src/tex-source" && find . -type f | LC_ALL=C sort | sed 's|^./||' | zip -X -q -9 "$out/ExplicitStringVacuaGSC-$edition-v$version-tex.zip" -@)
+    fi
+  done
+  exit 0
+fi
 mkdir -p "$2"
 out=$(cd "$2" && pwd)
 root=$(cd "$(dirname "$0")/../.." && pwd)
