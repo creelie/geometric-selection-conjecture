@@ -1,0 +1,546 @@
+\begin{abstract}
+We study what an explicit construction would have to establish for the
+Geometric Selection Conjecture. We give a smooth globally proper selection
+functional once a compatible viable point is supplied, distinguish this
+marked-point construction from a selector intrinsic to an unmarked metric,
+and prove a quantitative criterion for simultaneous stabilization and
+preservation of physical mass inequalities. We independently check the
+slope, Chern-class and index data of a published tetraquadric line-bundle
+example. An explicit normalization example shows that a holomorphic Yukawa
+hierarchy need not be a physical hierarchy. A local supersymmetric effective
+theory has an isolated minimum with broken supersymmetry, but its realization
+by the compactification is not established. No vacuum satisfying all nine
+conditions is constructed, and the full conjecture remains open.
+\end{abstract}
+\maketitle
+
+\noindent\textbf{Research status.} This is an author-review draft for a
+possible revision of \cite{Mirror}. It is not a proof of the full Geometric
+Selection Conjecture (GSC). The use of an Annals manuscript class concerns
+formatting; no journal acceptance, submission, or new Hexagon identifier
+is asserted. The elementary construction criteria below are not claimed
+to be previously unknown theorems.
+
+\section{The simultaneous construction problem}
+The GSC formulation in \cite{Dwork,Mirror} concerns a landscape
+$\mathcal L=\coprod_\tau M_\tau$ of compactification data and an involutive
+isometry $\mu$ defined on a union $D$ of components. A desired function
+$S:\mathcal L\to[0,\infty)$ is smooth and proper on each component,
+has a unique global minimum at a viable point, and is invariant under
+$\mu$ wherever $\mu$ is defined. Its viability requirements originate in
+\cite{Original}. We use the following short restatement, without supplying
+new numerical meanings for the physical acceptance conditions.
+
+\begin{center}\small
+\begin{tabular}{@{}p{.07\linewidth}p{.85\linewidth}@{}}
+\toprule
+C1 & A slope-polystable bundle with $c_1=0$ and an effective anomaly class.\\
+C2 & Three net families, with the quotient index treated consistently.\\
+C3 & Wilson-line reduction of the visible gauge group to the Standard Model.\\
+C4 & Three quark--lepton families and no chiral exotics after projection.\\
+C5 & Allowed sufficiently heavy masses for vectorlike exotics.\\
+C6 & A Higgs pair with doublet--triplet splitting.\\
+C7 & Stabilization of the relevant moduli in a controlled effective regime.\\
+C8 & Acceptable physical Yukawa rank and hierarchy after normalization.\\
+C9 & Phenomenologically consistent supersymmetry breaking, if present.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+These are nine simultaneous predicates on one complete datum, not nine
+alternative cases. Let $A_i$ be the locus satisfying C$i$. The existence
+problem is $\bigcap_{i=1}^9 A_i\ne\varnothing$. Nonemptiness of separate
+$A_i$, even of all pairs among three loci, need not imply a common point:
+$\{0,1\}$, $\{1,2\}$ and $\{0,2\}$ have pairwise intersections but empty
+triple intersection. Results at different bundles or different moduli
+values cannot be assembled into a single vacuum without proving their
+compatibility.
+
+For a complete datum one must specify the threefold, visible and hidden
+bundles, polarization, free action and equivariant structures when used,
+Wilson line, effective K\"ahler potential and superpotential, and the
+domain in which omitted corrections are controlled. C5 and C7--C9 also
+need explicit acceptance predicates. We leave those predicates as inputs;
+choosing convenient thresholds would change the problem.
+
+\section{A marked-point selection construction}
+The functional conditions have a clean differential-topological answer.
+They do not manufacture the point that is to be selected.
+
+\begin{theorem}[Selection with a supplied point]\label{thm:selection}
+Let $M$ be a countable disjoint union of second-countable smooth
+Riemannian manifolds. Let $\mu$ be an involutive isometry on a union $D$
+of components. Given $p\in M$, the following are equivalent:
+\begin{enumerate}[label=(\roman*)]
+\item $p\notin D$, or $\mu p=p$.
+\item There is a nonnegative smooth globally proper function $S$ on $M$
+with unique zero $p$ and $S\circ\mu=S$ on $D$.
+\end{enumerate}
+The function can be chosen to have Hessian $2g_p$ at $p$.
+\end{theorem}
+\begin{proof}
+An invariant function with unique zero must fix that zero under every
+symmetry defined there. This proves necessity.
+
+Every second-countable smooth manifold has a nonnegative smooth proper
+exhaustion $\rho$. One direct construction takes a compact exhaustion
+$K_j\subset\operatorname{int}K_{j+1}$, a locally finite partition of unity
+subordinate to the compact annular cover, and assigns successively increasing
+positive coefficients to its terms; outside $K_j$ all nonzero coefficients
+can be arranged to be at least $j$. Its sublevel sets are closed and
+contained in some $K_j$, hence compact. These standard smooth-manifold
+constructions apply separately to the components; see \cite{Lee}.
+
+On a component preserved by $\mu$, replace $\rho$ by
+$\rho+\rho\circ\mu$. On a pair of exchanged components choose $\rho$ on
+one and transport it to the other. The resulting function is invariant
+and proper on each component. Enumerate the component orbits; outside
+the orbit of the component of $p$, add distinct positive integer offsets
+tending to infinity. Each orbit contains at most two components.
+
+Choose a normal ball $B_r(p)$ with compact closure, and write
+$f(x)=d(p,x)^2$ there. If $p\in D$ and is fixed, this ball and $f$ are
+invariant. Choose a smooth function $\theta:[0,\infty)\to[0,1]$ equal to
+one for $t\le r^2/4$ and zero for $t\ge r^2/2$. On the component of $p$ set
+\[
+ S=\theta(f)f+(1-\theta(f))(1+\rho),
+\]
+extending the expression by $1+\rho$ outside the ball. This is smooth
+because $\theta(f)$ vanishes near its boundary. Its only zero is $p$:
+away from $p$ every nonzero term in this convex combination is positive.
+It equals $f$ near $p$, so its Hessian there is $2g_p$.
+
+On the remaining components use their exhaustion plus the positive
+orbit offset. For a fixed sublevel only finitely many offsets occur.
+On the distinguished component a sublevel is a closed subset of
+$\overline B_r(p)\cup\{\rho\le t-1\}$; on all other relevant components
+it is compact by properness of $\rho$. Thus every sublevel of $S$ is
+compact in the disjoint union. Invariance follows from the construction.
+\end{proof}
+
+\begin{remark}[What the point supplies]
+The construction uses the marked point $p$, exhaustions and cutoffs in
+addition to the metric. It proves the smooth-function assertion with a
+supplied compatible point. It does not prove that an unmarked metric
+determines $p$ or that $p$ satisfies C1--C9.
+\end{remark}
+
+\begin{proposition}[An intrinsic selector must respect all isometries]
+Suppose a rule assigns $S_g$ to an unmarked Riemannian manifold naturally
+under isometries. If $S_g$ has a unique minimum $p$, every isometry fixes
+$p$. In particular there is no such uniquely minimizing rule on a
+positive-dimensional homogeneous Riemannian manifold.
+\end{proposition}
+\begin{proof}
+Naturality for an isometry $h$ says $S_g(hx)=S_g(x)$. Hence $hp$ is
+another minimum and equals $p$. Transitivity on a manifold with more
+than one point is incompatible with a common fixed point.
+\end{proof}
+This is an obstruction to a particular notion of metric-only selection,
+not a proof that the actual heterotic moduli metric is homogeneous.
+It also shows why invariance under an additional compact group cannot be
+discarded merely because the partial mirror map is undefined at $p$:
+the additional group must still fix a unique selected point.
+
+\section{Index constraints and the mirror restriction}
+\begin{proposition}[Index and finite descent]\label{prop:index}
+Let $X$ be a Calabi--Yau threefold and $V$ a holomorphic bundle with
+$c_1(V)=0$. Then
+\[
+ \chi(X,V)=\frac12\int_Xc_3(V).
+\]
+If $\pi:X\to Y$ is finite \emph{\'etale} of degree $d$ and
+$V=\pi^*V_Y$, then $\chi(X,V)=d\chi(Y,V_Y)$. Thus the three-family
+index condition downstairs requires $|\int_Xc_3(V)|=6d$.
+\end{proposition}
+\begin{proof}
+In Hirzebruch--Riemann--Roch, the degree-six term of
+$\operatorname{ch}(V)\operatorname{td}(X)$ is
+$\operatorname{ch}_3(V)+c_1(V)c_2(X)/12+operatorname{rk}(V)c_1(X)c_2(X)/24$.
+The last two terms vanish and $\operatorname{ch}_3(V)=c_3(V)/2$.
+For an \emph{\'etale} map the tangent bundle and Todd class pull back,
+and integration of a pulled-back top class multiplies by $d$.
+\end{proof}
+
+For a quintic, expansion of $(1+H)^5/(1+5H)$ gives
+$c_3(T_X)=-40H^3$ and $\int_XH^3=5$, hence $\int c_3(T_X)=-200$.
+Consequently no standard-embedding
+free quotient has index of absolute value three, because $100=3d$ has no
+integer solution. This restriction is independent of the quotient group
+classification. It does not apply to arbitrary nonstandard bundles.
+
+Under the standard-type partial mirror convention of \cite{Mirror}, a
+fixed point has $h^{1,1}=h^{2,1}$ and hence $\chi(X)=0$. The bundle on
+that component has $\int c_3(V)=\chi(X)$, so Proposition~\ref{prop:index}
+gives zero net families. This proves that a selected viable point cannot
+be a mirror-fixed point in that specified domain. It does not exclude
+nonstandard data outside the domain, nor establish a mirror map on all
+$(0,2)$ compactifications.
+
+\section{An exact nonstandard geometric starting point}
+We now check a published bundle example rather than assume that a
+topological index determines its masses. The bundle data are those of
+Buchbinder, Constantin and Lukas \cite[Sec.~5.1]{BCL}; the calculations
+below are independent reproductions, not a new discovery of their model.
+
+Let $X\subset A=(\mathbb P^1)^4$ be a smooth hypersurface of multidegree
+$(2,2,2,2)$. Write $J_i$ for the four hyperplane classes. Adjunction gives
+$K_X\cong\mathcal O_X$ and
+\[
+ d_{ijk}=\int_XJ_iJ_jJ_k=
+ \begin{cases}2& i,j,k\text{ distinct},\\0&\text{otherwise},\end{cases}
+ \qquad c_2(T_X)=4\sum_{i<j}J_iJ_j.
+\]
+These formulas follow in the ambient ring $J_i^2=0$ from
+$[X]=2\sum J_i$ and $c(T_X)=\prod_i(1+2J_i)/(1+2\sum J_i)$.
+Set $V=\bigoplus_{a=1}^5\mathcal O_X(k_a)$, with columns
+\begin{equation}\label{eq:bundle}
+(k_a^i)=
+\begin{pmatrix}
+-1&-1&0&1&1\\
+0&-3&1&1&1\\
+0&2&-1&-1&0\\
+1&2&0&-1&-2
+\end{pmatrix}.
+\end{equation}
+
+\begin{proposition}[Cover-space data]\label{prop:cover}
+For every smooth $X$ above, $c_1(V)=0$ and $V$ is slope-polystable for
+$J=t(J_1+J_2+J_3+J_4)$, $t>0$. Its Chern and index data are
+\[
+ \left(\int_Xc_2(V)J_i\right)_{i=1}^4=(24,8,20,12),
+ \qquad \int_Xc_3(V)=-24,\qquad\chi(X,V)=-12.
+\]
+The anomaly class on the cover has the effective representative
+$6J_1J_3+2J_1J_4$.
+\end{proposition}
+\begin{proof}
+Every row of \eqref{eq:bundle} sums to zero, proving $c_1(V)=0$.
+Every column also sums to zero. The slope of a summand is therefore
+$12t^2\sum_i k_a^i=0$. Rank-one bundles are slope-stable, so their
+direct sum at common slope zero is polystable.
+
+Put $l_a=\sum_i k_a^iJ_i$. From $\sum l_a=0$ one obtains
+$c_2(V)=-\tfrac12\sum l_a^2$ and
+$c_3(V)=\tfrac13\sum l_a^3$. Direct multiplication using $d_{ijk}$ gives
+the displayed values. Independently, for a line bundle,
+\[
+ \chi(\mathcal O_X(k))=
+ 2\sum_{i<j<k'}k_i k_j k_{k'}+2\sum_i k_i.
+\]
+For the five columns the indices are $0,-8,0,0,-4$, giving $-12$.
+The anomaly pairs with the $J_i$ as $(0,16,4,12)$, exactly the pairings
+of $6J_1J_3+2J_1J_4$. The $J_i$ form an integral basis of $H^2(X)$ by
+Lefschetz; $H^4(X)$ is torsion-free by Lefschetz on $H_2$ and Poincar\'e
+duality. Equality of these pairings therefore identifies the classes.
+Each $J_iJ_j$ with $i\ne j$ is represented by an effective intersection
+of divisors, proving the assertion.
+\end{proof}
+
+\subsection{A free degree-four family and equivariance}
+On every factor let $a[x:y]=[x:-y]$ and $b[x:y]=[y:x]$ and act
+diagonally on $A$. They commute projectively and generate
+$\Gamma\cong(\mathbb Z/2)^2$. Each nonidentity element fixes $2^4=16$
+ambient points. The three sets are disjoint, so there are 48 points to
+avoid. Put
+\[
+ e_i=x_i^2+y_i^2,\quad d_i=x_i^2-y_i^2,\quad p_i=2x_iy_i.
+\]
+An invariant multidegree-$(2,2,2,2)$ linear system is spanned by products
+of one of $e_i,d_i,p_i$ per factor with even numbers of $d$ and $p$.
+
+\begin{lemma}[Base-point-free invariant system]
+This invariant linear system is base-point-free. Its general member is
+smooth and avoids all 48 fixed points, so $\Gamma$ acts freely on it.
+\end{lemma}
+\begin{proof}
+At a point of any factor at least two of $e,d,p$ are nonzero. Label them
+by $0,u,v\in(\mathbb Z/2)^2$. Any two-element subset of these three labels
+is an affine line. If the available two-element sets in four factors
+have different directions, their sumset is the whole group. If all have
+the same direction, they are the same pair and their fourfold sumset
+contains zero. A choice of nonzero factors with total label zero therefore
+exists, proving base-point-freeness. Taking subsets deals also with a
+factor where all three values are nonzero.
+
+Bertini gives smoothness on a nonempty open subset of the parameter
+space. At any of the finitely many fixed points base-point-freeness
+makes the vanishing condition a proper hyperplane. The complement of
+these hyperplanes meets that open subset. Such a member has a free
+action. The product of the four determinants of either ambient lift is
+$(-1)^4=1$, and its defining polynomial is invariant, so the residue
+holomorphic three-form is preserved. Thus the free quotient has trivial
+canonical bundle as well.
+\end{proof}
+
+The two linear lifts anticommute on $\mathcal O(1)$ of one factor.
+Their commutator on $\mathcal O(k_1,k_2,k_3,k_4)$ is
+$(-1)^{\sum k_i}$. Every column of \eqref{eq:bundle} has sum zero, so
+these tensor lifts commute and square to one. They give equivariant
+structures on the summands and a descended bundle $V_Y$ on $Y=X/\Gamma$.
+Proposition~\ref{prop:index} now proves $\chi(Y,V_Y)=-3$.
+
+The invariant polarization descends and proves polystability downstairs.
+The anomaly class is rationally effective downstairs: pushing forward
+an effective representative upstairs and dividing by four proves this
+over $\mathbb Q$. An equality after pullback alone does not exclude
+integral torsion in $H^4(Y,\mathbb Z)$. We have not audited that torsion
+refinement or the hidden-sector completion here. We therefore distinguish
+the verified rational anomaly statement from a full quantized anomaly
+certificate for the quotient.
+
+A Wilson homomorphism on the $SU(5)$ factor may send $a$ to
+$\operatorname{diag}(1,1,1,-1,-1)$ and $b$ to the identity. Its centralizer
+is $S(U(3)\times U(2))$, the Standard Model group up to a finite quotient.
+This group calculation is not a calculation of all projected cohomology
+groups, possible additional gauge factors, or their masses. Those are
+separate C3--C6 obligations. The example is a geometric starting point,
+not a certificate of a nine-condition vacuum.
+
+\section{Why holomorphic masses do not close C8}
+After fixing conventions and the Higgs factor, a physical Yukawa matrix
+has the form
+\begin{equation}\label{eq:normalisation}
+ Y_{\rm phys}=c\,Z_L^{-T/2}Y_{\rm hol}Z_R^{-1/2},
+ \qquad c>0,
+\end{equation}
+where the matter metrics are positive definite. Their invertibility
+preserves rank but does not preserve singular-value ratios.
+
+\begin{proposition}[A normalization counterexample]\label{prop:normalisation}
+For $0<\epsilon<1$, take
+\[
+Y_{\rm hol}=\operatorname{diag}(\epsilon^8,\epsilon^4,1),\quad
+Z_L=I,\quad Z_R=\operatorname{diag}(\epsilon^{16},\epsilon^8,1),\quad c=1.
+\]
+All metrics are positive definite and $Y_{\rm phys}=I$. Thus a full-rank
+holomorphic matrix with separated scales does not prove a physical hierarchy.
+\end{proposition}
+\begin{proof}
+The positive inverse square root of $Z_R$ is
+$\operatorname{diag}(\epsilon^{-8},\epsilon^{-4},1)$. Multiplication in
+\eqref{eq:normalisation} gives the identity.
+\end{proof}
+The example does not claim that these metrics occur in the tetraquadric
+model. It refutes the inference based on a holomorphic matrix alone.
+It does not refute a hierarchy proved with regular nondegenerate metrics
+at the limiting point, as the following bound makes precise.
+
+\begin{proposition}[Bounded normalization preserves orders]\label{prop:bounded}
+Suppose $mI\preceq Z_L,Z_R\preceq MI$ with $0<m\le M$ and
+$0<c_-\le c\le c_+$. For every singular value, ordered consistently,
+\[
+ \frac{c_-}{M}\sigma_i(Y_{\rm hol})
+ \le\sigma_i(Y_{\rm phys})
+ \le\frac{c_+}{m}\sigma_i(Y_{\rm hol}).
+\]
+If these bounds are uniform as a parameter tends to zero, any nonzero
+power-law orders of the holomorphic singular values are preserved.
+\end{proposition}
+\begin{proof}
+For invertible $A,B$, the min--max characterization gives
+$\sigma_i(AYB)\le\|A\|_{\rm op}\|B\|_{\rm op}\sigma_i(Y)$.
+Apply this also to $Y=A^{-1}(AYB)B^{-1}$ to obtain the reverse bound.
+The operator norms of the inverse square roots are at most $m^{-1/2}$
+and those of their inverses at most $M^{1/2}$; transpose has the same
+singular values. Multiplication by $c$ yields the result. Uniform positive
+constants do not change a power-law order.
+\end{proof}
+Continuity and positive definiteness at a regular limiting point give
+such bounds locally. The preceding counterexample loses that lower bound
+as $\epsilon\to0$. Conversely, an asymptotic order calculation alone does
+not fix the observed mass ratios or the point selected by stabilization.
+Published physical-flavour constructions are available \cite{CLLN};
+that paper leaves stabilization and supersymmetry breaking untreated.
+This is a limitation of the result cited, not an assertion about every
+heterotic model in the literature.
+
+\section{A quantitative simultaneous-persistence criterion}
+The following theorem identifies bounds that would make a local
+construction robust. All its assumptions must be checked on the same
+compactification chart and in the same normalization.
+
+\begin{theorem}[A certified interior minimum]\label{thm:minimum}
+Let $B=\overline B_r(u_0)\subset\mathbb R^n$ and let $V_0,\Delta$
+be $C^2$ on a neighborhood of $B$. Suppose on $B$ that
+\[
+ D^2V_0\succeq\lambda I,\quad
+ \|D^2\Delta\|_{\rm op}\le b<\lambda,\quad
+ \|\nabla V_0(u_0)\|\le\eta,\quad
+ \|\nabla\Delta(u_0)\|\le a.
+\]
+Put $\kappa=\lambda-b$ and assume $\eta+a<\kappa r$.
+Then $V=V_0+\Delta$ has exactly one critical point $u_*$ in $B$.
+It is an interior minimum, $D^2V(u_*)\succeq\kappa I$, and
+\begin{equation}\label{eq:displacement}
+ \|u_*-u_0\|\le\delta:=\frac{\eta+a}{\kappa}<r.
+\end{equation}
+\end{theorem}
+\begin{proof}
+The Hessian of $V$ is bounded below by $\kappa I$. Integrating along
+a segment yields strong monotonicity:
+\[
+ (\nabla V(x)-\nabla V(y))\cdot(x-y)\ge\kappa\|x-y\|^2.
+\]
+For $x$ on the boundary and $v=x-u_0$ this gives
+$\nabla V(x)\cdot v\ge\kappa r^2-(\eta+a)r>0$.
+The inward directional derivative is negative, so a minimum on the
+compact ball cannot occur at its boundary. A minimum exists and is
+therefore critical in the interior. Strong monotonicity excludes two
+critical points. Apply it with $x=u_*$, $y=u_0$ and use
+$\nabla V(u_*)=0$ to obtain
+$\kappa\|u_*-u_0\|^2\le(\eta+a)\|u_*-u_0\|$,
+which proves \eqref{eq:displacement}.
+\end{proof}
+
+\begin{proposition}[Preserving masses and inequalities]\label{prop:persistence}
+In Theorem~\ref{thm:minimum}, suppose $Y$ is a physical $3\times3$ Yukawa
+matrix with $\|Y(u)-Y(u_0)\|_{\rm op}\le L\|u-u_0\|$ on $B$.
+If $s_i$ are its singular values at $u_0$, then at $u_*$ they differ
+from $s_i$ by at most $e=L\delta$. In particular $s_{\min}>e$
+certifies full rank. For $s_j>e$,
+\[
+ \frac{\max(0,s_i-e)}{s_j+e}
+ \le\frac{s_i(u_*)}{s_j(u_*)}
+ \le\frac{s_i+e}{s_j-e}.
+\]
+If a real acceptance function $q$ is $L_q$-Lipschitz and has required
+lower bound $q_{\rm req}$, then
+$q(u_0)>q_{\rm req}+L_q\delta$ certifies $q(u_*)>q_{\rm req}$.
+\end{proposition}
+\begin{proof}
+The min--max formula for singular values and
+$|\|Av\|-\|Bv\||\le\|(A-B)v\|$ on unit vectors give
+$|\sigma_i(A)-\sigma_i(B)|\le\|A-B\|_{\rm op}$ by applying the
+formula in both directions. The ratio bounds follow by bounding numerator
+and denominator separately. The last assertion is the Lipschitz inequality.
+\end{proof}
+
+Thus a controlled ball preserving the discrete spectrum and satisfying
+strict mass, hierarchy and consistency margins would turn an approximate
+minimum into a simultaneous certificate. If the real kinetic matrix obeys
+$0<G(u_*)\preceq\Lambda I$, the physical scalar mass matrix
+$G(u_*)^{-1/2}D^2V(u_*)G(u_*)^{-1/2}$ has eigenvalues at least
+$\kappa/\Lambda$. This follows by applying the Hessian lower bound to
+$G^{-1/2}v$. At a critical point the connection correction to the Hessian
+vanishes. Thus kinetic normalization must also be bounded when interpreting
+the Hessian physically. The bounds must include all
+claimed perturbative and nonperturbative corrections, the normalization
+metrics, the physical moduli coordinates, and any constraints or gauge
+quotients. A Hessian estimate for a freely invented scalar function is
+not a Hessian estimate for the compactification potential.
+
+\section{An explicit local effective-theory construction and its limit}
+It is useful to separate a solvable analytic problem from the missing
+string realization. Consider a classical global $N=1$ effective theory
+with fields $S,Z_1,\ldots,Z_m$, constants $a>0$, $F\ne0$, and $m_j\ne0$:
+\[
+ K=|S|^2-a|S|^4+\sum_j|Z_j|^2,
+ \qquad W=FS+\frac12\sum_jm_jZ_j^2.
+\]
+We work on $|S|^2<1/(4a)$, where its K\"ahler metric is positive.
+
+\begin{proposition}[A stabilized local model]\label{prop:eft}
+For this specified classical global effective theory,
+\[
+ V=\frac{|F|^2}{1-4a|S|^2}+\sum_j|m_j|^2|Z_j|^2
+\]
+has a unique minimum at the origin of the stated domain. Supersymmetry
+is broken there. In canonical real coordinates its Hessian has diagonal
+entries $4a|F|^2,4a|F|^2$ and $|m_j|^2,|m_j|^2$ for each $j$.
+\end{proposition}
+\begin{proof}
+$K_{S\bar S}=1-4a|S|^2$ and $K_{Z_i\bar Z_j}=\delta_{ij}$, so the
+global-supersymmetry potential $K^{A\bar B}W_A\overline W_B$ is the
+displayed expression. Its first term is strictly increasing with $|S|^2$
+and the remaining terms are positive quadratics. The auxiliary field in
+the $S$ direction is nonzero at zero because $W_S=F$. Expanding with
+$S=(x+iy)/\sqrt2$ gives
+$V=|F|^2+2a|F|^2(x^2+y^2)+\sum_j|m_j|^2(u_j^2+v_j^2)/2+O(|S|^4)$,
+which proves the Hessian assertion.
+\end{proof}
+This proposition supplies no Calabi--Yau bundle realizing its $K$ and $W$.
+It omits supergravity, flux quantization, the anomaly constraints and
+the coupled visible sector. Consequently it verifies neither C7 nor C9
+for the geometric example. Its role is to make the missing realization
+problem explicit rather than hide it inside a choice of coefficients.
+
+\begin{proposition}[A tree-level obstruction]\label{prop:noscale}
+Let a supergravity model have
+\[
+ K=K_0(z,\bar z)-\sum_{i=1}^r n_i\log(T_i+\bar T_i),
+ \quad n_i>0,\quad\sum_i n_i=3,\quad W=W(z).
+\]
+At a point with $D_zW=0$, its F-term potential vanishes for all $T_i$
+in this product chart. It does not stabilize these K\"ahler directions.
+\end{proposition}
+\begin{proof}
+The $T$-block is diagonal,
+$K_i=-n_i/(T_i+\bar T_i)$ and
+$K_{i\bar i}=n_i/(T_i+\bar T_i)^2$. Hence
+$\sum_iK^{i\bar i}K_iK_{\bar i}=\sum_i n_i=3$.
+Since $D_iW=K_iW$ and the $z$ block contributes zero, these terms cancel
+the $-3|W|^2$ in $V_F=e^K(K^{A\bar B}D_AW\overline{D_BW}-3|W|^2)$.
+Thus there are flat $T$ directions. Additional D terms or corrections are
+not covered by this assertion and would need their own calculation.
+\end{proof}
+
+\section{The remaining proof obligations}
+The geometric calculation supplies explicit nonstandard bundle data,
+cover-space polystability and anomaly effectiveness, and an exact
+three-family quotient index. It does not compute the full projected
+spectrum or all mass operators. In particular the quotient integral
+anomaly certificate and the hidden sector need a complete audit.
+
+The local effective model proves that a specified mathematical potential
+can have a positive Hessian and broken supersymmetry. It does not show that
+this potential and the required physical Yukawa matrices arise from the
+same compactification. Theorem~\ref{thm:minimum} provides a route for a
+controlled candidate: establish its hypotheses and the acceptance margins
+on that candidate's chart. Those estimates have not been supplied here.
+
+Even an explicit metric-dependent selection function, a correct index,
+or a holomorphic hierarchy cannot replace these missing results. No
+intersection point of all nine viability loci has been established by
+the present constructions. The full GSC remains open in this draft.
+
+\section*{Verification and provenance}
+Exact-arithmetic controls reproduce the Chern, slope and index data, the
+256 invariant-system support cases, and the normalization and minimum
+examples. Sympy checks the local Hessian and no-scale identity. These are
+algebra checks, not a nine-condition construction; no Lean formalization
+is claimed.
+
+ChatGPT/Codex assisted with this draft at the author's request. Both
+existing authors are retained, and their review of the new material is
+pending. No v2 has been uploaded to Hexagon.
+
+\begin{thebibliography}{99}
+\bibitem{Original} D.~Bhattacharjee, U.~Bhattacharya and S.~Ghosh,
+\emph{One missing axiom for the complete closure of the heterotic landscape},
+Preprints.org (2026), version 2,
+\href{https://doi.org/10.20944/preprints202603.0792.v2}{doi:10.20944/preprints202603.0792.v2}.
+Cited for the formulation of the nine conditions, not as a proved
+existence theorem.
+\bibitem{Dwork} D.~Bhattacharjee and U.~Bhattacharya,
+\emph{Which string vibrations become which generations on the Dwork quintic},
+\href{https://hexagonmath.org/2610.00446v1}{Hexagon 2610.00446v1};
+code archive \href{https://github.com/creelie/strings/releases/tag/v1.2.0}{creelie/strings v1.2.0}.
+\bibitem{Mirror} D.~Bhattacharjee and U.~Bhattacharya,
+\emph{The mirror clause of the Geometric Selection Conjecture is empty},
+\href{https://hexagonmath.org/2610.00493v1}{Hexagon 2610.00493v1};
+\href{https://doi.org/10.5281/zenodo.23567115}{doi:10.5281/zenodo.23567115}.
+\bibitem{BCL} E.~I.~Buchbinder, A.~Constantin and A.~Lukas,
+\emph{The moduli space of heterotic line bundle models: a case study for the
+tetra-quadric}, J. High Energy Phys. \textbf{03} (2014), 025,
+\href{https://doi.org/10.1007/JHEP03(2014)025}{doi:10.1007/JHEP03(2014)025}.
+The bundle in \eqref{eq:bundle} is the published example of Section 5.1.
+\bibitem{CLLN} A.~Constantin, L.~T.-Y.~Leung, A.~Lukas and L.~A.~Nutricati,
+\emph{Reproducing Standard Model fermion masses and mixing in string theory:
+a heterotic line bundle study}, Phys. Rev. D \textbf{113} (2026), 046005,
+\href{https://doi.org/10.1103/fbdz-t73z}{doi:10.1103/fbdz-t73z}.
+\bibitem{Hartshorne} R.~Hartshorne, \emph{Algebraic Geometry},
+Graduate Texts in Mathematics 52, Springer, 1977.
+\bibitem{Lee} J.~M.~Lee, \emph{Introduction to Smooth Manifolds},
+second ed., Graduate Texts in Mathematics 218, Springer, 2013.
+\end{thebibliography}

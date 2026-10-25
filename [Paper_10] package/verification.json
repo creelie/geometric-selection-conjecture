@@ -1,0 +1,24 @@
+{
+  "pdf_pages": 57,
+  "pdf_sha256": "21ea92e4e44b9e0e7e184682f370ca4b25990472c9a7ec0b80b010c7c13ac40f",
+  "title_pages": 1,
+  "bibliographies": 1,
+  "margin_line_numbers": false,
+  "received_by_editors_claim": false,
+  "overfull_boxes": false,
+  "unresolved_references": false,
+  "visual_review": "all pages rerendered; current contact sheets and changed pages reviewed",
+  "finite_controls": [
+    "smoothness.py",
+    "spectrum.py",
+    "matrix_certificate.py",
+    "controls.py"
+  ],
+  "full_GSC_proved": false,
+  "new_DOI": null,
+  "final_ZIP_created": false,
+  "authors": [
+    "Deep Bhattacharjee"
+  ],
+  "prior_coauthor_credit": "Ushashi Bhattacharya in manuscript footnote and original references"
+}

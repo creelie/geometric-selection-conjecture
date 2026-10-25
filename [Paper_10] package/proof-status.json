@@ -1,69 +1,63 @@
 {
-  "title": "Explicit String Vacua and the Geometric Selection Conjecture",
-  "date": "2026-10-25",
-  "kind": "author_review_construction_attempt",
-  "GSC_proved": false,
-  "one_vacuum_satisfying_all_nine_conditions_constructed": false,
-  "Annals_level_novelty_established": false,
-  "proposed_Hexagon_revision_of": "2610.00493v1",
-  "new_Hexagon_version_published": false,
-  "conditions": [
-    {
-      "id": "C1",
+  "candidate": "X_pi / (Z/2)^2 with the specified split rank-5 bundle, Wilson line, J=100 sum J_i, zero singlet expectation values",
+  "full_GSC_proved": false,
+  "complete_vacuum_constructed": false,
+  "conditions": {
+    "C1": {
       "status": "partial",
-      "established": "Polystability and effective anomaly class on the cover; rational anomaly effectiveness on the quotient",
-      "missing": "Integral quotient anomaly torsion and a complete hidden-sector certificate"
+      "verified": "cover polystability and effective anomaly; quotient index/descent",
+      "remaining": "integral quotient anomaly and quantized hidden sector"
     },
-    {
-      "id": "C2",
-      "status": "exact_index_result",
-      "established": "Degree-four descent of the specified bundle has index -3",
-      "missing": "This index is not a complete projected spectrum calculation"
+    "C2": {
+      "status": "verified",
+      "index": -3
     },
-    {
-      "id": "C3",
-      "status": "partial",
-      "established": "A Wilson homomorphism has Standard Model centralizer in the SU(5) factor",
-      "missing": "Full visible gauge group and all additional gauge-factor mass conditions"
+    "C3": {
+      "status": "fails_at_split_point",
+      "residual_U1_generator": [
+        -4,
+        1,
+        6,
+        -4,
+        1
+      ],
+      "scope": "specified perturbative axion mass map and zero singlet VEVs"
     },
-    {
-      "id": "C4",
-      "status": "unproved_for_this_construction",
-      "missing": "Complete equivariant cohomology and projected spectrum on the same vacuum"
+    "C4": {
+      "status": "verified_charged_spectrum",
+      "families": 3
     },
-    {
-      "id": "C5",
-      "status": "unproved_for_this_construction",
-      "missing": "Allowed exotic mass terms and their values at the stabilized point"
+    "C5": {
+      "status": "no_additional_massless_charged_vectorlike_exotics",
+      "hidden_and_neutral_masses": "not asserted"
     },
-    {
-      "id": "C6",
-      "status": "unproved_for_this_construction",
-      "missing": "Projected Higgs pair and triplet-mass calculation"
+    "C6": {
+      "status": "verified_charged_spectrum",
+      "Higgs_doublet_pairs": 1,
+      "massless_Higgs_triplets": 0
     },
-    {
-      "id": "C7",
-      "status": "criterion_only",
-      "established": "A quantitative sufficient theorem for a specified potential; an explicit local EFT example",
-      "missing": "A compactification-derived potential and controlled corrections for all physical moduli"
+    "C7": {
+      "status": "fails_in_classical_approximation",
+      "reason": "flat overall volume ray",
+      "controlled_corrected_potential": "not constructed"
     },
-    {
-      "id": "C8",
-      "status": "unproved_for_this_construction",
-      "established": "Normalization counterexample and a perturbation criterion",
-      "missing": "Actual matter metrics, physical Yukawas and acceptance margins at the same stabilized point"
+    "C8": {
+      "status": "fails_perturbatively_at_split_point",
+      "up_rank_upper_bound": 2,
+      "down_rank": 0
     },
-    {
-      "id": "C9",
-      "status": "local_EFT_only",
-      "established": "Broken supersymmetry and positive scalar Hessian in the specified global EFT",
-      "missing": "String realization, gravity and visible-sector consistency"
+    "C9": {
+      "status": "not_certified",
+      "reason": "no verified SUSY-breaking sector and physical acceptance certificate"
     }
-  ],
-  "new_Lean_formalisation_claimed": false,
-  "human_review_of_new_text_confirmed": false,
-  "journal_submission_performed": false,
-  "release_or_DOI_minted": true,
-  "release_version": "2.0.0",
-  "publication_status": "See the v2.0.0 release and verified DOI receipt"
+  },
+  "novelty_independently_reviewed": false,
+  "Lean_full_formalization": false,
+  "author_review_of_new_material": "pending",
+  "new_DOI": null,
+  "public_release_created": false,
+  "author": "Deep Bhattacharjee",
+  "prior_source_coauthor": "Ushashi Bhattacharya",
+  "paper_number": 10,
+  "local_analytic_singlet_obstruction_proved": true
 }

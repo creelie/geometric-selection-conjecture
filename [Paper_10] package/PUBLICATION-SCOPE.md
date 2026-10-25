@@ -1,25 +1,15 @@
-# Publication scope - v2.0.0
+# Current consolidated Paper 10 draft
 
-This is the research revision titled Explicit String Vacua and the
-Geometric Selection Conjecture by Deep Bhattacharjee and Ushashi Bhattacharya.
-It contains Annals-format and Hexagon-format manuscripts with the same
-mathematical body, explicit partial constructions, independent algebra
-checks and a nine-condition proof-status ledger.
+Version label: 2.1.0-draft. No new GitHub release or Zenodo version DOI.
+Author: Deep Bhattacharjee. Ushashi Bhattacharya's prior coauthored results
+are credited in a manuscript footnote and the original source references.
 
-The full GSC is not proved. No single heterotic vacuum satisfying all nine
-conditions is constructed. The local effective-theory potential is not
-derived from the geometric compactification. The new text needs author
-review; previous human-understanding declarations are not extended to it.
-No Annals-level novelty or acceptance is established.
+The full GSC remains unproved. The explicit fixed split-bundle datum fails
+the residual gauge, perturbative Yukawa and classical stabilization tests.
+The new analytic singlet obstruction also excludes the specified local
+perturbative repair. A fully quantized single-vacuum construction is absent.
 
-Publication was explicitly authorized by the user on 25 October 2026.
-GitHub/Zenodo publication is separate from Hexagon: no public v2 has been
-uploaded to Hexagon. The proposed revision target is 2610.00493v1.
-
-The v1 mirror-clause note remains in paper/ and in earlier release tags.
-Its extension to additional compact symmetry groups requires the fixed-point
-condition proved in the new draft; mirror compatibility alone is insufficient.
-
-The final source ZIPs and combined package will be created only after the
-Zenodo version DOI has been issued, as requested. The release receipt will
-record that DOI and the exact source commit archived by Zenodo.
+The existing 2.0.0 release and DOI 10.5281/zenodo.23646340 archive the EARLIER
+manuscript, not the current consolidated PDF. Prior files are preserved in
+archive/paper10-v2.0.0 in the repository and in the local replacement backup.
+No current-source ZIP is created until a new version DOI is obtained.

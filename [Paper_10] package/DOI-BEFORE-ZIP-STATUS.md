@@ -1,6 +1,7 @@
-# DOI before final ZIPs
+# DOI and ZIP status
 
-The user authorized publication of this partial research revision on
-25 October 2026. The source trees and reviewed PDFs are archived first.
-The final TeX ZIPs and combined ZIP are created after the version DOI is
-confirmed. No new Hexagon upload or full GSC closure is claimed.
+Current consolidated draft: no new version DOI; no new final ZIP.
+Prior release 2.0.0: https://doi.org/10.5281/zenodo.23646340
+That DOI identifies only the previous archived files. It must not be reused
+as if it archived the present revised PDF. Older ZIPs and receipts are in
+the prior-version archive, not the current active package.

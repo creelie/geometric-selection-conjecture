@@ -1,31 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite the note below."
-title: "Explicit String Vacua and the Geometric Selection Conjecture: research manuscript and construction checks"
-abstract: >-
-  Research revision with explicit partial geometric constructions,
-  normalization bounds, a quantitative stability criterion and a local
-  effective-theory example. The full GSC remains unproved and no common
-  nine-condition vacuum is constructed. New author review is pending.
-type: software
-license: MIT
-version: 2.0.0
-date-released: "2026-10-25"
-repository-code: "https://github.com/creelie/geometric-selection-conjecture"
-url: "https://github.com/creelie/geometric-selection-conjecture/releases/tag/v2.0.0"
-keywords:
-  - heterotic string
-  - Calabi-Yau threefolds
-  - mirror symmetry
-  - generations
-  - Geometric Selection Conjecture
+message: "Cite the specific version used. This branch contains an unpublished review draft; the earlier v2.0.0 DOI does not identify it."
+type: article
+title: "Explicit String Vacua and the Geometric Selection Conjecture"
 authors:
   - family-names: Bhattacharjee
     given-names: Deep
     orcid: "https://orcid.org/0000-0003-0466-750X"
-    email: itsdeep@live.com
-  - family-names: Bhattacharya
-    given-names: Ushashi
-    orcid: "https://orcid.org/0009-0002-2254-3914"
-    email: rai.bhattacharya.in@gmail.com
-
-doi: "10.5281/zenodo.23646340"
+version: "2.1.0-draft"
+date-released: "2026-10-25"
+url: "https://github.com/creelie/geometric-selection-conjecture"
+abstract: "Consolidated research draft with credited prior joint work with Ushashi Bhattacharya. Explicit geometry and cohomology are certified; no vacuum satisfies all nine GSC conditions in this draft."

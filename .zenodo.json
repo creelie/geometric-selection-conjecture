@@ -1,10 +1,10 @@
 {
-  "title": "Explicit String Vacua and the Geometric Selection Conjecture: research manuscript, source and construction checks",
-  "description": "<p>Research revision by Deep Bhattacharjee and Ushashi Bhattacharya.\nAnnals-format and Hexagon-format manuscripts have the same mathematical body.\nThe archive includes a marked-point selection-functional construction,\nindependent Chern/slope/index checks of a published tetraquadric example,\na free invariant-family construction, matter-normalization bounds,\na quantitative stability criterion, and a local global-supersymmetry\neffective model with its missing string realization stated explicitly.</p>\n<p><strong>The full Geometric Selection Conjecture remains unproved.\nNo single heterotic vacuum satisfying all nine viability conditions is\nconstructed. The local effective potential is not derived from the\ncompactification; projected spectra, physical masses, stabilization and\nsupersymmetry breaking still require the recorded joint certificates.\nNo Annals-level novelty or acceptance is claimed.</strong></p>\n<p>The package includes exact Python controls, symbolic Sympy checks,\ncompilation and visual-review records, AI provenance and a proof-status\nledger. The geometric model is credited to Buchbinder, Constantin and Lukas,\nJHEP 03 (2014) 025. Earlier sources are cited for formulation and provenance;\nno unrefereed existence theorem supplies a viable vacuum. The v1 note is\nretained for context. New author review remains pending. GitHub/Zenodo\npublication does not constitute a Hexagon v2 upload or journal submission.</p>",
-  "upload_type": "software",
+  "title": "Explicit String Vacua and the Geometric Selection Conjecture",
+  "description": "<p>Unpublished consolidated Paper 10 research draft by Deep Bhattacharjee, with prior coauthored source work with Ushashi Bhattacharya credited in the manuscript footnote and bibliography. Explicit smooth tetraquadric geometry and equivariant charged spectrum are certified. The full GSC remains unproved: the fixed candidate has a residual U(1), perturbative Yukawa obstructions and no controlled stabilized supersymmetry-breaking completion. This draft has no new version DOI; the previous 2.0.0 DOI archives earlier files.</p>",
+  "upload_type": "publication",
   "license": "MIT",
   "access_right": "open",
-  "version": "2.0.0",
+  "version": "2.1.0-draft",
   "language": "eng",
   "keywords": [
     "heterotic string",
@@ -18,19 +18,14 @@
       "name": "Bhattacharjee, Deep",
       "orcid": "0000-0003-0466-750X",
       "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India"
-    },
-    {
-      "name": "Bhattacharya, Ushashi",
-      "orcid": "0009-0002-2254-3914",
-      "affiliation": "Formerly, National Taiwan University, Taipei 106319, Taiwan"
     }
   ],
-  "publication_date": "2026-10-25",
   "related_identifiers": [
     {
       "identifier": "https://hexagonmath.org/2610.00493v1",
       "scheme": "url",
       "relation": "isSupplementTo"
     }
-  ]
+  ],
+  "publication_type": "preprint"
 }

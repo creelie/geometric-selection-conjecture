@@ -1,54 +1,78 @@
-# Explicit String Vacua and the Geometric Selection Conjecture
+# Paper 10 — Explicit String Vacua and the Geometric Selection Conjecture
 
-Paper 10 - research revision v2.0.0, 25 October 2026.
+**Unpublished author-review revision. The full GSC is not proved.**
 
-**The full GSC remains unproved. No single heterotic vacuum satisfying
-all nine conditions is supplied. These files must not be described as an
-unconditional resolution or an accepted Annals paper.**
+Author of this revision: Deep Bhattacharjee. Ushashi Bhattacharya is credited in the manuscript footnote and the original coauthored references.
 
-The two editions use the same mathematical body:
+This is one coherent manuscript consolidating the two supplied Hexagon TeX
+archives and Paper 10, with a new fixed-complex-structure construction and
+an explicit audit of the nine conditions. No outside paper PDF is embedded.
+There is one title page and one bibliography, and no margin line numbering.
 
-- `Annals-review-draft/`: a PDF and a source ZIP using the `aomart` class.
-- `Hexagon-v2-review-draft/`: a PDF and a source ZIP with root `main.tex`
-  using `amsart`, suitable for a compilation review.
-- `verification/`: exact and symbolic checks, proof-status ledger and
-  compilation/visual-review record.
-- `AI_PROVENANCE.md`, `hexagonsubmissionform.md` and
-  `journalsubmissiondetails.md`: scope and proposed submission information.
+## What was added
 
-There are no margin line numbers. Ordinary page, theorem and equation
-numbers remain. No new Hexagon version is asserted to exist.
+- An explicit invariant pencil `F_theta = F_0 + theta G`, fixed at `theta = pi`.
+- A stratified proof that `F_0 = 0` is smooth, with rational Bezout certificates.
+- Smoothness of `X_pi` and freeness of the degree-four action, using a rational
+  discriminant and transcendence of pi, rather than numerical sampling.
+- Exact equivariant Koszul cohomology for the published tetraquadric bundle.
+  Four six-dimensional integer character blocks have determinants
+  `792, -792, 792, -792` at theta=1. Their nonzero product certifies the
+  nonzero determinant polynomial and hence invertibility at theta=pi.
+- Three-family charged spectrum, one Higgs doublet pair and no massless
+  colored Higgs triplets for the specified Wilson line.
+- An explicit residual Abelian generator, perturbative Yukawa rank obstruction,
+  classical flat volume direction, and a targeted holomorphic extension route.
+- A condition-by-condition ledger for this fixed datum, not a combination
+  of results at different vacua.
 
-The proposed revision target is the existing GSC note,
-https://hexagonmath.org/2610.00493v1, with the Dwork paper,
-https://hexagonmath.org/2610.00446v1, cited separately. This package does
-not overwrite the Dwork paper or its previous submission files.
+## Actual result of the nine-condition audit
 
-What is established in the draft:
+| Condition | Result for the fixed split-bundle datum |
+| --- | --- |
+| C1 | Polystability and cover anomaly effectivity proved; integral quotient anomaly and hidden completion not certified. |
+| C2 | Exact descended index -3. |
+| C3 | Extra U(1) survives in the specified perturbative model. |
+| C4 | Three charged families and no additional chiral charged exotics. |
+| C5 | No additional massless charged vectorlike exotics to lift; neutral/hidden masses not asserted. |
+| C6 | One Higgs doublet pair, no massless Higgs triplets in the projection. |
+| C7 | Classical volume direction is flat; controlled corrected stabilization absent. |
+| C8 | Perturbatively rank(Y_u) <= 2 and Y_d = 0 at zero singlet expectation values. |
+| C9 | No verified supersymmetry-breaking sector and phenomenological certificate. |
 
-1. A marked compatible point gives a smooth globally proper invariant
-   selection function under the stated manifold/involution hypotheses.
-2. The specified tetraquadric bundle has the stated slopes, Chern classes,
-   effective anomaly class on the cover and a degree-four quotient index
-   of three in absolute value. Quotient anomaly torsion remains unaudited.
-3. A positive matter metric can erase a holomorphic Yukawa hierarchy;
-   uniform positive upper/lower bounds preserve its asymptotic orders.
-4. Explicit Hessian and residual bounds imply a unique nearby stable
-   critical point and preserve strictly separated mass inequalities.
-5. A specified classical global-supersymmetry effective model has positive
-   scalar Hessian and broken supersymmetry. Its string realization is not
-   established. A no-scale calculation records a tree-level obstruction.
+This candidate **does not pass all nine conditions**. The non-Abelian extension
+construction is a different branch requiring a fresh stability, operator and
+potential audit. It is not silently substituted into the fixed-point ledger.
 
-These are elementary construction criteria and independent checks of a
-published example, not a newly established breakthrough. Definitions are
-credited to the existing preprints; no unrefereed existence theorem is
-used to certify a viable vacuum.
+## Files and reproduction
 
-The source ZIPs compile with pdfLaTeX. Run it three times on `main.tex`.
-The optional `anc/` scripts do not enter TeX compilation. Exact controls
-need Python 3. Symbolic controls additionally need Sympy 1.14.0.
+The PDF is the review copy. In `TeX-source`, compile `main.tex` with pdfLaTeX
+three times. The class, body, four matrix certificates and all figures are
+included. No shell escape, external article PDF, network access, bibliography
+download or Lean installation is required for TeX compilation.
 
-Author review of all new material is pending. This research revision is
-published through the existing GSC repository as v2.0.0. Its Zenodo version
-DOI is recorded in the release and receipt once issued. No journal
-submission, acceptance or automatic Hexagon upload is claimed.
+The `anc` directory contains executable controls and their exact JSON results.
+Use Python with Sympy 1.14.0. Run `smoothness.py`, `spectrum.py`,
+`matrix_certificate.py`, and `controls.py`. The matrix generator refreshes
+`matrix-certificates.tex` from integer input. These are finite algebra checks;
+they are not a complete formalization or a proof of physical viability.
+
+The consolidated spectral proof text is retained from the supplied Dwork
+source. This session rechecked the stated finite counts and arithmetic, not
+every inherited analytic assertion or every old repository toolchain.
+Independent expert review and novelty assessment are pending.
+
+## Sources and publication status
+
+- https://hexagonmath.org/2610.00446v1
+- https://hexagonmath.org/2610.00493v1
+- Paper 10 research revision: https://doi.org/10.5281/zenodo.23646340
+- Bundle data credited to Buchbinder, Constantin and Lukas,
+  JHEP 03 (2014) 025, https://doi.org/10.1007/JHEP03(2014)025
+
+The existing Paper 10 DOI is a source citation, **not a DOI for Paper 10**.
+No new release, DOI, public Hexagon version or journal submission has been made.
+No final ZIP is created before a new DOI, as previously requested by the author.
+
+Mathematical and physical closure is not implied by use of the Annals class.
+

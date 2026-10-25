@@ -1,0 +1,209 @@
+{
+  "Dwork_labels": 101,
+  "Dwork_distinct_characters": 101,
+  "Dwork_couplings_by_power": [
+    566,
+    425,
+    280,
+    160
+  ],
+  "Dwork_mass_entries_by_power": [
+    51,
+    30,
+    20,
+    0
+  ],
+  "Dwork_holomorphic_det_power": 70,
+  "free_quotient_table": [
+    {
+      "type": "X5",
+      "degree": 5,
+      "c2_L": 50,
+      "Euler": -200,
+      "chi_kL": [
+        5,
+        15,
+        35
+      ],
+      "gcd": 5,
+      "required_group_order": "100/3"
+    },
+    {
+      "type": "X6",
+      "degree": 3,
+      "c2_L": 42,
+      "Euler": -204,
+      "chi_kL": [
+        4,
+        11,
+        24
+      ],
+      "gcd": 1,
+      "required_group_order": "34"
+    },
+    {
+      "type": "X8",
+      "degree": 2,
+      "c2_L": 44,
+      "Euler": -296,
+      "chi_kL": [
+        4,
+        10,
+        20
+      ],
+      "gcd": 2,
+      "required_group_order": "148/3"
+    },
+    {
+      "type": "X10",
+      "degree": 1,
+      "c2_L": 34,
+      "Euler": -288,
+      "chi_kL": [
+        3,
+        7,
+        13
+      ],
+      "gcd": 1,
+      "required_group_order": "48"
+    },
+    {
+      "type": "X33",
+      "degree": 9,
+      "c2_L": 54,
+      "Euler": -144,
+      "chi_kL": [
+        6,
+        21,
+        54
+      ],
+      "gcd": 3,
+      "required_group_order": "24"
+    },
+    {
+      "type": "X42",
+      "degree": 8,
+      "c2_L": 56,
+      "Euler": -176,
+      "chi_kL": [
+        6,
+        20,
+        50
+      ],
+      "gcd": 2,
+      "required_group_order": "88/3"
+    },
+    {
+      "type": "X322",
+      "degree": 12,
+      "c2_L": 60,
+      "Euler": -144,
+      "chi_kL": [
+        7,
+        26,
+        69
+      ],
+      "gcd": 1,
+      "required_group_order": "24"
+    },
+    {
+      "type": "X2222",
+      "degree": 16,
+      "c2_L": 64,
+      "Euler": -128,
+      "chi_kL": [
+        8,
+        32,
+        88
+      ],
+      "gcd": 8,
+      "required_group_order": "64/3"
+    },
+    {
+      "type": "X44",
+      "degree": 4,
+      "c2_L": 40,
+      "Euler": -144,
+      "chi_kL": [
+        4,
+        12,
+        28
+      ],
+      "gcd": 4,
+      "required_group_order": "24"
+    },
+    {
+      "type": "X66",
+      "degree": 1,
+      "c2_L": 22,
+      "Euler": -120,
+      "chi_kL": [
+        2,
+        5,
+        10
+      ],
+      "gcd": 1,
+      "required_group_order": "20"
+    },
+    {
+      "type": "X43",
+      "degree": 6,
+      "c2_L": 48,
+      "Euler": -156,
+      "chi_kL": [
+        5,
+        16,
+        39
+      ],
+      "gcd": 1,
+      "required_group_order": "26"
+    },
+    {
+      "type": "X64",
+      "degree": 2,
+      "c2_L": 32,
+      "Euler": -156,
+      "chi_kL": [
+        3,
+        8,
+        17
+      ],
+      "gcd": 1,
+      "required_group_order": "26"
+    },
+    {
+      "type": "X62",
+      "degree": 4,
+      "c2_L": 52,
+      "Euler": -256,
+      "chi_kL": [
+        5,
+        14,
+        31
+      ],
+      "gcd": 1,
+      "required_group_order": "128/3"
+    }
+  ],
+  "line_indices": [
+    0,
+    -8,
+    0,
+    0,
+    -4
+  ],
+  "c2_V_pairings": [
+    24,
+    8,
+    20,
+    12
+  ],
+  "residual_U1": [
+    -4,
+    1,
+    6,
+    -4,
+    1
+  ],
+  "full_GSC_proved": false
+}

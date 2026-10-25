@@ -1,4 +1,4 @@
-name: Paper 10 construction controls
+name: Paper 10 consolidated construction controls
 on:
   push:
   workflow_dispatch:
@@ -12,9 +12,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install pinned symbolic checker
+      - name: Install exact symbolic checker
         run: python -m pip install sympy==1.14.0
-      - name: Verify archived payload hashes
+      - name: Verify current payload manifest and research scope
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -22,10 +22,15 @@ jobs:
           p=Path('[Paper_10] package')
           for e in json.loads((p/'PACKAGE-MANIFEST.json').read_text()):
               assert hashlib.sha256((p/e['path']).read_bytes()).hexdigest()==e['sha256'],e['path']
-          assert not json.loads((p/'proof-status.json').read_text())['GSC_proved']
+          assert not json.loads((p/'proof-status.json').read_text())['full_GSC_proved']
+          assert not (p/'DOI-RECEIPT.json').exists()
+          assert not list(p.rglob('*.zip'))
           PY
-      - name: Recompute exact and symbolic controls
+      - name: Recompute smoothness, cohomology, singlet and integer certificates
         run: |
-          python '[Paper_10] package/verification/verify_controls.py'
-          python '[Paper_10] package/verification/verify_symbolic.py'
-          git diff --exit-code -- '[Paper_10] package/verification/construction-controls.json' '[Paper_10] package/verification/symbolic-controls.json'
+          p='[Paper_10] package/Annals-review-draft/tex-source'
+          python "$p/anc/smoothness.py"
+          python "$p/anc/spectrum.py"
+          python "$p/anc/matrix_certificate.py"
+          python "$p/anc/controls.py"
+          git diff --exit-code -- "$p/anc" "$p/matrix-certificates.tex"
