@@ -3,7 +3,7 @@
 Title: Explicit String Vacua and the Geometric Selection Conjecture.
 Authors: Deep Bhattacharjee and Ushashi Bhattacharya.
 
-- Version DOI: to be recorded when the Zenodo archive of the release is published.
+- Version DOI: [10.5281/zenodo.23688897](https://doi.org/10.5281/zenodo.23688897)
 - Concept DOI: [10.5281/zenodo.23567114](https://doi.org/10.5281/zenodo.23567114)
 - Release: https://github.com/creelie/geometric-selection-conjecture/releases/tag/v3.1.0
 
