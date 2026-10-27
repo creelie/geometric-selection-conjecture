@@ -1,85 +1,76 @@
-# Paper 10 â€” Explicit String Vacua and the Geometric Selection Conjecture
+# Explicit String Vacua and the Geometric Selection Conjecture
 
-**Research revision v2.1.0. The full GSC is not proved.**
+Deep Bhattacharjee and Ushashi Bhattacharya. Release v3.0.0 of the paper, its
+LaTeX source and the programs that check its finite arithmetic.
 
-Author of this revision: Deep Bhattacharjee. Ushashi Bhattacharya is credited in the manuscript footnote and the original coauthored references.
+**The Geometric Selection Conjecture is not proved.** The paper exhibits one
+explicit heterotic datum on a free quotient of a tetraquadric, audits it
+against the nine conditions C1 to C9, and proves that the two failures it finds
+at the split locus, a surviving Abelian gauge factor and a vanishing Yukawa
+matrix, are forced.
 
-This is one coherent manuscript consolidating the two supplied Hexagon TeX
-archives and Paper 10, with a new fixed-complex-structure construction and
-an explicit audit of the nine conditions. No outside paper PDF is embedded.
-There is one title page and one bibliography, and no margin line numbering.
+## What the paper proves
 
-## What was added
+- The character labels, cubic couplings and invariant-direction mass maps of
+  the Dwork and weighted Fermat pencils, and the exclusion of three
+  standard-embedding families on free quotients of thirteen hypergeometric
+  complete-intersection types.
+- The mirror clause of the conjecture is empty, so the conjecture is the
+  existence of one viable vacuum on a component without a standard embedding.
+- One tetraquadric equation at a transcendental parameter is smooth with a
+  free action of order four; the published rank-five line-bundle sum of
+  Buchbinder, Constantin and Lukas on it has index -3 and, after the Wilson
+  line, three charged families and one Higgs doublet pair, by an exact
+  determinant certificate.
+- Section 16 (new in this version). On every Calabi-Yau threefold with at
+  most four Kahler parameters, every polystable sum of five line bundles with
+  c_1 = 0 has charge matrix of rank at most three and keeps at least one
+  Abelian gauge boson massless at its split locus (Theorem 16.1): condition C3
+  fails for every rank-five split datum there. For the fixed bundle the
+  polystable Kahler classes are exactly the volume ray. The perturbative
+  selection rules, decided by a flow criterion (Lemma 16.3), exclude six of
+  eleven three-family split data on the tetraquadric from C8 to all orders in
+  the singlets and leave five (Proposition 16.4); the five are candidates for
+  the extension branch, not vacua.
 
-- An explicit invariant pencil `F_theta = F_0 + theta G`, fixed at `theta = pi`.
-- A stratified proof that `F_0 = 0` is smooth, with rational Bezout certificates.
-- Smoothness of `X_pi` and freeness of the degree-four action, using a rational
-  discriminant and transcendence of pi, rather than numerical sampling.
-- Exact equivariant Koszul cohomology for the published tetraquadric bundle.
-  Four six-dimensional integer character blocks have determinants
-  `792, -792, 792, -792` at theta=1. Their nonzero product certifies the
-  nonzero determinant polynomial and hence invertibility at theta=pi.
-- Three-family charged spectrum, one Higgs doublet pair and no massless
-  colored Higgs triplets for the specified Wilson line.
-- An explicit residual Abelian generator, perturbative Yukawa rank obstruction,
-  classical flat volume direction, and a targeted holomorphic extension route.
-- A condition-by-condition ledger for this fixed datum, not a combination
-  of results at different vacua.
-
-## Actual result of the nine-condition audit
-
-| Condition | Result for the fixed split-bundle datum |
+| Condition | Fixed datum |
 | --- | --- |
-| C1 | Polystability and cover anomaly effectivity proved; integral quotient anomaly and hidden completion not certified. |
-| C2 | Exact descended index -3. |
-| C3 | Extra U(1) survives in the specified perturbative model. |
-| C4 | Three charged families and no additional chiral charged exotics. |
-| C5 | No additional massless charged vectorlike exotics to lift; neutral/hidden masses not asserted. |
-| C6 | One Higgs doublet pair, no massless Higgs triplets in the projection. |
-| C7 | Classical volume direction is flat; controlled corrected stabilization absent. |
-| C8 | Perturbatively rank(Y_u) <= 2 and Y_d = 0 at zero singlet expectation values. |
-| C9 | No verified supersymmetry-breaking sector and phenomenological certificate. |
+| C1 | Polystability, c_1 = 0 and cover anomaly effectivity proved; quotient anomaly and hidden completion not certified. |
+| C2 | Descended index exactly -3. |
+| C3 | Fails: an Abelian generator survives, and Theorem 16.1 forces this for every rank-five split datum. |
+| C4 | Three charged families, no additional chiral charged exotics. |
+| C5 | No additional massless charged vectorlike exotics; neutral and hidden masses not asserted. |
+| C6 | One Higgs doublet pair, no massless Higgs triplets. |
+| C7 | The volume ray is flat at tree level. |
+| C8 | Fails: rank Y_u <= 2 and Y_d = 0, and no singlet insertion restores Y_d (Proposition 16.4). |
+| C9 | No supersymmetry-breaking sector constructed. |
 
-This candidate **does not pass all nine conditions**. The non-Abelian extension
-construction is a different branch requiring a fresh stability, operator and
-potential audit. It is not silently substituted into the fixed-point ledger.
+## Layout
 
-## Files and reproduction
+- `final-revision/`: the paper (`main.tex`, `paper-body.tex`, `split-branch.tex`,
+  `matrix-certificates.tex`, `figures/`), its compiled PDF
+  `ExplicitStringVacuaGSC.pdf` (amsart, 44 pages), and `anc/`, the exact
+  controls of the tetraquadric construction with their JSON results.
+- `code/mirror_clause.py`: the mirror clause on Hodge data (511 checks).
+- `code/yukawa_charges.py`: the selection rules of Section 16 on the eleven
+  split data, by a maximal flow, with the closed sets or singlet insertions
+  that certify each entry of Table 6 (45 checks; output
+  `yukawa_charges_results.json`). `code/fig_charges.py` draws Figure 5.
+- `code/run_checks.sh` runs both checks; `bash .github/release/build.sh <version> dist`
+  rebuilds the release assets.
+- `paper/`: the mirror-clause note of releases 1.x. `[Paper_10] package/` and
+  `archive/`: the review drafts of releases 2.x.
 
-The PDF is the review copy. In either edition folder's `tex-source`, compile `main.tex` with pdfLaTeX
-three times. The class, body, four matrix certificates and all figures are
-included. No shell escape, external article PDF, network access, bibliography
-download or Lean installation is required for TeX compilation.
+Compile the paper with `pdflatex main.tex` three times in `final-revision/`;
+no BibTeX pass and no shell escape are needed. The ten further line-bundle
+sums of Section 16 come from the module `construct/lbs_tetraquadric.py` of
+the Anaxia engine, https://github.com/creelie/eBLLM, at commit `a85ae17`.
 
-The `anc` directory contains executable controls and their exact JSON results.
-Use Python with Sympy 1.14.0. Run `smoothness.py`, `spectrum.py`,
-`matrix_certificate.py`, and `controls.py`. The matrix generator refreshes
-`matrix-certificates.tex` from integer input. These are finite algebra checks;
-they are not a complete formalization or a proof of physical viability.
+## Earlier versions
 
-The consolidated spectral proof text is retained from the supplied Dwork
-source. This session rechecked the stated finite counts and arithmetic, not
-every inherited analytic assertion or every old repository toolchain.
-Independent expert review and novelty assessment are pending.
-
-## Sources and publication status
-
-- https://hexagonmath.org/2610.00446v1
-- https://hexagonmath.org/2610.00493v1
-- Paper 10 research revision: https://doi.org/10.5281/zenodo.23646340
-- Bundle data credited to Buchbinder, Constantin and Lukas,
-  JHEP 03 (2014) 025, https://doi.org/10.1007/JHEP03(2014)025
-
-The existing v2.0.0 DOI is a citation to the earlier source revision.
-The current version-specific DOI is recorded in `DOI-RECEIPT.json` and
-`RELEASE-DOI.md` when the integration confirms publication. Final source
-ZIPs and the complete package are supplied only after that receipt.
-
-Archiving is a research publication, not a proof of the nine conditions.
-No journal or Hexagon submission is performed by this release.
-
-Current package: [`[Paper_10] package`](%5BPaper_10%5D%20package).
-Current release: [v2.1.0](https://github.com/creelie/geometric-selection-conjecture/releases/tag/v2.1.0).
-Earlier v2.0.0 payload is preserved in `archive/paper10-v2.0.0`.
-
-Version 2.1.0 DOI: [10.5281/zenodo.23647986](https://doi.org/10.5281/zenodo.23647986).
+- Hexagon 2610.00446v1 (spectral calculations) and 2610.00493v1 (mirror clause).
+- Releases: v1.0.1 mirror-clause note, 10.5281/zenodo.23567115; v2.0.0,
+  10.5281/zenodo.23646340; v2.1.0, 10.5281/zenodo.23647986.
+- Concept DOI of all versions: 10.5281/zenodo.23567114. The version DOI of
+  v3.0.0 is recorded in `RELEASE-DOI.md` and `CITATION.cff` once Zenodo has
+  archived the release.

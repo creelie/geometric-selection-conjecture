@@ -1,0 +1,278 @@
+\section{The split branch on the tetraquadric}\label{sec:splitbranch}
+The ledger of the next section records two failures at the fixed datum
+that do not depend on the complex structure: the residual Abelian factor
+of Section~\ref{sec:extraU1} and the Yukawa deficiency of
+Proposition~\ref{prop:rankfailure}. This section asks whether another
+choice of five line bundles on the same manifold could avoid them while
+staying at the split locus. The first failure cannot be avoided by any
+sum of line bundles on any Calabi--Yau threefold with at most four K\"ahler
+parameters; the second is a property of the charge matrix, and the
+selection rules decide it in finitely many steps for each datum.
+
+\subsection{The residual Abelian factor is forced}\label{sec:forced}
+Let $X$ be a Calabi--Yau threefold, $h=h^{1,1}(X)$, and let $J_1,\dots,J_h$
+be divisor classes spanning $H^{1,1}(X,\Q)$. A sum of line bundles
+$V=\bigoplus_{a=1}^nL_a$ with $c_1(L_a)=\sum_ik_a^iJ_i$ has the integer
+charge matrix $K=(k_a^i)\in\Z^{h\times n}$, whose columns are the vectors
+$k_a$. For a K\"ahler class $J$ write $\kappa_i(J)=\int_XJ_iJ^2$.
+
+\begin{theorem}[The residual factor]\label{thm:forced}
+Suppose $c_1(V)=0$ and $V$ is slope-polystable with respect to $J$. Then
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,itemsep=1pt]
+\item $\rk K\le h-1$;
+\item the traceless kernel $\{q\in\Q^n:\ Kq=0,\ \sum_aq_a=0\}$ has dimension
+at least $n-h$;
+\item at the split locus, with vanishing expectation values of all charged
+singlets, exactly $n-1-\rk K\ge n-h$ of the $n-1$ traceless Abelian gauge
+bosons of the structure group $S(U(1)^n)$ are massless.
+\end{enumerate}
+In particular, for $n=5$ and $h\le4$ at least one Abelian gauge boson
+beyond the Standard Model stays massless at every split point of every
+rank-five sum of line bundles on $X$, and condition C3, read as the
+visible gauge group being exactly the Standard Model group, fails there.
+\end{theorem}
+\begin{proof}
+The slope of $L_a$ is $\mu_J(L_a)=\int_Xc_1(L_a)J^2=\sum_ik_a^i\kappa_i$.
+A polystable sum has all summands of slope $\mu_J(V)$, and
+$\mu_J(V)=\int_Xc_1(V)J^2=0$. Thus $K^{T}\kappa=0$. The vector $\kappa$ is
+nonzero, because $\sum_it_i\kappa_i=\int_XJ^3>0$ when $J=\sum_it_iJ_i$.
+Hence the rows of $K$ satisfy one nontrivial linear relation and
+$\rk K\le h-1$, which is (i). Since $c_1(V)=\sum_ac_1(L_a)=0$, the vector
+$\one=(1,\dots,1)$ lies in $\ker K$, which has dimension
+$n-\rk K\ge n-h+1$; the hyperplane $\sum_aq_a=0$ does not contain $\one$,
+so it meets $\ker K$ in a space of dimension at least $n-h$, which is (ii).
+
+For (iii) we use the Green--Schwarz masses of the Abelian gauge bosons as
+computed by Anderson, Gray, Lukas and Palti \cite[Section~2.7]{AGLP12}.
+The axions of the $h$ K\"ahler moduli and the universal axion shift under
+the $U(1)$ gauge transformations with coefficients $k_a^i$ and
+$\beta_ik_a^i$ respectively, and the mass matrix of the gauge bosons
+$A_a$ in the basis of the $n$ summands is
+$M_{ab}=k_a^{T}\widetilde Gk_b$, where
+$\widetilde G=G+\beta\beta^{T}/(4s^2)$, $G$ is the positive definite
+metric on the K\"ahler moduli and $s$ the dilaton. The matrix
+$\widetilde G$ is positive definite, so the quadratic form
+$q\mapsto q^{T}Mq=(Kq)^{T}\widetilde G(Kq)$ vanishes exactly on $\ker K$:
+the combination $\sum_aq_aA_a$ is massless if and only if $Kq=0$. On the
+traceless vectors, which parametrize the gauge bosons of $S(U(1)^n)$, the
+massless combinations form the space of (ii), of dimension
+$n-1-\rk K$. This is the count of \cite[eq.~(2.31)]{AGLP12}, and (i) gives
+the lower bound $n-h$, which is the statement of \cite[eq.~(2.32)]{AGLP12}
+that fewer than five K\"ahler moduli leave at least one $U(1)$ massless.
+A nonzero traceless $q$ in $\ker K$ acts nontrivially on some summand, so
+the surviving gauge boson is not a redundant generator.
+\end{proof}
+
+\begin{remark}[Reading the fixed datum]\label{rem:forcedfixed}
+For the matrix \eqref{eq:bundle}, $\rk K=3=h-1$, the largest value
+Theorem~\ref{thm:forced} allows, and $\ker K$ is spanned by $\one$ and the
+vector $q$ of \eqref{eq:extrau1}. The residual factor of
+Section~\ref{sec:extraU1} is therefore not a defect of the choice
+\eqref{eq:bundle}; it is the minimum that the tetraquadric, with
+$h^{1,1}=4$, imposes on every rank-five split datum. The polarization
+locus is tied to the same number. The constraint $K^{T}\kappa=0$ confines
+$\kappa$ to a space of dimension $h-\rk K=1$, the line through
+$(1,1,1,1)$, and for $J=\sum_it_iJ_i$ with all $t_i>0$ the intersection
+numbers of Proposition~\ref{prop:cover} give
+$\kappa_i=4\,e_2(t_j:j\ne i)=4\bigl(e_2(t)-t_i(e_1(t)-t_i)\bigr)$, where
+$e_1,e_2$ are the elementary symmetric functions. All four $\kappa_i$ are
+equal exactly when $t_i(e_1(t)-t_i)$ takes one value, so each $t_i$ is a
+root of $x(e_1-x)=c$, hence $t_i\in\{c',e_1-c'\}$ for one $c'$; if $m$ of
+the coordinates equal $c'$ and $4-m$ equal $e_1-c'$, summing gives
+$(m-3)e_1=(2m-4)c'$, which has a solution with all $t_i>0$ only for $m=0$
+or $m=4$, that is, all coordinates equal. Thus the ray $J=\lambda\sum_iJ_i$
+of Section~\ref{sec:pointfailure} is the whole locus of K\"ahler classes
+at which \eqref{eq:bundle} is polystable, and the flat classical direction
+of C7 and the massless generator of C3 are two readings of the one
+equality $4-\rk K=1$. For $n=h+1$ the two counts $n-1-\rk K$ and
+$h-\rk K$ agree for every split datum.
+\end{remark}
+
+\subsection{Selection rules on eleven split data}\label{sec:eleven}
+Let $X\subset(\PP^1)^4$ be any smooth tetraquadric and $V=\bigoplus_{a=1}^5
+\cO_X(k_a)$ with $c_1(V)=0$. Under the structure group $S(U(1)^5)$ the
+charged fields carry the charges of Section~\ref{sec:extraU1}, in the
+coordinates $e_1,\dots,e_5$ modulo the diagonal $\one$:
+\begin{center}\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+field & cohomology & charge & representation\\\midrule
+family $\mathbf{10}$ & $H^1(L_a)$ & $e_a$ & $\mathbf{10}$ of $SU(5)$\\
+family or Higgs $\overline{\mathbf 5}$ & $H^1(L_aL_b)$, $a<b$ & $e_a+e_b$ & $\overline{\mathbf5}$\\
+Higgs $\mathbf 5$ & $H^2(L_aL_b)$, $a<b$ & $-e_a-e_b$ & $\mathbf 5$\\
+singlet & $H^1(L_aL_b^{-1})$, $a\ne b$ & $e_a-e_b$ & $\mathbf 1$\\
+\bottomrule
+\end{tabular}
+\end{center}
+A term of the perturbative superpotential is a product of charged fields
+times a monomial in the singlets, and it is gauge invariant exactly when
+its total charge is a multiple of $\one$. For the down-type coupling
+$\mathbf{10}_a\,\overline{\mathbf5}_{bc}\,\overline{\mathbf5}_{de}$ the charge
+$Q=e_a+e_b+e_c+e_d+e_e$ has coordinate sum five, so invariance after
+insertion of singlets requires $\one-Q$ to be a nonnegative integer
+combination of the available singlet charges; for the up-type coupling
+$\mathbf{10}_a\mathbf{10}_b\mathbf 5_{de}$ the same is required of
+$e_d+e_e-e_a-e_b$. Which groups are nonzero depends on $X$, but on every
+smooth tetraquadric the restriction sequence
+$0\to\cO_A(k-2\one)\to\cO_A(k)\to\cO_X(k)\to0$ gives
+\begin{equation}\label{eq:koszulbound}
+ h^i(X,\cO_X(k))\le h^i(A,\cO_A(k))+h^{i+1}(A,\cO_A(k-2\one)),
+\end{equation}
+with the ambient groups given by the K\"unneth formula on $A=(\PP^1)^4$.
+We call a field \emph{possibly present} when the bound
+\eqref{eq:koszulbound} for its group is positive. A coupling forbidden
+with every possibly present singlet is forbidden on every smooth
+tetraquadric in the class; a coupling allowed by the charges is only not
+excluded by them.
+
+\begin{lemma}[Flow criterion]\label{lem:flow}
+Let $E$ be a set of ordered pairs $(p,q)$ of distinct elements of
+$N=\{1,\dots,n\}$ and $v\in\Z^n$ with $\sum_pv_p=0$. The following are
+equivalent.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*,itemsep=1pt]
+\item $v=\sum_{(p,q)\in E}m_{pq}(e_p-e_q)$ with integers $m_{pq}\ge0$.
+\item For every $B\subset N$ that no pair of $E$ leaves, that is, $p\in B$
+and $(p,q)\in E$ imply $q\in B$, one has $\sum_{p\in B}v_p\le0$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+A pair $(p,q)$ contributes $e_p-e_q$, whose sum over $B$ is $1$ if
+$p\in B\not\ni q$, $-1$ if $q\in B\not\ni p$ and $0$ otherwise. When no pair
+leaves $B$ the first case does not occur, so (a) gives
+$\sum_Bv\le0$, which is (b).
+
+Conversely, form the network with a source $s$, a sink $t$, the vertices
+of $N$, arcs $s\to p$ of capacity $v_p$ for $v_p>0$, arcs $q\to t$ of
+capacity $-v_q$ for $v_q<0$, and arcs $p\to q$ of unbounded capacity for
+$(p,q)\in E$. Let $S\ni s$, $T\ni t$ be a cut of finite capacity and
+$B=S\cap N$. No pair of $E$ leaves $B$, since such an arc would cross the
+cut with unbounded capacity. The capacity of the cut is
+\[
+ \sum_{p\notin B,\ v_p>0}v_p+\sum_{q\in B,\ v_q<0}(-v_q)
+ =\sum_{v_p>0}v_p-\sum_{p\in B}v_p\ \ge\ \sum_{v_p>0}v_p
+\]
+by (b). The cut $S=\{s\}$ has capacity $\sum_{v_p>0}v_p$, so this is the
+minimum, and the maximal flow theorem of Ford and Fulkerson \cite{FF56}
+gives an integral flow of that value, because all capacities are
+integers. It saturates every arc at $s$ and at $t$. Let $m_{pq}$ be the
+flow on the arc $p\to q$. Conservation at $p\in N$ says that
+$\sum_qm_{pq}-\sum_qm_{qp}$ equals the inflow from $s$ minus the outflow
+to $t$, which is $v_p$. This is (a).
+\end{proof}
+
+The criterion is decided by inspecting the $2^5$ subsets; the cases below
+were also checked by a maximal flow computation.\footnote{The program
+\texttt{code/yukawa\_charges.py} of the repository named in the note under
+the abstract lists, for each datum, the possibly present fields by
+\eqref{eq:koszulbound}, decides the two couplings by a maximal flow and
+prints either a closed set $B$ violating (b) or an explicit decomposition
+(a). Its output is the file \texttt{yukawa\_charges\_results.json}.}
+
+\begin{proposition}[Eleven split data]\label{prop:eleven}
+Consider the matrix \eqref{eq:bundle} and the ten rank-five sums of line
+bundles with entries in $[-2,2]$ listed in Table~\ref{tab:eleven}, which are
+the classes, up to permutation of the four factors of $(\PP^1)^4$, found
+by the scan of \cite{Anaxia} to satisfy $c_1(V)=0$, the anomaly inequality,
+the index $-3|G|$ for a free group $G$ of the stated order, a K\"ahler
+class with all slopes zero, and the upstairs spectrum tests of
+Section~\ref{sec:fixedbundle}. With all possibly present singlets
+inserted to every order:
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,itemsep=1pt]
+\item for \eqref{eq:bundle} every down-type coupling vanishes on every
+smooth tetraquadric, while the up-type couplings
+$\mathbf{10}_2\mathbf{10}_5\mathbf 5_{25}$ and, with one singlet of charge
+$e_5-e_2$, $\mathbf{10}_2\mathbf{10}_2\mathbf 5_{25}$ and
+$\mathbf{10}_5\mathbf{10}_5\mathbf 5_{25}$ are allowed by the charges;
+\item for the classes $9$ and $10$ every up-type and every down-type
+coupling vanishes; for the classes $3$, $4$ and $5$ every up-type coupling
+vanishes;
+\item for the classes $1$, $2$, $6$, $7$ and $8$ both couplings are
+allowed by the charges, with the singlet insertions of
+Table~\ref{tab:eleven}.
+\end{enumerate}
+Hence six of the eleven split data fail C8 to all orders of the
+perturbative singlet expansion on every smooth tetraquadric, and the five
+others are not excluded by the selection rules.
+\end{proposition}
+
+\begin{table}[t]\small\centering
+\caption{The eleven split data. Rows of $K$ are the vectors $k_a$; the
+$\mathbf{10}$ column lists the summands $L_a$ with $H^1(L_a)$ possibly
+present; ``down'' and ``up'' give a closed set $B$ of Lemma~\ref{lem:flow}
+forbidding every coupling of that type, or one allowed coupling with the
+singlet insertions it needs ($p\to q$ denotes a singlet of charge
+$e_p-e_q$).}\label{tab:eleven}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{@{}clcll@{}}
+\toprule
+datum & rows $k_a$ & $\mathbf{10}$ & down & up\\\midrule
+\eqref{eq:bundle} & $(-1,0,0,1),(-1,-3,2,2),(0,1,-1,0),(1,1,-1,-1),(1,1,0,-2)$ & $L_2,L_5$ & $B=\{1\}$, $B=\{3\}$ & $\mathbf{10}_2\mathbf{10}_5\mathbf5_{25}$\\
+1 ($|G|=2$) & $(-2,1,1,-1),(-1,-1,1,1),(-1,-1,1,1),(2,0,-2,1),(2,1,-1,-2)$ & $L_4$ & $\mathbf{10}_4\overline{\mathbf5}_{12}\overline{\mathbf5}_{12}$; $3\to1$, $5\to2$ & $\mathbf{10}_4\mathbf{10}_4\mathbf5_{12}$; $2\times(5\to4)$, $1\to5$, $2\to5$\\
+2 ($|G|=4$) & $(-2,1,0,-1),(-1,-1,1,1),(-1,-1,1,1),(2,0,-2,1),(2,1,0,-2)$ & $L_4,L_5$ & $\mathbf{10}_4\overline{\mathbf5}_{12}\overline{\mathbf5}_{12}$; $3\to1$, $5\to2$ & $\mathbf{10}_4\mathbf{10}_4\mathbf5_{15}$; $2\times(5\to4)$, $1\to5$\\
+3 ($|G|=2$) & $(-1,0,0,1),(-1,0,0,1),(-1,0,0,1),(1,-2,1,-1),(2,2,-1,-2)$ & $L_5$ & $\mathbf{10}_5\overline{\mathbf5}_{12}\overline{\mathbf5}_{34}$; none & $B=\{4\}$\\
+4 ($|G|=2$) & $(-1,-1,1,0),(-1,0,0,1),(-1,0,0,1),(1,-1,0,0),(2,2,-1,-2)$ & $L_5$ & $\mathbf{10}_5\overline{\mathbf5}_{14}\overline{\mathbf5}_{23}$; none & $B=\{2,4\}$\\
+5 ($|G|=2$) & $(-1,0,1,0),(-1,0,1,0),(0,-2,0,1),(1,1,-2,0),(1,1,0,-1)$ & $L_3,L_4$ & $\mathbf{10}_3\overline{\mathbf5}_{12}\overline{\mathbf5}_{45}$; none & $B=\{1\}$\\
+6 ($|G|=4$) & $(-1,0,1,0),(-1,1,0,0),(0,-2,1,1),(1,0,-2,1),(1,1,0,-2)$ & $L_3,L_4,L_5$ & $\mathbf{10}_3\overline{\mathbf5}_{12}\overline{\mathbf5}_{12}$; $4\to1$, $5\to2$ & $\mathbf{10}_3\mathbf{10}_3\mathbf5_{25}$; $2\times(4\to3)$, $2\times(5\to4)$, $2\to5$\\
+7 ($|G|=4$) & $(-1,0,0,1),(-1,0,0,1),(0,-2,1,1),(1,1,-2,-1),(1,1,1,-2)$ & $L_3,L_5$ & $\mathbf{10}_3\overline{\mathbf5}_{12}\overline{\mathbf5}_{12}$; $5\to1$, $4\to5$, $5\to2$ & $\mathbf{10}_3\mathbf{10}_3\mathbf5_{12}$; $2\times(5\to3)$, $2\times(4\to5)$, $1\to4$, $2\to4$\\
+8 ($|G|=4$) & $(-1,-1,1,1),(-1,1,0,0),(0,-2,1,1),(1,1,-2,0),(1,1,0,-2)$ & $L_3,L_4,L_5$ & $\mathbf{10}_3\overline{\mathbf5}_{12}\overline{\mathbf5}_{12}$; $4\to1$, $5\to2$ & $\mathbf{10}_4\mathbf{10}_4\mathbf5_{24}$; $2\to4$\\
+9 ($|G|=4$) & $(-1,0,1,0),(-1,1,-2,0),(0,-1,0,1),(0,-1,0,1),(2,1,1,-2)$ & $L_5$ & $B=\{1\}$ & $B=\{1,2,3\}$\\
+10 ($|G|=4$) & $(-1,0,1,0),(-1,1,-2,0),(0,-1,0,1),(1,-1,-1,1),(1,1,2,-2)$ & $L_5$ & $B=\{1\}$ & $B=\{1,2\}$\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\begin{proof}
+For each datum the possibly present fields follow from
+\eqref{eq:koszulbound} and the K\"unneth formula
+$h^0(\PP^1,\cO(m))=m+1$ for $m\ge0$, $h^1(\PP^1,\cO(m))=-m-1$ for $m\le-2$,
+all other groups zero. For \eqref{eq:bundle} the possibly present
+$\mathbf{10}$'s lie in $H^1(L_2)$ and $H^1(L_5)$, the
+$\overline{\mathbf5}$'s in $H^1$ of $L_1L_2$, $L_2L_4$, $L_2L_5$, $L_4L_5$,
+the $\mathbf5$'s in $H^2$ of $L_1L_2$, $L_2L_5$, and the singlets have
+charges $e_p-e_q$ with $p\in\{2,4,5\}$ and $(p,q)$ one of
+$(2,1),(2,3),(2,4),(2,5),(4,2),(5,1),(5,2),(5,3)$. No singlet has $p=1$ or
+$p=3$, so the sets $B=\{1\}$ and $B=\{3\}$ are left by no pair. For a
+down-type coupling $v=\one-Q$ has $v_3=1-Q_3=1$, since no charged field
+carries the coordinate $e_3$; Lemma~\ref{lem:flow}(b) fails at $B=\{3\}$
+and the coupling is forbidden. This recovers
+Proposition~\ref{prop:singletobstruction} for every smooth tetraquadric
+with the matrix \eqref{eq:bundle}. For the up-type couplings
+$Q=e_a+e_b-e_2-e_5$ with $a,b\in\{2,5\}$; $Q=0$ for $\{a,b\}=\{2,5\}$, and
+for $a=b=2$ the singlet $(5,2)$ gives $e_5-e_2=-Q$, for $a=b=5$ the singlet
+$(2,5)$. This is (i).
+
+For (ii) and (iii) the same two steps are carried out for each row of
+Table~\ref{tab:eleven}. Where the table gives a set $B$, the reader
+checks that no possibly present singlet $(p,q)$ has $p\in B$, $q\notin B$,
+and that $\sum_Bv>0$ for every choice of the charged fields: for the
+classes $9$ and $10$ the summand $L_1$ carries no $\mathbf{10}$ and lies in
+no possibly present $\overline{\mathbf5}$, so $v_1=1$ for every down-type
+coupling, while for the up-type couplings $B$ contains the coordinates of
+every possibly present $\mathbf 5$ and no $\mathbf{10}$, so
+$\sum_Bv=2>0$; for the classes $3$, $4$, $5$ the set $B$ contains a
+coordinate of every possibly present $\mathbf5$ and misses the
+coordinates of the $\mathbf{10}$'s. Where the table gives a coupling with
+insertions, the listed singlets are possibly present and their charges
+add to $\one-Q$, respectively $-Q$, which is (a) of the lemma. For the
+classes $3$, $4$ and $5$ the down-type coupling listed has $Q=\one$ and
+needs no insertion.
+\end{proof}
+
+\begin{remark}[What the proposition does and does not say]\label{rem:elevenscope}
+The proposition decides a necessary condition. For the six excluded data
+the conclusion is unconditional within the perturbative singlet
+expansion: no complex structure, no polarization and no singlet
+expectation values restore the missing matrices, since the bound
+\eqref{eq:koszulbound} holds on every smooth member and
+Lemma~\ref{lem:flow}(b) is violated. For the five remaining data nothing
+is asserted beyond the absence of this obstruction. Their down-type
+couplings arise only at second or third order in the singlets, the
+singlet groups may vanish on a given member, the free action and its
+projection of the spectrum have not been computed, and the stability of
+the bundle after the singlets acquire expectation values, which is the
+same extension problem as in Section~\ref{sec:pointfailure}, is open.
+By Theorem~\ref{thm:forced} every one of the eleven data keeps a massless
+Abelian gauge boson at its split point, so the five classes are candidates
+for the extension branch, not for the split locus.
+\end{remark}

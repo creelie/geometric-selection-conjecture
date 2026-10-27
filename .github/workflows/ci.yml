@@ -19,6 +19,8 @@ jobs:
           bash code/run_checks.sh | tee checks.log
           test "${PIPESTATUS[0]}" -eq 0
           grep -q '^511 checks passed, 0 failed$' checks.log
+          grep -q '^45 checks passed, 0 failed$' checks.log
+          git diff --exit-code -- code/yukawa_charges_results.json
       - name: Install LaTeX
         run: |
           sudo apt-get update
@@ -27,4 +29,4 @@ jobs:
       - name: Build the release assets as a check
         run: |
           version="$(sed -n 's/^version: *//p' CITATION.cff | tr -d '"')"
-          CHECK_ONLY=1 CHECK_ONLY=1 bash .github/release/build.sh "$version" dist
+          CHECK_ONLY=1 bash .github/release/build.sh "$version" dist

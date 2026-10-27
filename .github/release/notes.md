@@ -1,11 +1,10 @@
-# The Mirror Clause of the Geometric Selection Conjecture Is Empty, release 1.0.1
+# Explicit String Vacua and the Geometric Selection Conjecture, release 3.0.0
 
-The note, its LaTeX source and the check, unchanged from release 1.0.0; this release is archived on Zenodo.
+The paper by Deep Bhattacharjee and Ushashi Bhattacharya in its amsart form (44 pages), with its LaTeX source, the arXiv tarball and the checking programs.
 
-- The Geometric Selection Conjecture holds if and only if a viable vacuum exists fixed by the mirror involution wherever it is defined (Theorem 22 of *Which String Vibrations Become Which Generations on the Dwork Quintic*, hexagonmath.org 2610.00446v1).
-- The note proves that the fixed-point clause is never met: a vacuum fixed by the mirror involution is isomorphic to its mirror, so h¹¹ = h²¹ and χ = 0; its component carries a standard embedding, so c₃(V) = χ = 0; by Hirzebruch–Riemann–Roch it has zero net families and fails (C2).
-- Hence the conjecture is equivalent to the existence of one viable vacuum on a component with no standard embedding, with no condition on mirror symmetry, also in the compact-group reading; no vacuum on the tangent bundle of any Calabi–Yau threefold, or a deformation of it, is ever selected. The existence statement stays open.
+- New Section 16, "The split branch on the tetraquadric". Theorem 16.1: on every Calabi–Yau threefold with at most four Kähler parameters, every polystable sum of five line bundles with c₁ = 0 has charge matrix of rank at most three and keeps at least one Abelian gauge boson massless at its split locus, so condition C3 fails for every rank-five split datum; for the fixed bundle the polystable Kähler classes are exactly the volume ray. Lemma 16.3 (flow criterion) and Proposition 16.4: the perturbative selection rules exclude six of eleven three-family split data on the tetraquadric from C8 to all orders in the singlets and leave five, which are candidates for the extension branch only.
+- The earlier spectral, mirror-clause and fixed-datum results are unchanged; the nine-condition ledger (Table 7) cites the new theorems.
+- `code/yukawa_charges.py` decides the selection rules by a maximal flow and writes the certificates (45 checks); `code/mirror_clause.py` is unchanged (511 checks).
+- The Geometric Selection Conjecture is not proved.
 
-`paper/paper1/` holds the compiled note and `paper/paper2/` its source as one zip; `code/mirror_clause.py` checks the lemma and the corollary on Hodge data (511 checks). The note cites this release by its release page.
-
-Assets: the PDF and the LaTeX source (tex.zip).
+Assets: the PDF, the LaTeX source (tex.zip) and the arXiv tarball.
