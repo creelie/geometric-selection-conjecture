@@ -1,16 +1,17 @@
 {
   "title": "Explicit String Vacua and the Geometric Selection Conjecture",
-  "description": "<p>Consolidated Paper 10 research revision v2.1.0 by Deep Bhattacharjee, with prior coauthored source work with Ushashi Bhattacharya credited in the manuscript footnote and bibliography. Explicit smooth tetraquadric geometry and equivariant charged spectrum are certified. The full GSC remains unproved: the fixed candidate has a residual U(1), perturbative Yukawa obstructions and no controlled stabilized supersymmetry-breaking completion. The prior 2.0.0 DOI archives the earlier source revision. The full GSC is not proved.</p>",
+  "description": "<p>Release 3.0.0 of the paper by Deep Bhattacharjee and Ushashi Bhattacharya, with its LaTeX source and the programs that check its finite arithmetic. The paper computes the character labels, cubic couplings and mass maps of the Dwork and weighted Fermat pencils, proves that the mirror clause of the Geometric Selection Conjecture is empty, constructs one explicit heterotic datum on a free quotient of a tetraquadric and audits it against the nine conditions. New in this version: on every Calabi-Yau threefold with at most four Kahler parameters every polystable sum of five line bundles with vanishing first Chern class keeps an Abelian gauge boson massless at its split locus, the polystable classes of the fixed bundle form the volume ray, and the perturbative selection rules exclude six of eleven split data on the tetraquadric. The Geometric Selection Conjecture is not proved.</p>",
   "upload_type": "publication",
+  "publication_type": "preprint",
   "license": "MIT",
   "access_right": "open",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "language": "eng",
   "keywords": [
-    "heterotic string",
-    "Calabi-Yau threefolds",
-    "mirror symmetry",
-    "generations",
+    "heterotic compactification",
+    "Calabi-Yau threefold",
+    "Dwork pencil",
+    "line-bundle model",
     "Geometric Selection Conjecture"
   ],
   "creators": [
@@ -18,15 +19,24 @@
       "name": "Bhattacharjee, Deep",
       "orcid": "0000-0003-0466-750X",
       "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India; Formerly, University of Calcutta, Senate House, 87/1 College Street, Kolkata 700073, West Bengal, India"
+    },
+    {
+      "name": "Bhattacharya, Ushashi",
+      "orcid": "0009-0002-2254-3914",
+      "affiliation": "Formerly, National Taiwan University, Taipei 106319, Taiwan"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://hexagonmath.org/2610.00493v1",
       "scheme": "url",
-      "relation": "isSupplementTo"
+      "relation": "isNewVersionOf"
+    },
+    {
+      "identifier": "https://hexagonmath.org/2610.00446v1",
+      "scheme": "url",
+      "relation": "isNewVersionOf"
     }
   ],
-  "publication_type": "preprint",
-  "publication_date": "2026-10-25"
+  "publication_date": "2026-10-27"
 }

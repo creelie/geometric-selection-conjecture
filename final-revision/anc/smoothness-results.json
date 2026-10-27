@@ -1,0 +1,52 @@
+{
+  "seed_smoothness_identity_checks": true,
+  "face_determinants": [
+    1,
+    -21,
+    1
+  ],
+  "diagonal_certificates": [
+    {
+      "k": 0,
+      "r": 3,
+      "q": "2*t**3 + 15*t**2 + 6*t + 1",
+      "a": "21*t/37 + 101/37",
+      "b": "-7*t**2/37 - 307*t/222 - 32/111",
+      "identity": "a*q+b*qprime=1"
+    },
+    {
+      "k": 1,
+      "r": 3,
+      "q": "t**3 + 6*t**2 + 15*t + 2",
+      "a": "-t/74 - 4/37",
+      "b": "t**2/222 + 5*t/111 + 3/37",
+      "identity": "a*q+b*qprime=1"
+    },
+    {
+      "k": 0,
+      "r": 4,
+      "q": "t**4 + 8*t**3 + 30*t**2 + 8*t + 1",
+      "a": "t**2/6 + 47*t/48 + 19/8",
+      "b": "-t**3/24 - 21*t**2/64 - 29*t/24 - 11/64",
+      "identity": "a*q+b*qprime=1"
+    }
+  ],
+  "two_pair_certificate": {
+    "g": "y**2 - 8*y - 21",
+    "g_den": "y + 2",
+    "h": "y**4 - 16*y**3 - 66*y**2 - 16*y + 89",
+    "h_den": "y**2 + 4*y + 4",
+    "a": "-3*y**3/22 + 217*y**2/88 + 85*y/22 - 47/8",
+    "b": "3*y/22 - 11/8"
+  },
+  "fixed_point_seed_values": [
+    1,
+    2,
+    5,
+    48,
+    16
+  ],
+  "deformed_smoothness_method": "proper rational discriminant closed in A1, nonzero at theta=0; theta=pi transcendental",
+  "finite_testing_claims": false,
+  "full_GSC_proved": false
+}
