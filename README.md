@@ -1,9 +1,8 @@
 # Explicit String Vacua and the Geometric Selection Conjecture
 
 Deep Bhattacharjee and Ushashi Bhattacharya. Release v3.1.0 of the paper, its
-LaTeX source and the programs that check its finite arithmetic; concept DOI of
-all versions https://doi.org/10.5281/zenodo.23567114 (the version DOI of this
-release is recorded in `RELEASE-DOI.md` once Zenodo publishes it).
+LaTeX source and the programs that check its finite arithmetic, archived at
+https://doi.org/10.5281/zenodo.23688897.
 
 **The Geometric Selection Conjecture is not proved.** The paper exhibits one
 explicit heterotic datum on a free quotient of a tetraquadric, audits it
@@ -92,5 +91,5 @@ the Anaxia engine, https://github.com/creelie/eBLLM, at commit `a85ae17`.
 - Releases: v1.0.1 mirror-clause note, 10.5281/zenodo.23567115; v2.0.0,
   10.5281/zenodo.23646340; v2.1.0, 10.5281/zenodo.23647986.
 - Release v3.0.0 (split branch): https://doi.org/10.5281/zenodo.23682773.
-- Release v3.1.0 (this version): version DOI in `RELEASE-DOI.md` once published.
-  Concept DOI of all versions: 10.5281/zenodo.23567114.
+- Release v3.1.0 (this version): https://doi.org/10.5281/zenodo.23688897. Concept DOI of all
+  versions: 10.5281/zenodo.23567114.

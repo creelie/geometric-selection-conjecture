@@ -28,6 +28,11 @@
   ],
   "related_identifiers": [
     {
+      "identifier": "10.5281/zenodo.23688897",
+      "scheme": "doi",
+      "relation": "isIdenticalTo"
+    },
+    {
       "identifier": "https://hexagonmath.org/2610.00493v1",
       "scheme": "url",
       "relation": "isNewVersionOf"
