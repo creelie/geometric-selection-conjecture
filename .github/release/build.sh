@@ -28,7 +28,7 @@ cp -r "$work/tex" "$work/build"
 (
   cd "$work/build"
   for pass in 1 2 3; do
-    pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape main.tex > /dev/null
+    pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape main.tex > /dev/null || { tail -n 40 main.log; exit 1; }
   done
   pages() { pdfinfo "$1" | awk '/^Pages:/ {print $2}'; }
   test "$(pages main.pdf)" = "$(pages "$pdf")"

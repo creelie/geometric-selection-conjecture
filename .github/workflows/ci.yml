@@ -25,7 +25,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-latex-recommended \
-            texlive-latex-extra texlive-fonts-recommended texlive-science poppler-utils zip
+            texlive-latex-extra texlive-fonts-recommended texlive-science lmodern poppler-utils zip
       - name: Build the release assets as a check
         run: |
           version="$(sed -n 's/^version: *//p' CITATION.cff | tr -d '"')"
