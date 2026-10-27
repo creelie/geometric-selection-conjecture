@@ -22,10 +22,18 @@ second failure we decide the perturbative selection rules on eleven split
 data, the fixed bundle and ten further line-bundle sums with three families
 on the same manifold, by a flow criterion for the singlet insertions: six
 of the eleven lose a Yukawa matrix identically and five are not excluded.
-We give selection and perturbation criteria and a targeted extension
-construction, keeping their hypotheses separate from verified vacuum data.
-No vacuum satisfying all nine conditions is constructed; the full
-Geometric Selection Conjecture remains unproved.
+We then follow the extension branch: a single non-split extension never
+removes the forced gauge boson, while for the fixed bundle and five of the
+ten further sums a polystable sum of two rank-two extensions and a line
+bundle, with the same Chern character, exists on one side of a stability
+wall arbitrarily close to the split point and carries no massless Abelian
+gauge boson; for three further sums no such bundle exists at any K\"ahler
+class, and for one it does not exist on the general tetraquadric. We fix
+the acceptance windows for the stabilization, Yukawa and supersymmetry
+breaking conditions, so that the conjecture becomes a definite statement,
+and show that the failures found do not depend on them. No vacuum
+satisfying all nine conditions is constructed; the Geometric Selection
+Conjecture remains unproved.
 \end{abstract}
 \maketitle
 \begingroup\small\noindent
@@ -40,7 +48,10 @@ and \href{https://doi.org/10.5281/zenodo.23647986}{doi:10.5281/zenodo.23647986}.
 This version adds Section~\ref{sec:splitbranch}: the residual Abelian factor
 is forced for every rank-five split bundle on a threefold with at most four
 K\"ahler parameters, the polystable locus of the fixed bundle is the volume
-ray, and the perturbative selection rules are decided on eleven split data.
+ray, the perturbative selection rules are decided on eleven split data, and
+the extension branch of the eleven data is decided for its two smallest
+shapes; and Definition~\ref{def:windows}, which fixes the acceptance
+windows of the three phenomenological conditions.
 The programs that check the finite arithmetic are in the repository
 \href{https://github.com/creelie/geometric-selection-conjecture}{\texttt{creelie/geometric-selection-conjecture}} on GitHub, release
 \ownrelease{}, concept DOI
@@ -77,7 +88,17 @@ is forced for every sum of five line bundles on a threefold with at most
 four K\"ahler parameters (Theorem~\ref{thm:forced}), and the perturbative
 selection rules, decided by a flow criterion, exclude six of eleven split
 data on the tetraquadric and leave five (Proposition~\ref{prop:eleven}).
-Section~\ref{sec:ledger} tests the fixed datum against every
+The same section follows the extension branch away from the split locus:
+one non-split extension never removes the forced gauge boson
+(Proposition~\ref{prop:oneblock}), while a polystable sum of two rank-two
+extensions and a line bundle does so for the fixed datum and five of the
+ten further data, on one side of a stability wall through the polystable
+point, and is excluded for the other four at every K\"ahler class or on
+the general tetraquadric (Theorem~\ref{thm:twoblocks}).
+Definition~\ref{def:windows} fixes the acceptance windows of C7--C9, so
+that the conjecture is the definite statement GSC$(W)$ of
+Conjecture~\ref{conj:gscw}; the negative results do not depend on the
+windows. Section~\ref{sec:ledger} tests the fixed datum against every
 condition. It records both verified statements and failures.
 
 For comparison, consider the Dwork family
@@ -1387,8 +1408,57 @@ For a complete datum one must specify the threefold, visible and hidden
 bundles, polarization, free action and equivariant structures when used,
 Wilson line, effective K\"ahler potential and superpotential, and the
 domain in which omitted corrections are controlled. C5 and C7--C9 also
-need explicit acceptance predicates. We leave those predicates as inputs;
-choosing convenient thresholds would change the problem.
+need explicit acceptance predicates. Without them the conjecture is not a
+mathematical statement, since a threshold ``fixed by comparison with
+measurement'' is not a predicate on a datum. We fix one choice. The
+numbers are conventions, and a different choice gives a different
+conjecture; the failures proved in this paper for C7 and C8 hold for every
+choice, as Remark~\ref{rem:windowsrobust} records.
+
+\begin{definition}[The acceptance windows $W$]\label{def:windows}
+A datum satisfies the three conditions with the windows $W$ when:
+\begin{enumerate}[label=\textup{C\arabic*$_W$},start=7,leftmargin=*,itemsep=2pt]
+\item at the vacuum every modulus, that is every K\"ahler, complex
+structure, bundle and dilaton field of the four-dimensional theory, has a
+canonically normalized mass of at least $m_0=3\times10^4$ GeV; no exactly
+flat direction is allowed. The value is the lower bound for moduli that
+decay before nucleosynthesis \cite{BKN94,AKK12}.
+\item at the scale $\mu=2\times10^{16}$ GeV the up-type, down-type and
+charged-lepton Yukawa matrices have rank three, and their singular-value
+ratios lie within a factor three of the values
+\begin{gather*}
+ \frac{m_u}{m_t}=5.3\times10^{-6},\qquad \frac{m_c}{m_t}=2.6\times10^{-3},\qquad
+ \frac{m_d}{m_b}=8.9\times10^{-4},\\
+ \frac{m_s}{m_b}=1.6\times10^{-2},\qquad
+ \frac{m_e}{m_\tau}=2.8\times10^{-4},\qquad \frac{m_\mu}{m_\tau}=5.9\times10^{-2},
+\end{gather*}
+the ratios of the running masses at that scale in the minimal
+supersymmetric standard model with $\tan\beta=10$ \cite[Table~V]{XZZ08};
+the Cabibbo element satisfies $0.15\le|V_{us}|\le0.30$. The factor three
+covers the dependence on $\tan\beta$ between the two cases tabulated in
+\cite{XZZ08} and the threshold corrections at the matching scales.
+\item supersymmetry is broken, some F-term being nonzero at the vacuum,
+and the gravitino mass lies in $[10^3,10^6]$ GeV, the window around $m_0$
+in which gravity-mediated soft masses lie between the weak scale and the
+moduli scale \cite{AKK12}.
+\end{enumerate}
+\end{definition}
+
+\begin{conjecture}[GSC$(W)$]\label{conj:gscw}
+There is a complete datum, in the sense of the list above, satisfying
+C1--C6 and C7$_W$--C9$_W$.
+\end{conjecture}
+
+\begin{remark}[Dependence on the windows]\label{rem:windowsrobust}
+Only a positive certificate depends on $W$. The negative results of this
+paper do not: a flat direction of the classical potential, as on the
+volume ray of the fixed datum in Section~\ref{sec:pointfailure}, violates
+C7$_W$ for every $m_0>0$; a Yukawa matrix of rank at most two, or a
+vanishing one, violates C8$_W$ for every window around any nonzero ratios;
+and the selection rules of Proposition~\ref{prop:eleven} are statements
+about vanishing matrices. Where the paper writes C7, C8 or C9 below, the
+conditions are those of Definition~\ref{def:windows}.
+\end{remark}
 
 \section{A marked-point selection construction}
 The functional conditions have a clean differential-topological answer.
@@ -2136,7 +2206,10 @@ integral quotient anomaly and quantized hidden completion not certified.\\
 C2&Verified&Descended bundle index is exactly $-3$.\\
 C3&Fails at split point&The $SU(5)$ centralizer is the SM subgroup,
 but the additional generator $q$ in \eqref{eq:extrau1} survives; forced
-for every rank-five split datum by Theorem~\ref{thm:forced}.\\
+for every rank-five split datum by Theorem~\ref{thm:forced}. On the cover
+it disappears on the two-block extension branch of
+Theorem~\ref{thm:twoblocks}, whose descent to $X_\pi/\Gamma$ and spectrum
+are not certified.\\
 C4&Verified spectrum&Equivariant cohomology gives three charged families
 and no additional chiral charged exotics.\\
 C5&Vacant charged-exotic test&No additional massless charged vectorlike
@@ -2144,12 +2217,15 @@ exotics occur in this spectrum. Neutral and hidden masses not asserted.\\
 C6&Verified spectrum&One Higgs doublet pair and no massless Higgs triplets
 after the fixed Wilson projection.\\
 C7&Fails at tree level&The volume ray is flat in the stated classical
-F- and D-term potential.\\
+F- and D-term potential, so the volume modulus is massless there and
+C7$_W$ fails for every $m_0>0$.\\
 C8&Fails perturbatively&$\operatorname{rank}Y_u\le2$ and $Y_d=0$ at the
 fixed zero-singlet point; normalization cannot repair rank, and no singlet
-insertion restores $Y_d$ (Proposition~\ref{prop:eleven}).\\
-C9&Not certified&No supersymmetry-breaking sector with its required
-phenomenological data has been constructed.\\\bottomrule
+insertion restores $Y_d$ (Proposition~\ref{prop:eleven}); C8$_W$ fails
+for every window.\\
+C9&Not certified&No supersymmetry-breaking sector has been constructed;
+at the fixed point all F- and D-terms vanish, so the first clause of
+C9$_W$ is not met there.\\\bottomrule
 \end{tabular}\end{adjustbox}
 \end{table}
 Thus the fixed datum is \emph{not} a viable nine-condition vacuum.
@@ -2388,9 +2464,17 @@ Section~\ref{sec:splitbranch} shows that this branch is the only one left
 on the tetraquadric: no sum of five line bundles on a threefold with at
 most four K\"ahler parameters passes the gauge condition at its split
 locus, and on the tetraquadric the selection rules already remove six of
-the eleven three-family split data from the Yukawa condition; the five
-that survive the selection rules are candidates for the extension branch,
-not vacua.
+the eleven three-family split data from the Yukawa condition. On the
+branch itself a single extension never removes the forced gauge boson,
+while two rank-two extensions do so for the fixed datum and for five of
+the ten further data, on the cover and on one side of a stability wall,
+and cannot do so for the other four. What the branch has not been shown
+to do is to descend to the quotient, to keep three families with the
+required Yukawa matrices, and to lift the flat directions of
+C7$_W$; the four classes closed at the two smallest shapes could only
+pass C3 on a shape with a block of rank three or more. With the windows of
+Definition~\ref{def:windows} the conjecture is a definite statement, and
+every failure recorded here is independent of them.
 
 The remaining task is to specify a single quantized compactification
 with its hidden sector and controlled effective potential, and to verify
@@ -2411,8 +2495,10 @@ Section~\ref{sec:eleven} were produced by the scan of \cite{Anaxia}.
 Python programs recompute the smooth-seed polynomial identities, the
 fixed-pencil determinant and character cohomology, the Dwork label,
 coupling and mass-map counts, the thirteen-row Chern and index arithmetic,
-and the selection rules of Proposition~\ref{prop:eleven} with their flow
-certificates. Each program emits a machine-readable result with its scope.
+the selection rules of Proposition~\ref{prop:eleven} with their flow
+certificates, and the slope spaces, orientations, extension dimensions and
+polystable points of Theorem~\ref{thm:twoblocks} with the permutation
+matrices of Lemma~\ref{lem:genericvanishing}. Each program emits a machine-readable result with its scope.
 They are in the repository
 \href{https://github.com/creelie/geometric-selection-conjecture}{\texttt{creelie/geometric-selection-conjecture}} on GitHub (release
 \ownrelease{}, concept DOI \href{https://doi.org/\ownconceptdoi}{\ownconceptdoi}).
@@ -3134,6 +3220,42 @@ L.~R.~Ford and D.~R.~Fulkerson,
 \emph{Maximal flow through a network},
 Canad. J. Math. \textbf{8} (1956), 399--404,
 \href{https://doi.org/10.4153/CJM-1956-045-5}{doi:10.4153/CJM-1956-045-5}.
+
+\bibitem{AGLO09}
+L.~B.~Anderson, J.~Gray, A.~Lukas and B.~Ovrut,
+\emph{The edge of supersymmetry: stability walls in heterotic theory},
+Phys. Lett. B \textbf{677} (2009), 190--194,
+\href{https://doi.org/10.1016/j.physletb.2009.05.025}{doi:10.1016/j.physletb.2009.05.025}.
+
+\bibitem{AGL09}
+L.~B.~Anderson, J.~Gray, A.~Lukas and B.~Ovrut,
+\emph{Stability walls in heterotic theories},
+J. High Energy Phys. \textbf{09} (2009), 026,
+\href{https://doi.org/10.1088/1126-6708/2009/09/026}{doi:10.1088/1126-6708/2009/09/026}.
+
+\bibitem{HL10}
+D.~Huybrechts and M.~Lehn, \emph{The Geometry of Moduli Spaces of
+Sheaves}, second ed., Cambridge Mathematical Library, Cambridge University
+Press, 2010,
+\href{https://doi.org/10.1017/CBO9780511711985}{doi:10.1017/CBO9780511711985}.
+
+\bibitem{XZZ08}
+Z.-z.~Xing, H.~Zhang and S.~Zhou,
+\emph{Updated values of running quark and lepton masses},
+Phys. Rev. D \textbf{77} (2008), 113016,
+\href{https://doi.org/10.1103/PhysRevD.77.113016}{doi:10.1103/PhysRevD.77.113016}.
+
+\bibitem{BKN94}
+T.~Banks, D.~B.~Kaplan and A.~E.~Nelson,
+\emph{Cosmological implications of dynamical supersymmetry breaking},
+Phys. Rev. D \textbf{49} (1994), 779--787,
+\href{https://doi.org/10.1103/PhysRevD.49.779}{doi:10.1103/PhysRevD.49.779}.
+
+\bibitem{AKK12}
+B.~S.~Acharya, G.~Kane and P.~Kumar,
+\emph{Compactified string theories---generic predictions for particle
+physics}, Int. J. Mod. Phys. A \textbf{27} (2012), 1230012,
+\href{https://doi.org/10.1142/S0217751X12300128}{doi:10.1142/S0217751X12300128}.
 
 \bibitem{Anaxia}
 D.~Bhattacharjee, \emph{Anaxia: the BLLM engine},

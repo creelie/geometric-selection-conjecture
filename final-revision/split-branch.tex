@@ -92,8 +92,11 @@ $h-\rk K$ agree for every split datum.
 Let $X\subset(\PP^1)^4$ be any smooth tetraquadric and $V=\bigoplus_{a=1}^5
 \cO_X(k_a)$ with $c_1(V)=0$. Under the structure group $S(U(1)^5)$ the
 charged fields carry the charges of Section~\ref{sec:extraU1}, in the
-coordinates $e_1,\dots,e_5$ modulo the diagonal $\one$:
-\begin{center}\small
+coordinates $e_1,\dots,e_5$ modulo the diagonal $\one$, as listed in
+Table~\ref{tab:charges}.
+\begin{table}[t]\small\centering
+\caption{The charged fields of a rank-five split datum under
+$S(U(1)^5)$.}\label{tab:charges}
 \begin{tabular}{@{}llll@{}}
 \toprule
 field & cohomology & charge & representation\\\midrule
@@ -103,7 +106,7 @@ Higgs $\mathbf 5$ & $H^2(L_aL_b)$, $a<b$ & $-e_a-e_b$ & $\mathbf 5$\\
 singlet & $H^1(L_aL_b^{-1})$, $a\ne b$ & $e_a-e_b$ & $\mathbf 1$\\
 \bottomrule
 \end{tabular}
-\end{center}
+\end{table}
 A term of the perturbative superpotential is a product of charged fields
 times a monomial in the singlets, and it is gauge invariant exactly when
 its total charge is a multiple of $\one$. For the down-type coupling
@@ -274,5 +277,331 @@ the bundle after the singlets acquire expectation values, which is the
 same extension problem as in Section~\ref{sec:pointfailure}, is open.
 By Theorem~\ref{thm:forced} every one of the eleven data keeps a massless
 Abelian gauge boson at its split point, so the five classes are candidates
-for the extension branch, not for the split locus.
+for the extension branch, not for the split locus. The next subsection
+decides, for each of the eleven data, whether the smallest non-Abelian
+deformations of the split bundle remove that gauge boson.
+\end{remark}
+
+\subsection{The extension branch}\label{sec:extbranch}
+Throughout this subsection $X\subset(\PP^1)^4$ is a smooth tetraquadric,
+$V=\bigoplus_{a=1}^5L_a$ is one of the eleven data of
+Table~\ref{tab:eleven} other than the class $3$, so that $\rk K=3$, and
+$u\in\Z^5$ is a generator of the traceless kernel
+$\{q:Kq=0,\ \sum_aq_a=0\}$, which has dimension one by
+Theorem~\ref{thm:forced}(ii); the vectors $u$ are listed in
+Table~\ref{tab:twoblocks}. For a K\"ahler class $J=\sum_it_iJ_i$,
+$t_i>0$, we write $\mu_a(J)=\mu_J(L_a)=\sum_ik_a^i\kappa_i(J)$ and
+$\mu(J)=(\mu_1,\dots,\mu_5)=K\kappa(J)$. The vector $\mu(J)$ lies in the
+column space of $K$, which has dimension three and is contained in the
+hyperplane $\sum_a\mu_a=0$.
+
+The bundles that replace $V$ when the charged singlets of
+Section~\ref{sec:pointfailure} acquire expectation values are the
+polystable bundles $E=\bigoplus_jE_j$ of slope zero whose stable summands
+$E_j$ are iterated extensions of the line bundles $L_a$, $a\in B_j$, for a
+partition $\{B_j\}$ of $\{1,\dots,5\}$; they have the Chern character of
+$V$, and we call the partition the \emph{shape} of $E$. The split bundle
+has the shape with five blocks. The dictionary between such bundles and the
+four-dimensional theory is the one of the stability walls of Anderson,
+Gray, Lukas and Ovrut \cite{AGLO09,AGL09}: an extension class in
+$H^1(L_pL_q^{-1})=\operatorname{Ext}^1(L_q,L_p)$ is the expectation value
+of a singlet of charge $e_p-e_q$, the slopes of the summands are the
+D-terms of the Abelian factors, and a non-split extension exists as a
+polystable bundle exactly where the subbundle has the smaller slope.
+
+\begin{lemma}[The Abelian factor on a branch]\label{lem:branchfactor}
+Let $E=\bigoplus_{j=1}^mE_j$ be polystable of slope zero with the shape
+$\{B_j\}$. The structure group of $E$ reduces to
+$S\bigl(\prod_jU(|B_j|)\bigr)$, whose centre is parametrized by the
+traceless vectors $q\in\Q^5$ constant on every block. The Abelian gauge
+boson of such a generator $q$ is massless at $E$ if and only if $Kq=0$.
+Consequently $E$ keeps a massless Abelian gauge boson beyond the
+$SU(5)$ factor exactly when $u$ is constant on every block of its shape.
+\end{lemma}
+\begin{proof}
+Each $E_j$ is a holomorphic bundle of rank $|B_j|$ with a Hermitian
+Yang--Mills connection, so the connection on $E$ has holonomy in
+$\prod_jU(|B_j|)$, and in the subgroup with determinant one because
+$c_1(E)=c_1(V)=0$ and the connection is traceless. The centre of this group
+consists of the diagonal matrices with one scalar per block, that is the
+vectors $q$ constant on the blocks, traceless for the determinant
+condition. The Green--Schwarz masses of these generators are computed as in
+the proof of Theorem~\ref{thm:forced}: the axions shift under the generator
+$q$ by the first Chern class $\sum_jq_{B_j}c_1(E_j)=\sum_aq_ac_1(L_a)$,
+whose coordinates are $Kq$, because the first Chern class of an iterated
+extension is the sum of those of its quotients. Hence the mass of $q$ is
+$(Kq)^T\widetilde G(Kq)$ with $\widetilde G$ positive definite
+\cite[Section~2.7]{AGLP12}, and $q$ is massless exactly when $Kq=0$. The
+traceless solutions of $Kq=0$ are the multiples of $u$, so a massless
+generator exists if and only if $u$ itself is constant on the blocks.
+The same conclusion follows from the Higgs mechanism of
+\cite{AGL09}: the extension class of a block is a singlet of charge
+$e_p-e_q$ with $p,q$ in that block, and its expectation value gives a
+mass to every Abelian generator $q$ with $q_p\ne q_q$.
+\end{proof}
+
+\begin{lemma}[One side of a wall]\label{lem:wall}
+Let $Y$ be a smooth projective threefold, $L,L^\prime$ line bundles on $Y$
+and $J_0$ an ample class with $\mu_{J_0}(L)=\mu_{J_0}(L^\prime)$. Let
+$0\to L\to E\to L^\prime\to0$ be a non-split extension. There is a
+neighbourhood $U$ of $J_0$ in the ample cone such that $E$ is
+$\mu_J$-stable for every $J\in U$ with $\mu_J(L)<\mu_J(L^\prime)$.
+\end{lemma}
+\begin{proof}
+A saturated subsheaf $M\subset E$ of rank one is reflexive, hence a line
+bundle, as $Y$ is smooth \cite[Section~1.1]{HL10}; it suffices to
+show $\mu_J(M)<\mu_J(E)=\frac12(\mu_J(L)+\mu_J(L^\prime))$ for every
+such $M$. If the composite $M\to L^\prime$ vanishes, then $M\subset L$,
+so $M=L(-D)$ with $D$ effective and $\mu_J(M)\le\mu_J(L)<\mu_J(E)$.
+Otherwise $M\to L^\prime$ is injective, $M=L^\prime(-D)$ with $D$
+effective, and $D\ne0$, since $D=0$ would split the extension. Put
+$\delta_J=\frac12(\mu_J(L^\prime)-\mu_J(L))$, so that
+$\mu_J(M)<\mu_J(E)$ means $J^2\cdot D>\delta_J$.
+
+Choose a rational ample class $H$ with $J_0-H$ ample. By Grothendieck's
+lemma \cite[Lemma~1.7.9]{HL10} the saturated subsheaves $M\subset E$ with
+$\mu_H(M)\ge\mu_H(L^\prime)-1$, that is with $H^2\cdot D\le1$, form a
+bounded family, so only finitely many classes $D_1,\dots,D_m\in H^2(Y,\Z)$
+occur among them. Each $D_i$ is effective and nonzero, so
+$J_0^2\cdot D_i>0$, and $c_1=\min_iJ_0^2\cdot D_i>0$. Let $U$ be a
+neighbourhood of $J_0$ in the ample cone on which $J-H$ is ample,
+$J^2\cdot D_i>c_1/2$ for all $i$ and $\delta_J<\min(c_1/2,1)$; it exists
+by continuity, since $\delta_{J_0}=0$. For $J\in U$ and $M$ in the bounded
+family, $J^2\cdot D>c_1/2>\delta_J$. For $M$ outside it, $H^2\cdot D>1$,
+and writing $J=H+(J-H)$ with both terms ample gives
+$J^2\cdot D\ge H^2\cdot D>1>\delta_J$, because
+$H\cdot(J-H)\cdot D$ and $(J-H)^2\cdot D$ are nonnegative on the
+effective divisor $D$. In both cases $\mu_J(M)<\mu_J(E)$.
+\end{proof}
+
+\begin{proposition}[One block does not suffice]\label{prop:oneblock}
+No polystable bundle of slope zero whose shape has exactly one block of
+size two, $E=E_1\oplus L_r\oplus L_s\oplus L_o$ with $E_1$ a non-split
+extension of $L_q$ by $L_p$, removes the massless generator $u$: either no
+such bundle is polystable for any K\"ahler class, or $u_p=u_q$ and $u$
+stays massless by Lemma~\ref{lem:branchfactor}.
+\end{proposition}
+\begin{proof}
+Polystability of slope zero requires $\mu_r=\mu_s=\mu_o=0$, that is
+$\kappa(J)\perp k_r,k_s,k_o$. If these three rows are linearly
+independent, the solutions form the line $\{K^T\kappa=0\}$, since that
+line has dimension $4-\rk K=1$ and is contained in them; then
+$\mu_p=\mu_q=0$ as well, and $E_1$ has the subbundle $L_p$ of the same
+slope, so it is not stable, and the shape does not occur. If the three rows
+are dependent, some nonzero $v\in\ker K$ vanishes at $p$ and $q$. Now
+$\ker K=\Q\one\oplus\Q u$, so $v=\alpha\one+\beta u$ with
+$\alpha+\beta u_p=\alpha+\beta u_q=0$ and $\beta\ne0$, whence $u_p=u_q$.
+\end{proof}
+
+Two blocks of size two can do what one cannot. For a shape
+$\{p,q\},\{r,s\},\{o\}$ let
+\[
+ W=\{\mu\in\operatorname{Im}K:\ \mu_o=0,\ \mu_p+\mu_q=0\},
+\]
+the slopes allowed to a polystable bundle of that shape (the third
+condition $\mu_r+\mu_s=0$ follows from $\sum_a\mu_a=0$). When $W$ is a
+line $\Q w$, the slopes at every admissible $J$ are $\mu(J)=f(J)w$ for a
+scalar $f(J)\ne0$, so the sign of $f$ decides which member of each pair
+is the subbundle: the one with $fw_a<0$. We normalise $w$ so that $f>0$
+gives the orientation shown in the tables, and we say that a shape is
+\emph{realised} at $J$ when the two extension groups
+$H^1(L_{\rm sub}L_{\rm quot}^{-1})$ of that orientation are nonzero.
+
+\begin{lemma}[A vanishing on the general tetraquadric]\label{lem:genericvanishing}
+For the class $1$ of Table~\ref{tab:eleven}, $h^1(X,L_2L_5^{-1})=
+h^1(X,L_5L_2^{-1})=0$ for every tetraquadric $X$ in a nonempty Zariski
+open set of smooth members, in particular for the general one.
+\end{lemma}
+\begin{proof}
+Here $k_2-k_5=(-3,-2,2,3)$ and $k_5-k_2=(3,2,-2,-3)$. For $k=(-3,-2,2,3)$
+the K\"unneth formula gives $h^1(A,\cO_A(k))=0$ and
+$h^2(A,\cO_A(k))=h^2(A,\cO_A(k-2\one))=2\cdot1\cdot3\cdot4=24$, both
+groups being $H^1\otimes H^1\otimes H^0\otimes H^0$ in the four factors, so
+the restriction sequence gives $h^1(X,\cO_X(k))=\dim\ker\bigl(s\colon
+H^2(A,\cO_A(k-2\one))\to H^2(A,\cO_A(k))\bigr)$, where $s$ is the
+equation of $X$. In the \v{C}ech description $H^1(\PP^1,\cO(m))$ has the
+basis of the monomials $x^ay^b$ with $a,b\le-1$, $a+b=m$, and
+$H^0(\PP^1,\cO(m))$ that of the monomials with $a,b\ge0$; a polynomial
+acts by multiplication, and a product whose exponents leave the range is
+zero. For the quadric
+\begin{multline*}
+ s_0=x_1^2x_2^2y_3^2x_4^2+y_1^2y_2^2x_3^2x_4^2+y_1^2x_2^2x_3^2y_4^2
+ +x_1^2y_2^2y_3^2y_4^2\\+y_1^2(x_2y_2)(x_3y_3)y_4^2+x_1^2(x_2y_2)(x_3y_3)x_4^2
+\end{multline*}
+each of the $24$ monomials of the source is carried by exactly one of the
+six terms to a nonzero monomial of the target, and the $24$ images are
+distinct, so the map is a bijection of the two bases; the same holds for
+$k=(3,2,-2,-3)$ with the roles of the factors exchanged. Injectivity of a
+linear map is an open condition on $s$, and the smooth members form a
+nonempty open set, so both hold on a nonempty open set.\footnote{The
+program \texttt{code/extension\_branch.py} of the repository verifies the
+two permutation matrices and lists, for every datum and every shape with
+two blocks of size two, the space $W$, the orientations and the exact
+extension dimensions used below; its output is the file
+\texttt{extension\_branch\_results.json}.}
+\end{proof}
+
+\begin{theorem}[Two blocks]\label{thm:twoblocks}
+Let $V$ be one of the eleven data of Table~\ref{tab:eleven} other than the
+class $3$.
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,itemsep=1pt]
+\item For the classes $4$, $5$ and $9$ there is no K\"ahler class $J$ and no
+polystable bundle of slope zero of a shape with two blocks of size two on
+any smooth tetraquadric. For the class $1$ the same holds on every
+tetraquadric of Lemma~\ref{lem:genericvanishing}.
+\item For the datum \eqref{eq:bundle} and the classes $2$, $6$, $7$, $8$
+and $10$ there are a shape, listed in Table~\ref{tab:twoblocks}, and a
+K\"ahler class $J_0$ at which $V$ is polystable, such that the locus
+$S=\{J:\mu_o(J)=0,\ \mu_p(J)+\mu_q(J)=0\}$ is a smooth surface near
+$J_0$ on which $\mu=fw$ with $f$ changing sign along every curve through
+$J_0$ transverse to $\{f=0\}$, and such that for every $J\in S$ with
+$f(J)>0$ close enough to $J_0$ and every pair of nonzero classes in the two
+extension groups of the table, which are nonzero on every smooth
+tetraquadric, the bundle $E_1\oplus E_2\oplus L_o$ is polystable of
+slope zero, has the Chern character of $V$, and has structure group
+$S(U(2)\times U(2)\times U(1))$ with no massless Abelian gauge boson
+beyond $SU(5)$.
+\end{enumerate}
+\end{theorem}
+
+\begin{table}[t]\small\centering
+\caption{The realised shapes of Theorem~\ref{thm:twoblocks}(ii):
+the two extensions, the line bundle left alone, the vector $w$ spanning
+$W$ (normalised so that $f>0$ makes the stated subbundles of negative
+slope), the dimensions of $H^1(L_{\rm sub}L_{\rm quot}^{-1})$ for the two
+blocks, the generator $u$ and the coordinates $t$ of $J_0=\sum_it_iJ_i$.
+For the class $2$, $r=1.42764\dots$ is the root of
+$9r^4-36r^2+14r+16$ in $(1.4,1.5)$, $t_1=(18r^3+27r^2-39r-28)/5=4.7454\dots$
+and $t_2=(9r^3+6r^2-22r-4)/10=0.3008\dots$.}\label{tab:twoblocks}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{@{}cllccl@{}}
+\toprule
+datum & blocks & $w$ & $h^1$ & $u$ & $t$\\\midrule
+\eqref{eq:bundle} & $L_2\subset E_1\to L_1$, $L_5\subset E_2\to L_3$, $L_4$ & $(1,-1,1,0,-1)$ & $12$, $4$ & $(4,-1,-6,4,-1)$ & $(1,1,1,1)$\\
+2 & $L_4\subset E_1\to L_2$, $L_5\subset E_2\to L_3$, $L_1$ & $(0,1,1,-1,-1)$ & $16$, $16$ & $(0,-1,1,0,0)$ & $(t_1,t_2,r,1)$\\
+6 & $L_3\subset E_1\to L_2$, $L_5\subset E_2\to L_4$, $L_1$ & $(0,1,-1,1,-1)$ & $16$, $12$ & $(14,-11,-6,4,-1)$ & $(1,1,1,1)$\\
+7 & $L_3\subset E_1\to L_1$, $L_5\subset E_2\to L_2$, $L_4$ & $(1,1,-1,0,-1)$ & $4$, $24$ & $(1,-1,0,0,0)$ & $\bigl(1,\tfrac{5+\sqrt{105}}8,\tfrac{7+\sqrt{105}}4,1\bigr)$\\
+8 & $L_4\subset E_1\to L_1$, $L_5\subset E_2\to L_2$, $L_3$ & $(1,1,0,-1,-1)$ & $8$, $3$ & $(6,-4,-4,1,1)$ & $(1,1,1,1)$\\
+10 & $L_5\subset E_1\to L_1$, $L_4\subset E_2\to L_2$, $L_3$ & $(1,1,0,-1,-1)$ & $12$, $12$ & $(4,-1,-6,4,-1)$ & $(2+\sqrt7,1,2+\sqrt7,1)$\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\begin{table}[t]\small\centering
+\caption{Theorem~\ref{thm:twoblocks}(i): every shape with two blocks of
+size two whose space $W$ is nonzero, for the four excluded data; in all
+other shapes $W=0$. In each case $W$ is the line through $w$, and for each
+sign of $f$ a group $H^1(L_{\rm sub}L_{\rm quot}^{-1})$ is listed whose
+Koszul bound \eqref{eq:koszulbound} is zero, or, marked with an asterisk,
+which vanishes by Lemma~\ref{lem:genericvanishing}.}\label{tab:excluded}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{@{}clcll@{}}
+\toprule
+datum & shape & $w$ & vanishing group & vanishing group\\\midrule
+1 & $\{L_2,L_4\}$, $\{L_3,L_5\}$, $L_1$ & $(0,1,1,-1,-1)$ & $f>0$: $L_5L_3^{-1}{}^{*}$ & $f<0$: $L_2L_4^{-1}$\\
+1 & $\{L_2,L_5\}$, $\{L_3,L_4\}$, $L_1$ & $(0,1,1,-1,-1)$ & $f>0$: $L_5L_2^{-1}{}^{*}$ & $f<0$: $L_3L_4^{-1}$\\
+1 & $\{L_1,L_2\}$, $\{L_3,L_5\}$, $L_4$ & $(1,-1,-1,0,1)$ & $f>0$: $L_3L_5^{-1}{}^{*}$ & $f<0$: $L_1L_2^{-1}$\\
+1 & $\{L_1,L_3\}$, $\{L_2,L_5\}$, $L_4$ & $(1,-1,-1,0,1)$ & $f>0$: $L_2L_5^{-1}{}^{*}$ & $f<0$: $L_1L_3^{-1}$\\
+1 & $\{L_1,L_2\}$, $\{L_3,L_4\}$, $L_5$ & $(-1,1,1,-1,0)$ & $f>0$: $L_1L_2^{-1}$ & $f<0$: $L_3L_4^{-1}$\\
+1 & $\{L_1,L_3\}$, $\{L_2,L_4\}$, $L_5$ & $(-1,1,1,-1,0)$ & $f>0$: $L_1L_3^{-1}$ & $f<0$: $L_2L_4^{-1}$\\
+4 & $\{L_2,L_4\}$, $\{L_3,L_5\}$, $L_1$ & $(0,-1,-1,1,1)$ & $f>0$: $L_3L_5^{-1}$ & $f<0$: $L_4L_2^{-1}$\\
+4 & $\{L_2,L_5\}$, $\{L_3,L_4\}$, $L_1$ & $(0,-1,-1,1,1)$ & $f>0$: $L_2L_5^{-1}$ & $f<0$: $L_4L_3^{-1}$\\
+4 & $\{L_1,L_2\}$, $\{L_3,L_5\}$, $L_4$ & $(1,-1,-1,0,1)$ & $f>0$: $L_2L_1^{-1}$ & $f<0$: $L_1L_2^{-1}$\\
+4 & $\{L_1,L_3\}$, $\{L_2,L_5\}$, $L_4$ & $(1,-1,-1,0,1)$ & $f>0$: $L_3L_1^{-1}$ & $f<0$: $L_1L_3^{-1}$\\
+4 & $\{L_1,L_2\}$, $\{L_3,L_4\}$, $L_5$ & $(1,-1,-1,1,0)$ & $f>0$: $L_2L_1^{-1}$ & $f<0$: $L_1L_2^{-1}$\\
+4 & $\{L_1,L_3\}$, $\{L_2,L_4\}$, $L_5$ & $(1,-1,-1,1,0)$ & $f>0$: $L_3L_1^{-1}$ & $f<0$: $L_1L_3^{-1}$\\
+5 & $\{L_1,L_4\}$, $\{L_2,L_5\}$, $L_3$ & $(-1,-1,0,1,1)$ & $f>0$: $L_1L_4^{-1}$ & $f<0$: $L_5L_2^{-1}$\\
+5 & $\{L_1,L_5\}$, $\{L_2,L_4\}$, $L_3$ & $(-1,-1,0,1,1)$ & $f>0$: $L_1L_5^{-1}$ & $f<0$: $L_5L_1^{-1}$\\
+5 & $\{L_1,L_3\}$, $\{L_2,L_5\}$, $L_4$ & $(-1,-1,1,0,1)$ & $f>0$: $L_1L_3^{-1}$ & $f<0$: $L_3L_1^{-1}$\\
+5 & $\{L_1,L_5\}$, $\{L_2,L_3\}$, $L_4$ & $(-1,-1,1,0,1)$ & $f>0$: $L_1L_5^{-1}$ & $f<0$: $L_5L_1^{-1}$\\
+5 & $\{L_1,L_3\}$, $\{L_2,L_4\}$, $L_5$ & $(1,1,-1,-1,0)$ & $f>0$: $L_3L_1^{-1}$ & $f<0$: $L_1L_3^{-1}$\\
+5 & $\{L_1,L_4\}$, $\{L_2,L_3\}$, $L_5$ & $(1,1,-1,-1,0)$ & $f>0$: $L_3L_2^{-1}$ & $f<0$: $L_1L_4^{-1}$\\
+9 & $\{L_2,L_3\}$, $\{L_4,L_5\}$, $L_1$ & $(0,1,-1,-1,1)$ & $f>0$: $L_4L_5^{-1}$ & $f<0$: $L_2L_3^{-1}$\\
+9 & $\{L_2,L_4\}$, $\{L_3,L_5\}$, $L_1$ & $(0,1,-1,-1,1)$ & $f>0$: $L_3L_5^{-1}$ & $f<0$: $L_2L_4^{-1}$\\
+9 & $\{L_1,L_3\}$, $\{L_4,L_5\}$, $L_2$ & $(1,0,-1,-1,1)$ & $f>0$: $L_3L_1^{-1}$ & $f<0$: $L_1L_3^{-1}$\\
+9 & $\{L_1,L_4\}$, $\{L_3,L_5\}$, $L_2$ & $(1,0,-1,-1,1)$ & $f>0$: $L_4L_1^{-1}$ & $f<0$: $L_1L_4^{-1}$\\
+9 & $\{L_1,L_3\}$, $\{L_2,L_4\}$, $L_5$ & $(1,1,-1,-1,0)$ & $f>0$: $L_3L_1^{-1}$ & $f<0$: $L_1L_3^{-1}$\\
+9 & $\{L_1,L_4\}$, $\{L_2,L_3\}$, $L_5$ & $(1,1,-1,-1,0)$ & $f>0$: $L_4L_1^{-1}$ & $f<0$: $L_1L_4^{-1}$\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\begin{proof}
+(i) A polystable bundle of slope zero and shape $\{p,q\},\{r,s\},\{o\}$
+has $\mu(J)\in W$. For each of the four data, Table~\ref{tab:excluded}
+lists the shapes with $W\ne0$, and in every one of them $W$ is a line; in
+the other shapes all five slopes vanish and the extensions have a
+subbundle of equal slope, so they are not stable. On a listed shape
+$\mu(J)=fw$ with $f\ne0$, and for each sign of $f$ the subbundle of a
+block is its member of negative slope. The table lists for each sign a
+group $H^1(L_{\rm sub}L_{\rm quot}^{-1})$ that vanishes, on every smooth
+tetraquadric when its bound \eqref{eq:koszulbound} is zero, which is
+checked with the K\"unneth formula as in the proof of
+Proposition~\ref{prop:eleven}, and on the tetraquadrics of
+Lemma~\ref{lem:genericvanishing} in the four cases marked with an
+asterisk, which are the groups $H^1(L_2L_5^{-1})$ and $H^1(L_5L_2^{-1})$
+of the class $1$ and their copies with $L_3\cong L_2$. The corresponding
+block has no non-split extension, so the shape does not occur.
+
+(ii) Fix a row of Table~\ref{tab:twoblocks} and write
+$\{p,q\}=\{{\rm sub}_1,{\rm quot}_1\}$, $\{r,s\}$ for the second block.
+The slopes vanish at $J_0$: for $t=(1,1,1,1)$ every $\kappa_i$ equals $12$
+and every row of $K$ has coordinate sum zero; for the other three $J_0$ the
+five polynomials $\mu_a(t)$ vanish at the listed algebraic point, which is
+verified by exact arithmetic. The surface $S$ is smooth at $J_0$ when the
+differentials of $\mu_o$ and $\mu_p+\mu_q$ are independent there. For
+$i\ne j$ one has $\partial\kappa_i/\partial t_j=4(e_1(t)-t_i-t_j)$ and
+$\partial\kappa_i/\partial t_i=0$, so at $t=(1,1,1,1)$, using the zero
+coordinate sum of the rows, $d\mu_a=-8\sum_jk_a^j\,dt_j$: the two
+differentials are $-8$ times the rows $k_o$ and $k_p+k_q$, which are
+independent for the three symmetric data (for \eqref{eq:bundle},
+$(1,1,-1,-1)$ and $(-2,-3,2,3)$). On $S$ the slopes lie in $W=\Q w$, so
+$\mu=fw$ with $f=\mu_{q}/w_q$; its differential along $S$ at $J_0$ is
+nonzero, for \eqref{eq:bundle} because $k_1$ is not in the span of $k_4$
+and $k_1+k_2$, and for the other data by the same exact computation. Hence
+$f$ takes both signs on $S$ arbitrarily close to $J_0$.
+
+For $J\in S$ with $f(J)>0$ the slopes of the subbundles are
+$fw_{\rm sub}<0$ and those of the quotients $fw_{\rm quot}>0$, while
+$\mu_o=0$ and $\mu_{\rm sub}+\mu_{\rm quot}=0$ on each block. The two
+extension groups are nonzero on every smooth tetraquadric, because for each
+the bound \eqref{eq:koszulbound} is attained: the K\"unneth groups
+$H^1(A,\cO_A(k-2\one))$ and $H^2(A,\cO_A(k))$ vanish, so the restriction
+sequence gives $h^1(X,\cO_X(k))=h^1(A,\cO_A(k))+h^2(A,\cO_A(k-2\one))$,
+which is the number in the table. Lemma~\ref{lem:wall}, applied to each
+block at $J_0$, gives a neighbourhood $U$ of $J_0$ on which both $E_1$ and
+$E_2$ are stable for every $J$ with $f(J)>0$; their slopes and that of
+$L_o$ are zero, so $E=E_1\oplus E_2\oplus L_o$ is polystable of slope zero
+for $J\in S\cap U$, $f(J)>0$. Its Chern character is that of $V$. The
+determinants $c_1(E_1)=c_1(L_p)+c_1(L_q)$ and $c_1(E_2)$ differ in every
+row, so the two blocks are not isomorphic and the structure group is
+$S(U(2)\times U(2)\times U(1))$. Finally $u$ is not constant on the
+blocks: in every row $u_{\rm sub}\ne u_{\rm quot}$ for both blocks, as
+Table~\ref{tab:twoblocks} shows, so by Lemma~\ref{lem:branchfactor} no
+Abelian gauge boson beyond $SU(5)$ is massless at $E$.
+\end{proof}
+
+\begin{remark}[What the branch does and does not give]\label{rem:extscope}
+Theorem~\ref{thm:twoblocks}(ii) removes the obstruction of
+Theorem~\ref{thm:forced} for six of the eleven data, including the fixed
+datum, at the cost of leaving the split locus: the polystable K\"ahler
+classes of $E$ form a half of the surface $S$, of dimension two, in place
+of the ray of Remark~\ref{rem:forcedfixed}, and the extension classes are
+further moduli. Everything is stated on the cover $X$. For the quotient
+$X/\Gamma$ the K\"ahler class and the two extension classes have to be
+$\Gamma$-invariant, which requires the equivariant structures on the line
+bundles and the invariant parts of the two groups; for the fixed datum the
+group $H^1(L_2L_1^{-1})$ of dimension $12$ has invariant classes by
+Section~\ref{sec:pointfailure}, and the invariant part of $H^1(L_5L_3^{-1})$
+has not been computed. The charged spectrum and the Yukawa couplings
+change along the branch and have not been recomputed; condition C7 is not
+addressed, since $S$ and the extension classes are flat directions of the
+D-terms; and shapes with a block of size three or more, which by
+Lemma~\ref{lem:branchfactor} remove $u$ exactly when $u$ is not constant on
+the large block, are not treated. Proposition~\ref{prop:oneblock} and part
+(i) close the smallest shapes for the classes $1$, $4$, $5$ and $9$; for
+these the Abelian factor can only disappear on a shape with a block of
+size at least three.
 \end{remark}

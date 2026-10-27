@@ -1,11 +1,11 @@
 {
   "title": "Explicit String Vacua and the Geometric Selection Conjecture",
-  "description": "<p>Release 3.0.0 of the paper by Deep Bhattacharjee and Ushashi Bhattacharya, with its LaTeX source and the programs that check its finite arithmetic. The paper computes the character labels, cubic couplings and mass maps of the Dwork and weighted Fermat pencils, proves that the mirror clause of the Geometric Selection Conjecture is empty, constructs one explicit heterotic datum on a free quotient of a tetraquadric and audits it against the nine conditions. New in this version: on every Calabi-Yau threefold with at most four Kahler parameters every polystable sum of five line bundles with vanishing first Chern class keeps an Abelian gauge boson massless at its split locus, the polystable classes of the fixed bundle form the volume ray, and the perturbative selection rules exclude six of eleven split data on the tetraquadric. The Geometric Selection Conjecture is not proved.</p>",
+  "description": "<p>Release 3.1.0 of the paper by Deep Bhattacharjee and Ushashi Bhattacharya, with its LaTeX source and the programs that check its finite arithmetic. The paper computes the character labels, cubic couplings and mass maps of the Dwork and weighted Fermat pencils, proves that the mirror clause of the Geometric Selection Conjecture is empty, constructs one explicit heterotic datum on a free quotient of a tetraquadric and audits it against the nine conditions. Section 16 proves that on every Calabi-Yau threefold with at most four Kahler parameters every polystable sum of five line bundles with vanishing first Chern class keeps an Abelian gauge boson massless at its split locus, and that the perturbative selection rules exclude six of eleven split data on the tetraquadric. New in this version: the extension branch of the eleven data is decided for its two smallest shapes. A single rank-two extension never removes the forced Abelian factor (Proposition 16.8). Two rank-two extensions remove it for six of the eleven data, each on one side of a stability wall through an explicit polystable Kahler class (Theorem 16.10, with the stability lemma 16.7), and are excluded for four data at every Kahler class, one of them on the general tetraquadric by a Koszul permutation certificate (Lemma 16.9). The three phenomenological conditions receive explicit acceptance windows (Definition 9.1), which turn the conjecture into the statement GSC(W) (Conjecture 9.2); every negative result of the paper holds for every choice of windows. The Geometric Selection Conjecture is not proved.</p>",
   "upload_type": "publication",
   "publication_type": "preprint",
   "license": "MIT",
   "access_right": "open",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "language": "eng",
   "keywords": [
     "heterotic compactification",
@@ -27,11 +27,6 @@
     }
   ],
   "related_identifiers": [
-    {
-      "identifier": "10.5281/zenodo.23682773",
-      "scheme": "doi",
-      "relation": "isIdenticalTo"
-    },
     {
       "identifier": "https://hexagonmath.org/2610.00493v1",
       "scheme": "url",

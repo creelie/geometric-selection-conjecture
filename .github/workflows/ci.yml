@@ -14,13 +14,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install sympy
+        run: python3 -m pip install --quiet sympy
       - name: Run the check
         run: |
           bash code/run_checks.sh | tee checks.log
           test "${PIPESTATUS[0]}" -eq 0
           grep -q '^511 checks passed, 0 failed$' checks.log
           grep -q '^45 checks passed, 0 failed$' checks.log
-          git diff --exit-code -- code/yukawa_charges_results.json
+          grep -q '^61 checks passed, 0 failed$' checks.log
+          git diff --exit-code -- code/yukawa_charges_results.json code/extension_branch_results.json
       - name: Install LaTeX
         run: |
           sudo apt-get update
