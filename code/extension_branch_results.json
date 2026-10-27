@@ -1,0 +1,9463 @@
+[
+ {
+  "name": "BCL fixed datum",
+  "rank": 3,
+  "u": [
+   [
+    4,
+    -1,
+    -6,
+    4,
+    -1
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       20,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       null,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       null,
+       4
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "undecided"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      -1,
+      -2,
+      2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      -2,
+      0,
+      -1,
+      1,
+      2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 2,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      -1,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": false
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       3,
+       1
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": false
+     },
+     {
+      "sub": [
+       3,
+       1
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": false
+     },
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": false
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       12,
+       null
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "undecided"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      1,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       12,
+       4
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      1,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       4,
+       1
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       1
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       12,
+       20
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      2,
+      -2,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      2,
+      -1,
+      -2,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "polystable": [
+   [
+    "1",
+    "1",
+    "1",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 0,
+     "10": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "03": 0,
+     "30": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "excluded"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "04": 0,
+     "40": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 20,
+     "21": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": null,
+     "31": null
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "14": null,
+     "41": null
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "undecided"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "23": 0,
+     "32": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "24": 0,
+     "42": 4
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "34": 0,
+     "43": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "single_block_excluded": false,
+  "realisable": [
+   [
+    1,
+    0,
+    4,
+    2,
+    3,
+    12,
+    4,
+    1
+   ],
+   [
+    4,
+    0,
+    1,
+    2,
+    3,
+    12,
+    20,
+    1
+   ]
+  ],
+  "undecided": [
+   [
+    1,
+    3,
+    4,
+    2,
+    0
+   ],
+   [
+    4,
+    0,
+    3,
+    1,
+    2
+   ]
+  ],
+  "two_blocks_excluded": false,
+  "certificate": {
+   "sub": [
+    1,
+    4
+   ],
+   "quotient": [
+    0,
+    2
+   ],
+   "o": 3,
+   "ext_dims": [
+    12,
+    4
+   ],
+   "J0": [
+    "1",
+    "1",
+    "1",
+    "1"
+   ]
+  },
+  "two_blocks": "realisable"
+ },
+ {
+  "name": "class 1",
+  "rank": 3,
+  "u": [
+   [
+    0,
+    -1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      1,
+      -1,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       16,
+       null
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "undecided"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      1,
+      -1,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       null,
+       16
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       null,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "undecided"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       6,
+       null
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "undecided"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       1
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       6,
+       null
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       2,
+       1
+      ],
+      "ext_dims": [
+       0,
+       null
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "undecided"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      1,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       3
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       0,
+       3
+      ],
+      "ext_dims": [
+       6,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      1,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       3
+      ],
+      "quotient": [
+       2,
+       1
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       2,
+       1
+      ],
+      "quotient": [
+       0,
+       3
+      ],
+      "ext_dims": [
+       6,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "polystable": [
+   [
+    "1",
+    "-1/3 + sqrt(7)/3",
+    "-1/3 + sqrt(7)/3",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 0,
+     "10": 6
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 6
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "03": 0,
+     "30": 24
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "04": 18,
+     "40": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 0,
+     "21": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": true,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 0,
+     "31": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "14": null,
+     "41": null
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "23": 0,
+     "32": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "24": null,
+     "42": null
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "34": 0,
+     "43": 8
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   }
+  ],
+  "single_block_excluded": false,
+  "realisable": [],
+  "undecided": [
+   [
+    3,
+    1,
+    4,
+    2,
+    0
+   ],
+   [
+    4,
+    1,
+    3,
+    2,
+    0
+   ],
+   [
+    1,
+    0,
+    2,
+    4,
+    3
+   ],
+   [
+    2,
+    0,
+    1,
+    4,
+    3
+   ]
+  ],
+  "two_blocks_excluded": false,
+  "generic_vanishing": {
+   "groups": [
+    "L_2 L_5^-1",
+    "L_5 L_2^-1"
+   ],
+   "quadric": [
+    [
+     1,
+     [
+      [
+       2,
+       0
+      ],
+      [
+       2,
+       0
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       2,
+       0
+      ]
+     ]
+    ],
+    [
+     1,
+     [
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       2,
+       0
+      ],
+      [
+       2,
+       0
+      ]
+     ]
+    ],
+    [
+     1,
+     [
+      [
+       0,
+       2
+      ],
+      [
+       2,
+       0
+      ],
+      [
+       2,
+       0
+      ],
+      [
+       0,
+       2
+      ]
+     ]
+    ],
+    [
+     1,
+     [
+      [
+       2,
+       0
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       2
+      ]
+     ]
+    ],
+    [
+     1,
+     [
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       2
+      ]
+     ]
+    ],
+    [
+     1,
+     [
+      [
+       2,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       2,
+       0
+      ]
+     ]
+    ]
+   ],
+   "note": "zero on the general tetraquadric"
+  },
+  "two_blocks": "excluded on the general tetraquadric"
+ },
+ {
+  "name": "class 2",
+  "rank": 3,
+  "u": [
+   [
+    0,
+    -1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      1,
+      -1,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       16,
+       16
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      1,
+      -1,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       16,
+       16
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       1
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       2,
+       1
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      1,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       3
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       0,
+       3
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      1,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       3
+      ],
+      "quotient": [
+       2,
+       1
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       2,
+       1
+      ],
+      "quotient": [
+       0,
+       3
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "polystable": [
+   [
+    "18*r**3/5 + 27*r**2/5 - 39*r/5 - 28/5",
+    "9*r**3/10 + 3*r**2/5 - 11*r/5 - 2/5",
+    "r",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 0,
+     "10": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "03": 0,
+     "30": 18
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "04": 6,
+     "40": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 0,
+     "21": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": true,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 0,
+     "31": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "14": 0,
+     "41": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "23": 0,
+     "32": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "24": 0,
+     "42": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "34": 0,
+     "43": 12
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   }
+  ],
+  "single_block_excluded": false,
+  "realisable": [
+   [
+    3,
+    1,
+    4,
+    2,
+    0,
+    16,
+    16,
+    1
+   ],
+   [
+    4,
+    1,
+    3,
+    2,
+    0,
+    16,
+    16,
+    1
+   ]
+  ],
+  "undecided": [],
+  "two_blocks_excluded": false,
+  "certificate": {
+   "sub": [
+    3,
+    4
+   ],
+   "quotient": [
+    1,
+    2
+   ],
+   "o": 0,
+   "ext_dims": [
+    16,
+    16
+   ],
+   "J0": [
+    "18*r**3/5 + 27*r**2/5 - 39*r/5 - 28/5",
+    "9*r**3/10 + 3*r**2/5 - 11*r/5 - 2/5",
+    "r",
+    "1"
+   ]
+  },
+  "two_blocks": "realisable"
+ },
+ {
+  "name": "class 3",
+  "rank": 2,
+  "u": [
+   [
+    1,
+    -1,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    -1,
+    0,
+    0
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 0,
+    "W": [],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "polystable": [],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 0,
+     "10": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": true,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": true,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "03": 6,
+     "30": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "04": 0,
+     "40": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 0,
+     "21": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": true,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 6,
+     "31": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "14": 0,
+     "41": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "23": 6,
+     "32": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "24": 0,
+     "42": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 1,
+    "dim_N": 3,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "34": 0,
+     "43": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "excluded"
+   }
+  ],
+  "note": "rank 2: slopes vanish on a curve, two Abelian generators; excluded by C8 (Proposition 16.4)",
+  "single_block_excluded": true,
+  "realisable": [],
+  "undecided": [],
+  "two_blocks_excluded": true,
+  "two_blocks": "excluded"
+ },
+ {
+  "name": "class 4",
+  "rank": 3,
+  "u": [
+   [
+    0,
+    -1,
+    1,
+    0,
+    0
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       4,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       4
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       16,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      0,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      0,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       1
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       2,
+       1
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      0,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      -1,
+      1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       2
+      ],
+      "quotient": [
+       0,
+       3
+      ],
+      "ext_dims": [
+       0,
+       4
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       3
+      ],
+      "quotient": [
+       1,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      -1,
+      1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       1
+      ],
+      "quotient": [
+       0,
+       3
+      ],
+      "ext_dims": [
+       0,
+       4
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       3
+      ],
+      "quotient": [
+       2,
+       1
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "polystable": [
+   [
+    "1",
+    "1",
+    "1/4",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 0,
+     "10": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "03": 2,
+     "30": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "04": null,
+     "40": null
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "undecided"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 0,
+     "21": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": true,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 4,
+     "31": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "14": 0,
+     "41": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "23": 4,
+     "32": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "24": 0,
+     "42": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "34": 0,
+     "43": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "excluded"
+   }
+  ],
+  "single_block_excluded": false,
+  "realisable": [],
+  "undecided": [],
+  "two_blocks_excluded": true,
+  "two_blocks": "excluded"
+ },
+ {
+  "name": "class 5",
+  "rank": 3,
+  "u": [
+   [
+    1,
+    -1,
+    0,
+    0,
+    0
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       2,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       4,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       2
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      1,
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      1,
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   }
+  ],
+  "polystable": [
+   [
+    "4",
+    "4",
+    "4",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 0,
+     "10": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": true,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "03": 0,
+     "30": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "04": 0,
+     "40": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 0,
+     "21": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 0,
+     "31": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "14": 0,
+     "41": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "23": 0,
+     "32": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "excluded"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "24": 0,
+     "42": 8
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "34": 2,
+     "43": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   }
+  ],
+  "single_block_excluded": false,
+  "realisable": [],
+  "undecided": [],
+  "two_blocks_excluded": true,
+  "two_blocks": "excluded"
+ },
+ {
+  "name": "class 6",
+  "rank": 3,
+  "u": [
+   [
+    14,
+    -11,
+    -6,
+    4,
+    -1
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       2,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       2,
+       4
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       16,
+       12
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -3,
+      -1,
+      3
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       4,
+       2
+      ],
+      "ext_dims": [
+       3,
+       12
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       2
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       3,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      -1,
+      -4,
+      4
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       4,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      0,
+      -2,
+      1,
+      2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      2,
+      0,
+      3,
+      -3,
+      -2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      0,
+      -5,
+      5
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       12,
+       3
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      1,
+      -5,
+      0,
+      5
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -2,
+      1,
+      0,
+      2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       4
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       2,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       4,
+       3
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -3,
+      3,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       4,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       2
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       16
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      2,
+      -2,
+      5,
+      -5,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      3,
+      4,
+      -3,
+      -4,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       4,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      2,
+      -2,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       12,
+       16
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   }
+  ],
+  "polystable": [
+   [
+    "1",
+    "1",
+    "1",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 0,
+     "10": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 4
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "03": 0,
+     "30": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "04": 0,
+     "40": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 0,
+     "21": 16
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 0,
+     "31": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "14": 3,
+     "41": 3
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "23": 0,
+     "32": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "24": 0,
+     "42": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "34": 0,
+     "43": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "single_block_excluded": true,
+  "realisable": [
+   [
+    2,
+    1,
+    4,
+    3,
+    0,
+    16,
+    12,
+    1
+   ],
+   [
+    1,
+    4,
+    3,
+    2,
+    0,
+    3,
+    12,
+    1
+   ],
+   [
+    3,
+    0,
+    4,
+    1,
+    2,
+    12,
+    3,
+    1
+   ],
+   [
+    2,
+    0,
+    4,
+    1,
+    3,
+    4,
+    3,
+    1
+   ],
+   [
+    3,
+    0,
+    2,
+    1,
+    4,
+    12,
+    16,
+    1
+   ]
+  ],
+  "undecided": [],
+  "two_blocks_excluded": false,
+  "certificate": {
+   "sub": [
+    2,
+    4
+   ],
+   "quotient": [
+    1,
+    3
+   ],
+   "o": 0,
+   "ext_dims": [
+    16,
+    12
+   ],
+   "J0": [
+    "1",
+    "1",
+    "1",
+    "1"
+   ]
+  },
+  "two_blocks": "realisable"
+ },
+ {
+  "name": "class 7",
+  "rank": 3,
+  "u": [
+   [
+    1,
+    -1,
+    0,
+    0,
+    0
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       6,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       24
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       6
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       24,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      -1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       2,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       4,
+       24
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      1,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       4,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       2
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       24,
+       4
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      1,
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       4,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       6
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      1,
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       4
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       6,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   }
+  ],
+  "polystable": [
+   [
+    "1",
+    "5/8 + sqrt(105)/8",
+    "7/4 + sqrt(105)/4",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 0,
+     "10": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": true,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 4
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "03": 6,
+     "30": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "04": 0,
+     "40": 24
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 0,
+     "21": 4
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 6,
+     "31": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "14": 0,
+     "41": 24
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "23": 16,
+     "32": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "24": 0,
+     "42": 16
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "34": 4,
+     "43": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   }
+  ],
+  "single_block_excluded": false,
+  "realisable": [
+   [
+    2,
+    0,
+    4,
+    1,
+    3,
+    4,
+    24,
+    1
+   ],
+   [
+    4,
+    0,
+    2,
+    1,
+    3,
+    24,
+    4,
+    1
+   ]
+  ],
+  "undecided": [],
+  "two_blocks_excluded": false,
+  "certificate": {
+   "sub": [
+    2,
+    4
+   ],
+   "quotient": [
+    0,
+    1
+   ],
+   "o": 3,
+   "ext_dims": [
+    4,
+    24
+   ],
+   "J0": [
+    "1",
+    "5/8 + sqrt(105)/8",
+    "7/4 + sqrt(105)/4",
+    "1"
+   ]
+  },
+  "two_blocks": "realisable"
+ },
+ {
+  "name": "class 8",
+  "rank": 3,
+  "u": [
+   [
+    6,
+    -4,
+    -4,
+    1,
+    1
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 2,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      0,
+      0
+     ],
+     [
+      0,
+      -1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       2,
+       4
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": false
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": false
+     },
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       16,
+       3
+      ],
+      "u_higgsed": false
+     },
+     {
+      "sub": [
+       2,
+       4
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       16,
+       3
+      ],
+      "u_higgsed": false
+     }
+    ],
+    "verdict": "realisable, Abelian factor kept"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       3,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       3,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       4,
+       2
+      ],
+      "ext_dims": [
+       3,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       2
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       3,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      0,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       8,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      0,
+      -1,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       8,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      0,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       8,
+       3
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       8,
+       3
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      1,
+      -2,
+      0,
+      2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       4,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -2,
+      1,
+      0,
+      2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       4
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       2,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      0,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      2,
+      -2,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       4,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      2,
+      -1,
+      -2,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       3
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      0,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "polystable": [
+   [
+    "1",
+    "1",
+    "1",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 4,
+     "10": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "03": 0,
+     "30": 8
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "04": 0,
+     "40": 8
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "12": 0,
+     "21": 16
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 3,
+     "31": 3
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "14": 3,
+     "41": 3
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "23": 0,
+     "32": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "24": 0,
+     "42": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "34": 3,
+     "43": 3
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   }
+  ],
+  "single_block_excluded": false,
+  "realisable": [
+   [
+    3,
+    0,
+    4,
+    1,
+    2,
+    8,
+    3,
+    1
+   ],
+   [
+    4,
+    0,
+    3,
+    1,
+    2,
+    8,
+    3,
+    1
+   ]
+  ],
+  "undecided": [],
+  "two_blocks_excluded": false,
+  "certificate": {
+   "sub": [
+    3,
+    4
+   ],
+   "quotient": [
+    0,
+    1
+   ],
+   "o": 2,
+   "ext_dims": [
+    8,
+    3
+   ],
+   "J0": [
+    "1",
+    "1",
+    "1",
+    "1"
+   ]
+  },
+  "two_blocks": "realisable"
+ },
+ {
+  "name": "class 9",
+  "rank": 3,
+  "u": [
+   [
+    0,
+    0,
+    -1,
+    1,
+    0
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       36
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       0,
+       36
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       36
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       0,
+       36
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      0,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      0,
+      0,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      0,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      0,
+      0,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      0,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      0,
+      0,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      1,
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      1,
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   }
+  ],
+  "polystable": [
+   [
+    "2 + sqrt(7)",
+    "1",
+    "2 + sqrt(7)",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "01": 0,
+     "10": 4
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "03": 0,
+     "30": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "04": 0,
+     "40": 8
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 0,
+     "21": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 0,
+     "31": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "14": 0,
+     "41": 28
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "23": 0,
+     "32": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": true,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "24": 0,
+     "42": 36
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "34": 0,
+     "43": 36
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "single_block_excluded": false,
+  "realisable": [],
+  "undecided": [],
+  "two_blocks_excluded": true,
+  "two_blocks": "excluded"
+ },
+ {
+  "name": "class 10",
+  "rank": 3,
+  "u": [
+   [
+    4,
+    -1,
+    -6,
+    4,
+    -1
+   ]
+  ],
+  "partitions": [
+   {
+    "pairs": [
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       32
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      1,
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       3,
+       2
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       3,
+       2
+      ],
+      "ext_dims": [
+       0,
+       36
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 0,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      -1,
+      -2,
+      2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       32
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 1,
+    "dim_W": 1,
+    "W": [
+     [
+      2,
+      0,
+      1,
+      -1,
+      -2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      3,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      0,
+      -1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       4,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       0,
+       32
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 2,
+    "dim_W": 2,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ],
+     [
+      1,
+      -2,
+      0,
+      -1,
+      2
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       3,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": false
+     },
+     {
+      "sub": [
+       0,
+       4
+      ],
+      "quotient": [
+       3,
+       1
+      ],
+      "ext_dims": [
+       0,
+       24
+      ],
+      "u_higgsed": false
+     },
+     {
+      "sub": [
+       3,
+       1
+      ],
+      "quotient": [
+       0,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": false
+     },
+     {
+      "sub": [
+       3,
+       4
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       24
+      ],
+      "u_higgsed": false
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 2,
+    "dim_W": 1,
+    "W": [
+     [
+      -1,
+      -1,
+      0,
+      1,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       4,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       4,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       12,
+       12
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      1,
+      0,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       4
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       4,
+       36
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       1,
+       4
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "realisable"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      0,
+      -1,
+      0,
+      0,
+      1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      4
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 3,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      -1,
+      1,
+      0,
+      -1
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       4,
+       1
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       12,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       4,
+       1
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      1
+     ],
+     [
+      2,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      2,
+      -2,
+      1,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       1,
+       3
+      ],
+      "quotient": [
+       0,
+       2
+      ],
+      "ext_dims": [
+       4,
+       0
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       2
+      ],
+      "quotient": [
+       1,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      2,
+      -1,
+      -2,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [
+     {
+      "sub": [
+       2,
+       3
+      ],
+      "quotient": [
+       0,
+       1
+      ],
+      "ext_dims": [
+       0,
+       12
+      ],
+      "u_higgsed": true
+     },
+     {
+      "sub": [
+       0,
+       1
+      ],
+      "quotient": [
+       2,
+       3
+      ],
+      "ext_dims": [
+       0,
+       0
+      ],
+      "u_higgsed": true
+     }
+    ],
+    "verdict": "excluded"
+   },
+   {
+    "pairs": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ],
+    "o": 4,
+    "dim_W": 1,
+    "W": [
+     [
+      1,
+      0,
+      0,
+      -1,
+      0
+     ]
+    ],
+    "same_determinant": false,
+    "orientations": [],
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "polystable": [
+   [
+    "2 + sqrt(7)",
+    "1",
+    "2 + sqrt(7)",
+    "1"
+   ]
+  ],
+  "single_block": [
+   {
+    "pair": [
+     0,
+     1
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "01": 0,
+     "10": 4
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "02": 0,
+     "20": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     0,
+     3
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "03": 0,
+     "30": 0
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "excluded"
+   },
+   {
+    "pair": [
+     0,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "04": 0,
+     "40": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     2
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "12": 0,
+     "21": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "13": 0,
+     "31": 12
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     1,
+     4
+    ],
+    "rank_of_others": 2,
+    "dim_N": 2,
+    "mu_p_vanishes_on_N": false,
+    "ext_dims": {
+     "14": 0,
+     "41": 24
+    },
+    "u_higgsed": false,
+    "isomorphic": false,
+    "verdict": "slope condition satisfiable, Abelian factor kept"
+   },
+   {
+    "pair": [
+     2,
+     3
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "23": 0,
+     "32": 0
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     2,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "24": 0,
+     "42": 36
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   },
+   {
+    "pair": [
+     3,
+     4
+    ],
+    "rank_of_others": 3,
+    "dim_N": 1,
+    "mu_p_vanishes_on_N": true,
+    "ext_dims": {
+     "34": 0,
+     "43": 32
+    },
+    "u_higgsed": true,
+    "isomorphic": false,
+    "verdict": "no slope-zero point"
+   }
+  ],
+  "single_block_excluded": false,
+  "realisable": [
+   [
+    4,
+    0,
+    3,
+    1,
+    2,
+    12,
+    12,
+    1
+   ],
+   [
+    1,
+    0,
+    4,
+    2,
+    3,
+    4,
+    36,
+    1
+   ]
+  ],
+  "undecided": [],
+  "two_blocks_excluded": false,
+  "certificate": {
+   "sub": [
+    4,
+    3
+   ],
+   "quotient": [
+    0,
+    1
+   ],
+   "o": 2,
+   "ext_dims": [
+    12,
+    12
+   ],
+   "J0": [
+    "2 + sqrt(7)",
+    "1",
+    "2 + sqrt(7)",
+    "1"
+   ]
+  },
+  "two_blocks": "realisable"
+ }
+]
