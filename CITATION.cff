@@ -16,6 +16,9 @@ date-released: "2026-10-30"
 doi: "10.5281/zenodo.23567114"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.23789249"
+    description: "Version DOI of release 3.4.0."
+  - type: doi
     value: "10.5281/zenodo.23788713"
     description: "Version DOI of release 3.3.0."
   - type: doi

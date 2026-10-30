@@ -146,5 +146,4 @@ checks every property the paper uses, so nothing rests on that search.
 - Release v3.1.0 (extension branch): https://doi.org/10.5281/zenodo.23688897.
 - Release v3.2.0 (branch on the quotient): https://doi.org/10.5281/zenodo.23788190.
 - Release v3.3.0 (filtered bundles): https://doi.org/10.5281/zenodo.23788713.
-- Release v3.4.0 (this version): the version DOI is recorded after Zenodo
-  publishes it. Concept DOI of all versions: 10.5281/zenodo.23567114.
+- Release v3.4.0 (this version): https://doi.org/10.5281/zenodo.23789249. Concept DOI of all versions: 10.5281/zenodo.23567114.
