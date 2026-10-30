@@ -24,7 +24,7 @@ jobs:
           grep -q '^45 checks passed, 0 failed$' checks.log
           grep -q '^61 checks passed, 0 failed$' checks.log
           grep -q '^152 checks passed, 0 failed$' checks.log
-          grep -q '^644 checks passed, 0 failed$' checks.log
+          grep -q '^7244 checks passed, 0 failed$' checks.log
           git diff --exit-code -- code/yukawa_charges_results.json code/extension_branch_results.json code/gamma_branch_results.json code/filtered_branch_results.json
       - name: Install LaTeX
         run: |

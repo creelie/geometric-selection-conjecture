@@ -1,11 +1,11 @@
 {
   "title": "Explicit String Vacua and the Geometric Selection Conjecture",
-  "description": "<p>Release 3.3.0 of the paper by Deep Bhattacharjee and Ushashi Bhattacharya, with its LaTeX source and the programs that check its finite arithmetic. The paper tests the Geometric Selection Conjecture against explicit heterotic data. It computes the generations, couplings and mass maps of the Dwork and weighted Fermat pencils and excludes three-family standard-embedding quotients of thirteen hypergeometric families. Every polystable sum of five line bundles with vanishing first Chern class on a threefold with at most four Kahler parameters keeps a massless Abelian gauge boson; on a tetraquadric with a free (Z/2)^2 action extensions remove it, and one descends to the quotient with three families, one Higgs pair, no charged exotics and no extra gauge boson. New in this version (Section 16.5): an extension of two line bundles can be reordered when their extension group vanishes, and with this no bundle on the quotient built by extensions from the eleven three-family line-bundle data, with blocks of any size, has three Yukawa matrices of full rank at large volume (Theorem 16.21, Corollary 16.22). The Geometric Selection Conjecture is not proved.</p>",
+  "description": "<p>Release 3.4.0 of the paper by Deep Bhattacharjee and Ushashi Bhattacharya, with its LaTeX source and the programs that check its finite arithmetic. The paper tests the Geometric Selection Conjecture against explicit heterotic data. It computes the generations, couplings and mass maps of the Dwork and weighted Fermat pencils and excludes three-family standard-embedding quotients of thirteen hypergeometric families. Every polystable sum of five line bundles with vanishing first Chern class on a threefold with at most four Kahler parameters keeps a massless Abelian gauge boson; on a tetraquadric with a free (Z/2)^2 action extensions remove it, and one descends to the quotient with three families, one Higgs pair, no charged exotics and no extra gauge boson. No bundle on the quotient whose pullback is built by extensions from the eleven three-family line-bundle data, with blocks of any size, has three Yukawa matrices of full rank at large volume (Theorem 16.21, Corollary 16.26). New in this version (Section 16.6): the filtration need not be assumed equivariant, and an index count modulo four shows that the two data with an odd row give no bundle on the quotient at all. The Geometric Selection Conjecture is not proved.</p>",
   "upload_type": "publication",
   "publication_type": "preprint",
   "license": "MIT",
   "access_right": "open",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "language": "eng",
   "keywords": [
     "heterotic compactification",
@@ -27,6 +27,11 @@
     }
   ],
   "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23788713",
+      "scheme": "doi",
+      "relation": "isNewVersionOf"
+    },
     {
       "identifier": "10.5281/zenodo.23788190",
       "scheme": "doi",
