@@ -1,44 +1,39 @@
 
 \begin{abstract}
-We test the Geometric Selection Conjecture, which asks for one heterotic
-compactification meeting nine physical conditions, against explicit data.
-Residue calculations on the Dwork and weighted Fermat pencils give the
-character labels, cubic couplings and mass maps of their generations, and
-an index argument excludes three-family standard-embedding quotients of
-thirteen hypergeometric families. On a fixed smooth tetraquadric with a
-free action of $(\Z/2)^2$ we compute the equivariant cohomology of a
-rank-five sum of line bundles exactly. It gives three families and one
-Higgs pair, but also a massless extra Abelian gauge boson, Yukawa matrices
-of deficient rank and a flat volume. The gauge boson is forced for every
-split rank-five bundle on a threefold with at most four K\"ahler
-parameters, and two rank-two extensions remove it. We descend this branch
-to the quotient: it keeps the three-family spectrum exactly, so the first
-six conditions hold at once, while every such bundle built from eleven
-three-family line-bundle data on the quotient has an up-type Yukawa
-matrix of rank at most two, and for the fixed bundle a vanishing down-type
-matrix. With numerical acceptance windows fixed, the conjecture is a
-definite statement; it remains unproved.
+We test the Geometric Selection Conjecture against explicit heterotic
+data. For the Dwork and weighted Fermat pencils we compute the generations,
+their cubic couplings and mass maps, and exclude three-family
+standard-embedding quotients of thirteen hypergeometric families. On a
+threefold with at most four K\"ahler parameters every polystable sum of
+five line bundles with $c_1=0$ keeps a massless Abelian gauge boson. On a
+smooth tetraquadric with a free $(\Z/2)^2$ action, extensions of such sums
+remove it, and one of them descends to the quotient with three families,
+one Higgs pair, no charged exotics and no extra gauge boson. No bundle
+built by extensions from the eleven three-family line-bundle data on this
+quotient has three Yukawa matrices of full rank at large volume. The
+conjecture remains unproved.
 \end{abstract}
 \maketitle
 \begingroup\small\noindent
 \textit{Note.} Earlier versions of this work appeared on Hexagon as
 \href{https://hexagonmath.org/2610.00446v1}{2610.00446v1}
-(the spectral calculations on the Dwork and weighted Fermat pencils),
+(the spectral calculations on the Dwork pencil),
 \href{https://hexagonmath.org/2610.00493v1}{2610.00493v1} (the mirror clause)
 and \href{https://hexagonmath.org/2610.00493v2}{2610.00493v2}, with the
 archived versions
 \href{https://doi.org/10.5281/zenodo.23567115}{doi:10.5281/zenodo.23567115},
 \href{https://doi.org/10.5281/zenodo.23646340}{doi:10.5281/zenodo.23646340},
 \href{https://doi.org/10.5281/zenodo.23647986}{doi:10.5281/zenodo.23647986},
-\href{https://doi.org/10.5281/zenodo.23682773}{doi:10.5281/zenodo.23682773}
-and \href{https://doi.org/10.5281/zenodo.23688897}{doi:10.5281/zenodo.23688897}.
+\href{https://doi.org/10.5281/zenodo.23682773}{doi:10.5281/zenodo.23682773},
+\href{https://doi.org/10.5281/zenodo.23688897}{doi:10.5281/zenodo.23688897}
+and \href{https://doi.org/10.5281/zenodo.23788190}{doi:10.5281/zenodo.23788190}.
 The second version added Sections~\ref{sec:forced}--\ref{sec:extbranch}
 and Definition~\ref{def:windows}. This version adds
-Section~\ref{sec:gammabranch}, on the extension branch over the quotient,
-states the conjecture and its partial mirror in full in
+Sections~\ref{sec:gammabranch} and~\ref{sec:filtered}, on the extension
+branch over the quotient, states the conjecture and its partial mirror in full in
 Section~\ref{sec:selection}, and checks the eleven line-bundle data
 independently, so that no result depends on an unrefereed source.
-The programs that check the finite arithmetic are in the repository
+The checking programs are in the repository
 \href{https://github.com/creelie/geometric-selection-conjecture}{\texttt{creelie/geometric-selection-conjecture}} on GitHub, release
 \ownrelease{}, concept DOI
 \href{https://doi.org/\ownconceptdoi}{\ownconceptdoi}\ifx\ownversiondoi\empty\else,
@@ -88,7 +83,11 @@ two-block bundle on that quotient built from the eleven data has an
 up-type Yukawa matrix of rank at most two, and for the fixed datum a
 vanishing down-type matrix, whatever the extension classes, equivariant
 structures and Wilson line (Theorem~\ref{thm:gammayukawa},
-Corollary~\ref{cor:gammac8}).
+Corollary~\ref{cor:gammac8}). The same holds for blocks of every size: an
+extension of $L_b$ by $L_a$ can be reordered when
+$H^1(L_aL_b^{-1})=0$, and with this every bundle on the quotient filtered
+by the line bundles of the eleven data has a Yukawa matrix of rank at most
+two (Theorem~\ref{thm:filtered}, Corollary~\ref{cor:filteredc8}).
 Definition~\ref{def:windows} fixes the acceptance windows of C7--C9, so
 that the conjecture is the definite statement GSC$(W)$ of
 Conjecture~\ref{conj:gscw}; the negative results do not depend on the
@@ -2235,7 +2234,9 @@ under $J\mapsto\lambda J$, so the same ray is flat.\\
 C8&Fails perturbatively&$\operatorname{rank}Y_u\le2$ and $Y_d=0$ at the
 fixed zero-singlet point, and no singlet insertion restores $Y_d$
 (Proposition~\ref{prop:eleven}); on the branch $\operatorname{rank}Y_u\le2$
-and $Y_d=Y_e=0$ for every extension class (Theorem~\ref{thm:gammayukawa});
+and $Y_d=Y_e=0$ for every extension class (Theorem~\ref{thm:gammayukawa}),
+and $Y_d=Y_e=0$ for every bundle filtered by the same line bundles, of any
+shape (Theorem~\ref{thm:filtered}(i));
 normalization cannot repair rank, and C8$_W$ fails for every window.\\
 C9&Not certified&No supersymmetry-breaking sector has been constructed;
 at the fixed point all F- and D-terms vanish, so the first clause of
@@ -2488,13 +2489,12 @@ while two rank-two extensions do so for the fixed datum and for five of
 the ten further data, on the cover and on one side of a stability wall,
 and cannot do so for the other four. On the quotient the branch of the
 fixed datum keeps the three-family spectrum and passes C1--C6 at once,
-but every two-block bundle on $X_\pi/\Gamma$ built from the eleven data has
-an up-type Yukawa matrix of rank at most two, so C8 fails on the whole of
-that branch at the level of the cup product; nothing here lifts the flat
-directions of C7$_W$, and the four classes closed at the two smallest
-shapes could only pass C3 on a shape with a block of rank three or more.
-The open routes to C8 on this manifold are shapes with a block of rank
-three or more, other free groups for the classes $2$ and $7$, and
+but no bundle on $X_\pi/\Gamma$ built from the eleven data by extensions,
+with blocks of any size, has three Yukawa matrices of full rank, so C8
+fails on the whole extension branch at the level of the cup product;
+nothing here lifts the flat directions of C7$_W$.
+The open routes to C8 on this manifold are bundles that are not filtered
+by these line bundles, other free groups for the classes $2$ and $7$, and
 nonperturbative contributions to the couplings. With the windows of
 Definition~\ref{def:windows} the conjecture is a definite statement, and
 every failure recorded here is independent of them.
@@ -2522,8 +2522,9 @@ the selection rules of Proposition~\ref{prop:eleven} with their flow
 certificates, the slope spaces, orientations, extension dimensions and
 polystable points of Theorem~\ref{thm:twoblocks} with the permutation
 matrices of Lemma~\ref{lem:genericvanishing}, the properties of the
-eleven data, and the equivariant cohomology and Yukawa bounds of
-Section~\ref{sec:gammabranch}. Each program emits a machine-readable result with its scope.
+eleven data, the equivariant cohomology and Yukawa bounds of
+Section~\ref{sec:gammabranch}, and the links and down-set bounds of
+Section~\ref{sec:filtered}. Each program emits a machine-readable result with its scope.
 They are in the repository
 \href{https://github.com/creelie/geometric-selection-conjecture}{\texttt{creelie/geometric-selection-conjecture}} on GitHub (release
 \ownrelease{}, concept DOI \href{https://doi.org/\ownconceptdoi}{\ownconceptdoi}).

@@ -1,6 +1,6 @@
 # Explicit String Vacua and the Geometric Selection Conjecture
 
-Deep Bhattacharjee and Ushashi Bhattacharya. Release v3.2.0 of the paper, its
+Deep Bhattacharjee and Ushashi Bhattacharya. Release v3.3.0 of the paper, its
 LaTeX source and the programs that check its finite arithmetic. Contact for
 this repository: egspl@proton.me (GitHub account creelie).
 
@@ -9,8 +9,9 @@ explicit heterotic datum on a free quotient of a tetraquadric, audits it
 against the nine conditions C1 to C9, and proves that the two failures it finds
 at the split locus, a surviving Abelian gauge factor and a vanishing Yukawa
 matrix, are forced. On the two-block extension branch over the quotient the
-first six conditions hold together, while C8 fails for every such bundle built
-from the eleven data. No result depends on an unrefereed source.
+first six conditions hold together, while C8 fails for every bundle on the
+quotient built from the eleven data by extensions, with blocks of any size.
+No result depends on an unrefereed source.
 
 ## What the paper proves
 
@@ -44,7 +45,7 @@ from the eleven data. No result depends on an unrefereed source.
   lemma 16.7 and exact extension groups), and are excluded for classes 4, 5, 9
   at every Kahler class and for class 1 on the general tetraquadric (Lemma
   16.9).
-- Section 16.4 (new in this version). The branch on the quotient. The Gamma-
+- Section 16.4. The branch on the quotient. The Gamma-
   compatible data are the fixed datum and classes 6, 8, 9, 10; class 9 has no
   polystable two-block bundle. By holomorphic Lefschetz the cohomology of each
   summand is a multiple of the regular representation (Lemma 16.12), and
@@ -58,6 +59,14 @@ from the eleven data. No result depends on an unrefereed source.
   is polystable on the quotient, has no massless extra U(1), and has exactly
   three families, one Higgs pair and no triplets (Theorem 16.17): C1 to C6 hold
   together, C7 is flat and C8 fails. Worldsheet instantons are not treated.
+- Section 16.5 (new in this version). Bundles filtered by the line bundles,
+  with blocks of any size. An extension of L_b by L_a can be reordered when
+  H^1(L_a L_b^-1) = 0 (Lemma 16.20), so every such bundle has a subbundle on
+  which the selection rules act. Theorem 16.21: Y_d = Y_e = 0 for the fixed
+  datum; rank Y_u <= 2, or rank Y_d, Y_e <= 2, for class 6; rank Y_u <= 2 for
+  class 8; Y_u = Y_d = Y_e = 0 for classes 9 and 10. Corollary 16.22: C8_W
+  fails for every bundle on X_pi/Gamma filtered by the line bundles of the
+  eleven data that has three families.
 - The eleven data are checked independently (first Chern class, index, c_2
   bound, H^2(V) = 0 and an exact polystable Kahler class for each), and the
   five unrefereed preprints cited before are no longer used.
@@ -75,14 +84,14 @@ from the eleven data. No result depends on an unrefereed source.
 | C5 | No additional massless charged vectorlike exotics; neutral and hidden masses not asserted. |
 | C6 | One Higgs doublet pair, no massless Higgs triplets. |
 | C7 | The volume ray is flat at tree level, also on the branch: a massless modulus, so C7_W fails for every window. |
-| C8 | Fails: rank Y_u <= 2 and Y_d = 0, and no singlet insertion restores Y_d (Proposition 16.4); on the branch rank Y_u <= 2 and Y_d = Y_e = 0 for every extension class (Theorem 16.15); C8_W fails for every window. |
+| C8 | Fails: rank Y_u <= 2 and Y_d = 0, and no singlet insertion restores Y_d (Proposition 16.4); on the branch rank Y_u <= 2 and Y_d = Y_e = 0 for every extension class (Theorem 16.15), and Y_d = Y_e = 0 for every bundle filtered by the same line bundles (Theorem 16.21); C8_W fails for every window. |
 | C9 | No supersymmetry-breaking sector constructed; the F- and D-terms vanish, so C9_W fails for every window. |
 
 ## Layout
 
 - `final-revision/`: the paper (`main.tex`, `paper-body.tex`, `split-branch.tex`,
   `matrix-certificates.tex`, `figures/`), its compiled PDF
-  `ExplicitStringVacuaGSC.pdf` (amsart, 54 pages), and `anc/`, the exact
+  `ExplicitStringVacuaGSC.pdf` (amsart, 56 pages), and `anc/`, the exact
   controls of the tetraquadric construction with their JSON results.
 - `code/mirror_clause.py`: the mirror clause on Hodge data (511 checks).
 - `code/yukawa_charges.py`: the selection rules of Section 16 on the eleven
@@ -99,7 +108,11 @@ from the eleven data. No result depends on an unrefereed source.
   Q(theta), the Gamma-compatible data and shapes, and the term-rank bounds of
   Theorem 16.15 over all equivariant structures (152 checks; output
   `gamma_branch_results.json`).
-- `code/run_checks.sh` runs the four checks; `bash .github/release/build.sh <version> dist`
+- `code/filtered_branch.py`: Section 16.5: the links H^1(L_a L_b^-1) != 0 and
+  the pieces on X_pi for the five Gamma-data, the facts used in the proof of
+  Theorem 16.21, and its bounds recomputed for all 120 flag orders and every
+  down-set (644 checks; output `filtered_branch_results.json`).
+- `code/run_checks.sh` runs the five checks; `bash .github/release/build.sh <version> dist`
   rebuilds the release assets.
 - `paper/`: the mirror-clause note of releases 1.x. `[Paper_10] package/` and
   `archive/`: the review drafts of releases 2.x.
@@ -117,5 +130,6 @@ checks every property the paper uses, so nothing rests on that search.
   10.5281/zenodo.23646340; v2.1.0, 10.5281/zenodo.23647986.
 - Release v3.0.0 (split branch): https://doi.org/10.5281/zenodo.23682773.
 - Release v3.1.0 (extension branch): https://doi.org/10.5281/zenodo.23688897.
-- Release v3.2.0 (this version): the version DOI is recorded after Zenodo
+- Release v3.2.0 (branch on the quotient): https://doi.org/10.5281/zenodo.23788190.
+- Release v3.3.0 (this version): the version DOI is recorded after Zenodo
   publishes it. Concept DOI of all versions: 10.5281/zenodo.23567114.

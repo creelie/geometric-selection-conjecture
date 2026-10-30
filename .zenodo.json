@@ -1,11 +1,11 @@
 {
   "title": "Explicit String Vacua and the Geometric Selection Conjecture",
-  "description": "<p>Release 3.2.0 of the paper by Deep Bhattacharjee and Ushashi Bhattacharya, with its LaTeX source and the programs that check its finite arithmetic. The paper computes the character labels, cubic couplings and mass maps of the Dwork and weighted Fermat pencils, proves that the mirror clause of the Geometric Selection Conjecture is empty, constructs one explicit heterotic datum on a free quotient of a tetraquadric and audits it against the nine conditions. Section 16 proves that every polystable sum of five line bundles on a Calabi-Yau threefold with at most four Kahler parameters keeps an Abelian gauge boson massless, and that two rank-two extensions remove it for six of eleven three-family data on the tetraquadric. New in this version (Section 16.4): the extension branch on the quotient. By holomorphic Lefschetz and selection rules from the block torus and from closed subbundles, every polystable Gamma-bundle with two blocks of size two built from the eleven data has an up-type Yukawa matrix of rank at most two (Theorem 16.15, Corollary 16.16), so the flavour condition fails on the whole branch. For the fixed datum the descended bundle is polystable, has no extra massless gauge boson and has exactly three families, one Higgs pair and no triplets (Theorem 16.17): the first six conditions hold together. The eleven data are checked independently and the paper no longer depends on unrefereed preprints. The Geometric Selection Conjecture is not proved.</p>",
+  "description": "<p>Release 3.3.0 of the paper by Deep Bhattacharjee and Ushashi Bhattacharya, with its LaTeX source and the programs that check its finite arithmetic. The paper tests the Geometric Selection Conjecture against explicit heterotic data. It computes the generations, couplings and mass maps of the Dwork and weighted Fermat pencils and excludes three-family standard-embedding quotients of thirteen hypergeometric families. Every polystable sum of five line bundles with vanishing first Chern class on a threefold with at most four Kahler parameters keeps a massless Abelian gauge boson; on a tetraquadric with a free (Z/2)^2 action extensions remove it, and one descends to the quotient with three families, one Higgs pair, no charged exotics and no extra gauge boson. New in this version (Section 16.5): an extension of two line bundles can be reordered when their extension group vanishes, and with this no bundle on the quotient built by extensions from the eleven three-family line-bundle data, with blocks of any size, has three Yukawa matrices of full rank at large volume (Theorem 16.21, Corollary 16.22). The Geometric Selection Conjecture is not proved.</p>",
   "upload_type": "publication",
   "publication_type": "preprint",
   "license": "MIT",
   "access_right": "open",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "language": "eng",
   "keywords": [
     "heterotic compactification",
@@ -27,6 +27,11 @@
     }
   ],
   "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23788190",
+      "scheme": "doi",
+      "relation": "isNewVersionOf"
+    },
     {
       "identifier": "10.5281/zenodo.23688897",
       "scheme": "doi",
