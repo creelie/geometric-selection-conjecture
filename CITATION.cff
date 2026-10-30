@@ -9,11 +9,11 @@ authors:
   - family-names: Bhattacharya
     given-names: Ushashi
     orcid: "https://orcid.org/0009-0002-2254-3914"
-version: "3.1.0"
+version: "3.2.0"
 url: "https://github.com/creelie/geometric-selection-conjecture"
-abstract: "Spectral calculations on the Dwork and weighted Fermat pencils, the mirror clause of the Geometric Selection Conjecture, one explicit tetraquadric datum audited against the nine conditions, the proof that its two failures at the split locus are forced (every rank-five split bundle on a threefold with at most four Kahler parameters keeps an Abelian gauge boson massless, and the selection rules exclude six of eleven split data), the extension branch of the eleven data decided for its two smallest shapes (a single extension never removes the Abelian factor; two rank-two extensions remove it for six data on one side of a stability wall and are excluded for four), and explicit acceptance windows for the three phenomenological conditions. The conjecture is not proved."
-date-released: "2026-10-27"
-doi: "10.5281/zenodo.23688897"
+abstract: "Spectral calculations on the Dwork and weighted Fermat pencils, the mirror clause of the Geometric Selection Conjecture, and one explicit heterotic datum on a free quotient of a tetraquadric audited against the nine conditions. Every rank-five split bundle on a threefold with at most four Kahler parameters keeps an Abelian gauge boson massless, and two rank-two extensions remove it for six of eleven three-family data. New in this version: the extension branch descended to the quotient. For the fixed datum it keeps three families, one Higgs pair and no triplets with no extra gauge boson, so the first six conditions hold together, while for every polystable bundle on the quotient with two blocks of size two built from those data the up-type Yukawa matrix has rank at most two. The eleven data are checked independently and no unrefereed preprint is used. The conjecture is not proved."
+date-released: "2026-10-30"
+doi: "10.5281/zenodo.23567114"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.23688897"

@@ -1,57 +1,43 @@
 
 \begin{abstract}
-We combine explicit spectral calculations for the Dwork and weighted
-Fermat pencils with an audit of the Geometric Selection Conjecture.
-The residue calculation determines the character labels, cubic couplings
-and invariant-direction mass maps, while an index argument excludes three
-standard-embedding families on free quotients of thirteen hypergeometric
-complete-intersection types. For a nonstandard construction we fix one
-tetraquadric equation, prove smoothness and a free degree-four action,
-and calculate equivariant bundle cohomology by an exact determinant
-certificate. Its projected charged spectrum contains three families and
-one Higgs doublet pair. At the specified split-bundle point, however, an
-additional Abelian gauge factor survives, the perturbative Yukawa matrices
-fail the required rank test, and the tree-level volume remains flat.
-We then show that the first of these failures is forced: on every
-Calabi--Yau threefold with at most four K\"ahler parameters, every
-polystable sum of five line bundles with vanishing first Chern class has
-a charge matrix of rank at most three and keeps at least one Abelian gauge
-boson massless at its split locus. On the tetraquadric the polystable
-K\"ahler classes of the fixed bundle form exactly the volume ray. For the
-second failure we decide the perturbative selection rules on eleven split
-data, the fixed bundle and ten further line-bundle sums with three families
-on the same manifold, by a flow criterion for the singlet insertions: six
-of the eleven lose a Yukawa matrix identically and five are not excluded.
-We then follow the extension branch: a single non-split extension never
-removes the forced gauge boson, while for the fixed bundle and five of the
-ten further sums a polystable sum of two rank-two extensions and a line
-bundle, with the same Chern character, exists on one side of a stability
-wall arbitrarily close to the split point and carries no massless Abelian
-gauge boson; for three further sums no such bundle exists at any K\"ahler
-class, and for one it does not exist on the general tetraquadric. We fix
-the acceptance windows for the stabilization, Yukawa and supersymmetry
-breaking conditions, so that the conjecture becomes a definite statement,
-and show that the failures found do not depend on them. No vacuum
-satisfying all nine conditions is constructed; the Geometric Selection
-Conjecture remains unproved.
+We test the Geometric Selection Conjecture, which asks for one heterotic
+compactification meeting nine physical conditions, against explicit data.
+Residue calculations on the Dwork and weighted Fermat pencils give the
+character labels, cubic couplings and mass maps of their generations, and
+an index argument excludes three-family standard-embedding quotients of
+thirteen hypergeometric families. On a fixed smooth tetraquadric with a
+free action of $(\Z/2)^2$ we compute the equivariant cohomology of a
+rank-five sum of line bundles exactly. It gives three families and one
+Higgs pair, but also a massless extra Abelian gauge boson, Yukawa matrices
+of deficient rank and a flat volume. The gauge boson is forced for every
+split rank-five bundle on a threefold with at most four K\"ahler
+parameters, and two rank-two extensions remove it. We descend this branch
+to the quotient: it keeps the three-family spectrum exactly, so the first
+six conditions hold at once, while every such bundle built from eleven
+three-family line-bundle data on the quotient has an up-type Yukawa
+matrix of rank at most two, and for the fixed bundle a vanishing down-type
+matrix. With numerical acceptance windows fixed, the conjecture is a
+definite statement; it remains unproved.
 \end{abstract}
 \maketitle
 \begingroup\small\noindent
-\textit{Note.} An earlier and incomplete version of this work appeared in two
-parts on Hexagon, as \href{https://hexagonmath.org/2610.00446v1}{2610.00446v1}
-(the spectral calculations on the Dwork and weighted Fermat pencils) and
-\href{https://hexagonmath.org/2610.00493v1}{2610.00493v1} (the mirror clause),
-with the archived versions
+\textit{Note.} Earlier versions of this work appeared on Hexagon as
+\href{https://hexagonmath.org/2610.00446v1}{2610.00446v1}
+(the spectral calculations on the Dwork and weighted Fermat pencils),
+\href{https://hexagonmath.org/2610.00493v1}{2610.00493v1} (the mirror clause)
+and \href{https://hexagonmath.org/2610.00493v2}{2610.00493v2}, with the
+archived versions
 \href{https://doi.org/10.5281/zenodo.23567115}{doi:10.5281/zenodo.23567115},
-\href{https://doi.org/10.5281/zenodo.23646340}{doi:10.5281/zenodo.23646340}
-and \href{https://doi.org/10.5281/zenodo.23647986}{doi:10.5281/zenodo.23647986}.
-This version adds Section~\ref{sec:splitbranch}: the residual Abelian factor
-is forced for every rank-five split bundle on a threefold with at most four
-K\"ahler parameters, the polystable locus of the fixed bundle is the volume
-ray, the perturbative selection rules are decided on eleven split data, and
-the extension branch of the eleven data is decided for its two smallest
-shapes; and Definition~\ref{def:windows}, which fixes the acceptance
-windows of the three phenomenological conditions.
+\href{https://doi.org/10.5281/zenodo.23646340}{doi:10.5281/zenodo.23646340},
+\href{https://doi.org/10.5281/zenodo.23647986}{doi:10.5281/zenodo.23647986},
+\href{https://doi.org/10.5281/zenodo.23682773}{doi:10.5281/zenodo.23682773}
+and \href{https://doi.org/10.5281/zenodo.23688897}{doi:10.5281/zenodo.23688897}.
+The second version added Sections~\ref{sec:forced}--\ref{sec:extbranch}
+and Definition~\ref{def:windows}. This version adds
+Section~\ref{sec:gammabranch}, on the extension branch over the quotient,
+states the conjecture and its partial mirror in full in
+Section~\ref{sec:selection}, and checks the eleven line-bundle data
+independently, so that no result depends on an unrefereed source.
 The programs that check the finite arithmetic are in the repository
 \href{https://github.com/creelie/geometric-selection-conjecture}{\texttt{creelie/geometric-selection-conjecture}} on GitHub, release
 \ownrelease{}, concept DOI
@@ -94,7 +80,15 @@ one non-split extension never removes the forced gauge boson
 extensions and a line bundle does so for the fixed datum and five of the
 ten further data, on one side of a stability wall through the polystable
 point, and is excluded for the other four at every K\"ahler class or on
-the general tetraquadric (Theorem~\ref{thm:twoblocks}).
+the general tetraquadric (Theorem~\ref{thm:twoblocks}). On the quotient
+$X_\pi/\Gamma$ this branch descends: for the fixed datum the two-block bundle
+keeps the three-family spectrum exactly and leaves no extra gauge boson,
+so that C1--C6 hold at once (Theorem~\ref{thm:fixedbranch}), while every
+two-block bundle on that quotient built from the eleven data has an
+up-type Yukawa matrix of rank at most two, and for the fixed datum a
+vanishing down-type matrix, whatever the extension classes, equivariant
+structures and Wilson line (Theorem~\ref{thm:gammayukawa},
+Corollary~\ref{cor:gammac8}).
 Definition~\ref{def:windows} fixes the acceptance windows of C7--C9, so
 that the conjecture is the definite statement GSC$(W)$ of
 Conjecture~\ref{conj:gscw}; the negative results do not depend on the
@@ -334,8 +328,8 @@ is the antigeneration.
 \centering
 \includegraphics[width=0.96\textwidth]{figures/fig_hodge.png}
 \caption{Left: the intersection of the Fermat quintic with the plane
-$x_3=x_4=0$, which in an affine chart is the curve $z_1^5+z_2^5=1$ in
-$\C^2$, drawn with the parametrisation of Hanson~\cite{Han94} and projected
+$x_3=x_4=0$, which in the chart $x_5=1$ is, after $z_i\mapsto-z_i$, the
+curve $z_1^5+z_2^5=1$ in $\C^2$, drawn with the parametrisation of Hanson~\cite{Han94} and projected
 to three dimensions along $(\mathrm{Re}\,z_1,\mathrm{Re}\,z_2,
 \cos\alpha\,\mathrm{Im}\,z_1+\sin\alpha\,\mathrm{Im}\,z_2)$. It is
 assembled from twenty-five patches, one for each pair of fifth roots of
@@ -706,7 +700,8 @@ its class modulo $\one$, so at $\psi=0$ a coupling of $h$, $\bb$ and $\cc$
 survives only if $\one+\bb+\cc=(3,3,3,3,3)$; for a label with an exponent
 three the required partner $2\one-\bb$ has a negative entry.
 At the conifold points $\psi^5=1$ the matrix $M$ has nonzero determinant,
-but the normalisation of Remark~\ref{rem:hessian} has a pole: the holomorphically normalized residue expression has a pole.
+but the normalised cubic form $\lambda_{F_\psi}=\lambda/(3\,200\,000(1-\psi^5))$
+of Remark~\ref{rem:hessian} has a pole.
 A statement about a physical coupling also requires its matter and
 Hodge metrics; a pole of that expression alone is not a proof of
 a universal physical divergence. See~\cite{CDGP91} for the period behavior.
@@ -1370,14 +1365,24 @@ generations and the invariant deformation gives every generation a mass.
 
 
 \section{The simultaneous construction problem}\label{sec:selection}
-The GSC formulation in \cite{Dwork,Mirror} concerns a landscape
-$\mathcal L=\coprod_\tau M_\tau$ of compactification data and an involutive
-isometry $\mu$ defined on a union $D$ of components. A desired function
-$S:\mathcal L\to[0,\infty)$ is smooth and proper on each component,
-has a unique global minimum at a viable point, and is invariant under
-$\mu$ wherever $\mu$ is defined. Its viability requirements originate in
-\cite{Original}. We use the following short restatement, without supplying
-new numerical meanings for the physical acceptance conditions.
+We state the Geometric Selection Conjecture in the form used throughout,
+so that nothing below depends on another formulation. A \emph{landscape}
+is a countable disjoint union $\mathcal L=\coprod_\tau M_\tau$ of
+connected smooth Riemannian manifolds, one for each discrete choice $\tau$
+of compactification data (threefold type, bundle topology, free group,
+Wilson line), whose points are the continuous parameters of the
+corresponding heterotic data. A \emph{partial mirror} is an involutive
+isometry $\mu$ of a union $D$ of components of $\mathcal L$; in the
+\emph{standard-type convention} $D$ consists of the components of
+standard-embedding data $(X,T_X)$ whose mirror threefold $X^\vee$ is again
+in $\mathcal L$, and $\mu$ sends $(X,T_X)$ to $(X^\vee,T_{X^\vee})$,
+exchanging the complex and K\"ahler moduli. A \emph{selector} is a
+function $S\colon\mathcal L\to[0,\infty)$ that is smooth and proper on
+each component, invariant under $\mu$ on $D$, and has a unique global
+minimum. The conjecture asserts that a selector exists whose minimum is
+a viable point, a complete datum satisfying the nine conditions below. We
+list the conditions in words first; Definition~\ref{def:windows} then
+fixes the numerical acceptance windows of C7--C9.
 
 \begin{center}\small
 \begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}p{.07\linewidth}p{.85\linewidth}@{}}
@@ -1407,9 +1412,11 @@ compatibility.
 For a complete datum one must specify the threefold, visible and hidden
 bundles, polarization, free action and equivariant structures when used,
 Wilson line, effective K\"ahler potential and superpotential, and the
-domain in which omitted corrections are controlled. C5 and C7--C9 also
-need explicit acceptance predicates. Without them the conjecture is not a
-mathematical statement, since a threshold ``fixed by comparison with
+domain in which omitted corrections are controlled. We read C5 as the
+definite statement that no charged vectorlike exotic is massless at the
+vacuum, so that the massless charged spectrum is that of C4 and C6.
+C7--C9 need explicit acceptance predicates. Without them the conjecture is
+not a mathematical statement, since a threshold ``fixed by comparison with
 measurement'' is not a predicate on a datum. We fix one choice. The
 numbers are conventions, and a different choice gives a different
 conjecture; the failures proved in this paper for C7 and C8 hold for every
@@ -1566,12 +1573,14 @@ free quotient has index of absolute value three, because $100=3d$ has no
 integer solution. This restriction is independent of the quotient group
 classification. It does not apply to arbitrary nonstandard bundles.
 
-Under the standard-type partial mirror convention of \cite{Mirror}, a
-fixed point has $h^{1,1}=h^{2,1}$ and hence $\chi(X)=0$. The bundle on
-that component has $\int c_3(V)=\chi(X)$, so Proposition~\ref{prop:index}
-gives zero net families. This proves that a selected viable point cannot
-be a mirror-fixed point in that specified domain. It does not exclude
-nonstandard data outside the domain, nor establish a mirror map on all
+Under the standard-type partial mirror of Section~\ref{sec:selection}, a
+fixed point $(X,T_X)=\mu(X,T_X)$ has $X\cong X^\vee$, hence
+$h^{1,1}=h^{2,1}$ and $\chi(X)=2(h^{1,1}-h^{2,1})=0$. The bundle on that
+component is $V=T_X$, with $\int_Xc_3(V)=\chi(X)$ by the Gauss--Bonnet
+theorem, so Proposition~\ref{prop:index} gives zero net families. By
+Theorem~\ref{thm:selection}(i) a selector with minimum $p\in D$ forces
+$\mu p=p$, so a selected viable point cannot lie in $D$. This does not
+exclude nonstandard data outside $D$, nor establish a mirror map on all
 $(0,2)$ compactifications.
 
 
@@ -2189,46 +2198,53 @@ possibly present singlet inserted.}
 \end{figure}
 
 \section{Nine-condition ledger for the one fixed datum}\label{sec:ledger}
-The table refers only to $X_\pi/\Gamma$, the descended split bundle,
-$J=100\sum J_i$, the specified Wilson line and zero singlet expectation
-values. The perturbative effective-theory assumptions are stated in
-Section~\ref{sec:pointfailure}. ``Verified'' below always carries this
-stated mathematical or perturbative scope. Table~\ref{tab:ledger} is
-the result.
+The table refers to $X_\pi/\Gamma$ with the specified Wilson line, at two
+points: the descended split bundle at $J=100\sum J_i$ with zero singlet
+expectation values, and the descended two-block bundle $E_Y$ of
+Theorem~\ref{thm:fixedbranch}. The perturbative effective-theory
+assumptions are stated in Section~\ref{sec:pointfailure}. ``Verified''
+below always carries this stated mathematical or perturbative scope.
+Table~\ref{tab:ledger} is the result.
 \begin{table}[t]
-\caption{The nine conditions at the fixed datum.}\label{tab:ledger}
+\caption{The nine conditions at the fixed datum, at the split point and on
+the two-block branch.}\label{tab:ledger}
 \small
 \begin{adjustbox}{max width=\linewidth}\begin{tabular}{@{}p{.06\linewidth}>{\raggedright\arraybackslash}p{.18\linewidth}>{\raggedright\arraybackslash}p{.65\linewidth}@{}}
 \toprule
 &Status&Certificate or failed test\\\midrule
-C1&Partial&Polystability, $c_1=0$ and cover anomaly effectivity proved;
-integral quotient anomaly and quantized hidden completion not certified.\\
-C2&Verified&Descended bundle index is exactly $-3$.\\
-C3&Fails at split point&The $SU(5)$ centralizer is the SM subgroup,
-but the additional generator $q$ in \eqref{eq:extrau1} survives; forced
-for every rank-five split datum by Theorem~\ref{thm:forced}. On the cover
-it disappears on the two-block extension branch of
-Theorem~\ref{thm:twoblocks}, whose descent to $X_\pi/\Gamma$ and spectrum
-are not certified.\\
+C1&Partial&Polystability, $c_1=0$ and cover anomaly effectivity proved,
+at the split point and for $E_Y$; integral quotient anomaly and quantized
+hidden completion not certified.\\
+C2&Verified&Descended bundle index is exactly $-3$, for $E_Y$ as well.\\
+C3&Fails at split point; verified on the branch&The $SU(5)$ centralizer is
+the SM subgroup, but at the split point the additional generator $q$ in
+\eqref{eq:extrau1} survives, as Theorem~\ref{thm:forced} forces for every
+rank-five split datum. For $E_Y$ no Abelian gauge boson beyond $SU(5)$ is
+massless (Theorem~\ref{thm:fixedbranch}(i)).\\
 C4&Verified spectrum&Equivariant cohomology gives three charged families
-and no additional chiral charged exotics.\\
+and no additional chiral charged exotics, for $E_Y$ by
+Theorem~\ref{thm:fixedbranch}(ii).\\
 C5&Vacant charged-exotic test&No additional massless charged vectorlike
 exotics occur in this spectrum. Neutral and hidden masses not asserted.\\
 C6&Verified spectrum&One Higgs doublet pair and no massless Higgs triplets
 after the fixed Wilson projection.\\
 C7&Fails at tree level&The volume ray is flat in the stated classical
 F- and D-term potential, so the volume modulus is massless there and
-C7$_W$ fails for every $m_0>0$.\\
+C7$_W$ fails for every $m_0>0$. On the branch polystability is unchanged
+under $J\mapsto\lambda J$, so the same ray is flat.\\
 C8&Fails perturbatively&$\operatorname{rank}Y_u\le2$ and $Y_d=0$ at the
-fixed zero-singlet point; normalization cannot repair rank, and no singlet
-insertion restores $Y_d$ (Proposition~\ref{prop:eleven}); C8$_W$ fails
-for every window.\\
+fixed zero-singlet point, and no singlet insertion restores $Y_d$
+(Proposition~\ref{prop:eleven}); on the branch $\operatorname{rank}Y_u\le2$
+and $Y_d=Y_e=0$ for every extension class (Theorem~\ref{thm:gammayukawa});
+normalization cannot repair rank, and C8$_W$ fails for every window.\\
 C9&Not certified&No supersymmetry-breaking sector has been constructed;
 at the fixed point all F- and D-terms vanish, so the first clause of
 C9$_W$ is not met there.\\\bottomrule
 \end{tabular}\end{adjustbox}
 \end{table}
-Thus the fixed datum is \emph{not} a viable nine-condition vacuum.
+Thus the fixed datum is \emph{not} a viable nine-condition vacuum, at the
+split point or on the branch. On the branch it passes C1--C6 at once, with
+the stated scope of C1, and fails C7 and C8.
 The construction proves explicit geometry and charged-spectrum statements,
 and it proves definite failures of some tests. It neither proves nor
 disproves existence of a different vacuum passing all nine.
@@ -2458,8 +2474,10 @@ The explicit tetraquadric construction supplies a free quotient, index
 and projected charged spectrum at one fixed complex structure.
 Its residual gauge generator and deficient perturbative Yukawa matrices
 are exact obstructions to using that split point as the sought vacuum.
-The extension branch changes the bundle and therefore requires its own
-stability, operator and potential calculations before replacing the audit.
+The extension branch changes the bundle and requires its own stability,
+spectrum, operator and potential calculations; Section~\ref{sec:splitbranch}
+carries out the first three on the cover and on the quotient, and the
+potential is not computed.
 Section~\ref{sec:splitbranch} shows that this branch is the only one left
 on the tetraquadric: no sum of five line bundles on a threefold with at
 most four K\"ahler parameters passes the gauge condition at its split
@@ -2468,11 +2486,16 @@ the eleven three-family split data from the Yukawa condition. On the
 branch itself a single extension never removes the forced gauge boson,
 while two rank-two extensions do so for the fixed datum and for five of
 the ten further data, on the cover and on one side of a stability wall,
-and cannot do so for the other four. What the branch has not been shown
-to do is to descend to the quotient, to keep three families with the
-required Yukawa matrices, and to lift the flat directions of
-C7$_W$; the four classes closed at the two smallest shapes could only
-pass C3 on a shape with a block of rank three or more. With the windows of
+and cannot do so for the other four. On the quotient the branch of the
+fixed datum keeps the three-family spectrum and passes C1--C6 at once,
+but every two-block bundle on $X_\pi/\Gamma$ built from the eleven data has
+an up-type Yukawa matrix of rank at most two, so C8 fails on the whole of
+that branch at the level of the cup product; nothing here lifts the flat
+directions of C7$_W$, and the four classes closed at the two smallest
+shapes could only pass C3 on a shape with a block of rank three or more.
+The open routes to C8 on this manifold are shapes with a block of rank
+three or more, other free groups for the classes $2$ and $7$, and
+nonperturbative contributions to the couplings. With the windows of
 Definition~\ref{def:windows} the conjecture is a definite statement, and
 every failure recorded here is independent of them.
 
@@ -2484,21 +2507,23 @@ inputs have not been established for the fixed example. Consequently this
 manuscript does not prove the full Geometric Selection Conjecture.
 
 \section*{Data and declarations}
-The spectral sections and their five appendices present the work of the
-two authors on the Dwork and weighted Fermat pencils \cite{Dwork}; the
-mirror argument is that of \cite{Mirror} under its standard-type
-partial-mirror convention; the marked-point and effective-theory criteria
-reorganize \cite{Paper10}. The bundle example is the published one of
-\cite{BCL}, and the ten further line-bundle sums of
-Section~\ref{sec:eleven} were produced by the scan of \cite{Anaxia}.
+Every result of the paper is proved in the text, from the cited refereed
+literature and the computations described below; no statement depends on
+an unpublished or unrefereed source. The bundle example is the published
+one of \cite{BCL}. The ten further line-bundle sums of
+Section~\ref{sec:eleven} come from a computer search of sums with
+entries in $[-2,2]$; the paper uses only the properties stated there,
+which are checked independently.
 
 Python programs recompute the smooth-seed polynomial identities, the
 fixed-pencil determinant and character cohomology, the Dwork label,
 coupling and mass-map counts, the thirteen-row Chern and index arithmetic,
 the selection rules of Proposition~\ref{prop:eleven} with their flow
-certificates, and the slope spaces, orientations, extension dimensions and
+certificates, the slope spaces, orientations, extension dimensions and
 polystable points of Theorem~\ref{thm:twoblocks} with the permutation
-matrices of Lemma~\ref{lem:genericvanishing}. Each program emits a machine-readable result with its scope.
+matrices of Lemma~\ref{lem:genericvanishing}, the properties of the
+eleven data, and the equivariant cohomology and Yukawa bounds of
+Section~\ref{sec:gammabranch}. Each program emits a machine-readable result with its scope.
 They are in the repository
 \href{https://github.com/creelie/geometric-selection-conjecture}{\texttt{creelie/geometric-selection-conjecture}} on GitHub (release
 \ownrelease{}, concept DOI \href{https://doi.org/\ownconceptdoi}{\ownconceptdoi}).
@@ -3166,26 +3191,6 @@ V.~Braun, On free quotients of complete intersection Calabi--Yau
 manifolds, J. High Energy Phys. \textbf{2011} (2011), no.~4, 005,
 \href{https://doi.org/10.1007/JHEP04(2011)005}{doi:10.1007/JHEP04(2011)005}.
 
-\bibitem{Original}
-D.~Bhattacharjee, U.~Bhattacharya and S.~Ghosh,
-\emph{One missing axiom for the complete closure of the heterotic landscape},
-Preprints.org (2026), version 2,
-\href{https://doi.org/10.20944/preprints202603.0792.v2}{doi:10.20944/preprints202603.0792.v2}.
-Cited for the formulation of the nine conditions, not as a proved
-existence theorem.
-
-\bibitem{Dwork}
-D.~Bhattacharjee and U.~Bhattacharya,
-\emph{Which string vibrations become which generations on the Dwork quintic},
-\href{https://hexagonmath.org/2610.00446v1}{Hexagon 2610.00446v1};
-code archive \href{https://github.com/creelie/strings/releases/tag/v1.2.0}{creelie/strings v1.2.0}.
-
-\bibitem{Mirror}
-D.~Bhattacharjee and U.~Bhattacharya,
-\emph{The mirror clause of the Geometric Selection Conjecture is empty},
-\href{https://hexagonmath.org/2610.00493v1}{Hexagon 2610.00493v1};
-\href{https://doi.org/10.5281/zenodo.23567115}{doi:10.5281/zenodo.23567115}.
-
 \bibitem{BCL}
 E.~I.~Buchbinder, A.~Constantin and A.~Lukas,
 \emph{The moduli space of heterotic line bundle models: a case study for the
@@ -3202,12 +3207,6 @@ a heterotic line bundle study}, Phys. Rev. D \textbf{113} (2026), 046005,
 \bibitem{Lee}
 J.~M.~Lee, \emph{Introduction to Smooth Manifolds},
 second ed., Graduate Texts in Mathematics 218, Springer, 2013.
-
-\bibitem{Paper10}
-D.~Bhattacharjee and U.~Bhattacharya,
-\emph{Explicit String Vacua and the Geometric Selection Conjecture},
-version 2.1.0 (2026),
-\href{https://doi.org/10.5281/zenodo.23647986}{doi:10.5281/zenodo.23647986}.
 
 \bibitem{AGLP12}
 L.~B.~Anderson, J.~Gray, A.~Lukas and E.~Palti,
@@ -3257,10 +3256,4 @@ B.~S.~Acharya, G.~Kane and P.~Kumar,
 physics}, Int. J. Mod. Phys. A \textbf{27} (2012), 1230012,
 \href{https://doi.org/10.1142/S0217751X12300128}{doi:10.1142/S0217751X12300128}.
 
-\bibitem{Anaxia}
-D.~Bhattacharjee, \emph{Anaxia: the BLLM engine},
-\url{https://github.com/creelie/eBLLM}, module
-\texttt{construct/lbs\_tetraquadric.py} at commit \texttt{a85ae17};
-engine release 3.1.0,
-\href{https://doi.org/10.5281/zenodo.23484160}{doi:10.5281/zenodo.23484160}.
 \end{thebibliography}
