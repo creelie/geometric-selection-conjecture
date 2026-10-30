@@ -28,6 +28,11 @@
   ],
   "related_identifiers": [
     {
+      "identifier": "10.5281/zenodo.23789249",
+      "scheme": "doi",
+      "relation": "isNewVersionOf"
+    },
+    {
       "identifier": "10.5281/zenodo.23788713",
       "scheme": "doi",
       "relation": "isNewVersionOf"
