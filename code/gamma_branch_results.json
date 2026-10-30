@@ -1,0 +1,688 @@
+{
+ "data": [
+  {
+   "name": "fixed",
+   "order": 4,
+   "c2J": [
+    24,
+    8,
+    20,
+    12
+   ],
+   "index": -12,
+   "gamma_compatible": true
+  },
+  {
+   "name": "class 1",
+   "order": 2,
+   "c2J": [
+    12,
+    22,
+    10,
+    20
+   ],
+   "index": -6,
+   "gamma_compatible": false
+  },
+  {
+   "name": "class 2",
+   "order": 4,
+   "c2J": [
+    14,
+    16,
+    10,
+    12
+   ],
+   "index": -12,
+   "gamma_compatible": false
+  },
+  {
+   "name": "class 3",
+   "order": 2,
+   "c2J": [
+    10,
+    16,
+    16,
+    6
+   ],
+   "index": -6,
+   "gamma_compatible": false
+  },
+  {
+   "name": "class 4",
+   "order": 2,
+   "c2J": [
+    10,
+    14,
+    12,
+    4
+   ],
+   "index": -6,
+   "gamma_compatible": false
+  },
+  {
+   "name": "class 5",
+   "order": 2,
+   "c2J": [
+    10,
+    10,
+    4,
+    8
+   ],
+   "index": -6,
+   "gamma_compatible": false
+  },
+  {
+   "name": "class 6",
+   "order": 4,
+   "c2J": [
+    14,
+    10,
+    10,
+    10
+   ],
+   "index": -12,
+   "gamma_compatible": true
+  },
+  {
+   "name": "class 7",
+   "order": 4,
+   "c2J": [
+    14,
+    10,
+    16,
+    4
+   ],
+   "index": -12,
+   "gamma_compatible": false
+  },
+  {
+   "name": "class 8",
+   "order": 4,
+   "c2J": [
+    16,
+    8,
+    12,
+    12
+   ],
+   "index": -12,
+   "gamma_compatible": true
+  },
+  {
+   "name": "class 9",
+   "order": 4,
+   "c2J": [
+    14,
+    6,
+    14,
+    -6
+   ],
+   "index": -12,
+   "gamma_compatible": true
+  },
+  {
+   "name": "class 10",
+   "order": 4,
+   "c2J": [
+    16,
+    8,
+    12,
+    -4
+   ],
+   "index": -12,
+   "gamma_compatible": true
+  }
+ ],
+ "gamma": {
+  "fixed": {
+   "pieces": {
+    "L2": [
+     0,
+     8,
+     0,
+     0
+    ],
+    "L5": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L2L4": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L2L5": [
+     0,
+     3,
+     3,
+     0
+    ],
+    "L4L5": [
+     0,
+     8,
+     0,
+     0
+    ]
+   },
+   "families": [
+    0,
+    2,
+    0,
+    0,
+    1
+   ],
+   "structures": [
+    {
+     "structure": [
+      2,
+      4,
+      5,
+      3,
+      1
+     ],
+     "ext": [
+      12,
+      4
+     ],
+     "descending_cases": 768,
+     "twisted_bounds": [
+      2,
+      0
+     ],
+     "blind_bounds": [
+      2,
+      0
+     ]
+    },
+    {
+     "structure": [
+      2,
+      1,
+      5,
+      3,
+      4
+     ],
+     "ext": [
+      12,
+      4
+     ],
+     "descending_cases": 768,
+     "twisted_bounds": [
+      2,
+      0
+     ],
+     "blind_bounds": [
+      2,
+      0
+     ]
+    },
+    {
+     "structure": [
+      5,
+      1,
+      2,
+      3,
+      4
+     ],
+     "ext": [
+      12,
+      20
+     ],
+     "descending_cases": 768,
+     "twisted_bounds": [
+      2,
+      0
+     ],
+     "blind_bounds": [
+      2,
+      0
+     ]
+    }
+   ],
+   "koszul_bounds": [
+    2,
+    0
+   ]
+  },
+  "class 6": {
+   "pieces": {
+    "L3": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L4": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L5": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L1L2": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L1L5": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L2L4": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L2L5": [
+     0,
+     3,
+     3,
+     0
+    ]
+   },
+   "families": [
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "structures": [
+    {
+     "structure": [
+      3,
+      2,
+      5,
+      4,
+      1
+     ],
+     "ext": [
+      16,
+      12
+     ],
+     "descending_cases": 768,
+     "twisted_bounds": [
+      0,
+      3
+     ],
+     "blind_bounds": [
+      0,
+      3
+     ]
+    },
+    {
+     "structure": [
+      2,
+      5,
+      4,
+      3,
+      1
+     ],
+     "ext": [
+      3,
+      12
+     ],
+     "descending_cases": 576,
+     "twisted_bounds": [
+      1,
+      1
+     ],
+     "blind_bounds": [
+      1,
+      1
+     ]
+    },
+    {
+     "structure": [
+      4,
+      1,
+      5,
+      2,
+      3
+     ],
+     "ext": [
+      12,
+      3
+     ],
+     "descending_cases": 576,
+     "twisted_bounds": [
+      0,
+      1
+     ],
+     "blind_bounds": [
+      0,
+      1
+     ]
+    },
+    {
+     "structure": [
+      3,
+      1,
+      5,
+      2,
+      4
+     ],
+     "ext": [
+      4,
+      3
+     ],
+     "descending_cases": 576,
+     "twisted_bounds": [
+      0,
+      2
+     ],
+     "blind_bounds": [
+      0,
+      2
+     ]
+    },
+    {
+     "structure": [
+      4,
+      1,
+      3,
+      2,
+      5
+     ],
+     "ext": [
+      12,
+      16
+     ],
+     "descending_cases": 768,
+     "twisted_bounds": [
+      0,
+      3
+     ],
+     "blind_bounds": [
+      0,
+      3
+     ]
+    }
+   ],
+   "koszul_bounds": [
+    1,
+    3
+   ]
+  },
+  "class 8": {
+   "pieces": {
+    "L3": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L4": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L5": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L1L2": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L1L3": [
+     0,
+     8,
+     0,
+     0
+    ],
+    "L2L4": [
+     0,
+     3,
+     3,
+     0
+    ],
+    "L2L5": [
+     0,
+     3,
+     3,
+     0
+    ],
+    "L4L5": [
+     0,
+     3,
+     3,
+     0
+    ]
+   },
+   "families": [
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "structures": [
+    {
+     "structure": [
+      3,
+      2,
+      4,
+      5,
+      1
+     ],
+     "ext": [
+      16,
+      3
+     ],
+     "descending_cases": 576,
+     "twisted_bounds": [
+      2,
+      3
+     ],
+     "blind_bounds": [
+      2,
+      3
+     ]
+    },
+    {
+     "structure": [
+      3,
+      2,
+      5,
+      4,
+      1
+     ],
+     "ext": [
+      16,
+      3
+     ],
+     "descending_cases": 576,
+     "twisted_bounds": [
+      2,
+      3
+     ],
+     "blind_bounds": [
+      2,
+      3
+     ]
+    },
+    {
+     "structure": [
+      4,
+      1,
+      5,
+      2,
+      3
+     ],
+     "ext": [
+      8,
+      3
+     ],
+     "descending_cases": 576,
+     "twisted_bounds": [
+      2,
+      3
+     ],
+     "blind_bounds": [
+      2,
+      3
+     ]
+    },
+    {
+     "structure": [
+      5,
+      1,
+      4,
+      2,
+      3
+     ],
+     "ext": [
+      8,
+      3
+     ],
+     "descending_cases": 576,
+     "twisted_bounds": [
+      2,
+      3
+     ],
+     "blind_bounds": [
+      2,
+      3
+     ]
+    }
+   ],
+   "koszul_bounds": [
+    2,
+    3
+   ]
+  },
+  "class 9": {
+   "pieces": {
+    "L5": [
+     0,
+     12,
+     0,
+     0
+    ],
+    "L1L5": [
+     0,
+     12,
+     0,
+     0
+    ],
+    "L3L4": [
+     0,
+     3,
+     3,
+     0
+    ]
+   },
+   "families": [
+    0,
+    0,
+    0,
+    0,
+    3
+   ],
+   "structures": []
+  },
+  "class 10": {
+   "pieces": {
+    "L5": [
+     0,
+     12,
+     0,
+     0
+    ],
+    "L1L5": [
+     0,
+     8,
+     0,
+     0
+    ],
+    "L2L4": [
+     0,
+     4,
+     0,
+     0
+    ],
+    "L2L5": [
+     0,
+     3,
+     3,
+     0
+    ]
+   },
+   "families": [
+    0,
+    0,
+    0,
+    0,
+    3
+   ],
+   "structures": [
+    {
+     "structure": [
+      5,
+      1,
+      4,
+      2,
+      3
+     ],
+     "ext": [
+      12,
+      12
+     ],
+     "descending_cases": 768,
+     "twisted_bounds": [
+      0,
+      0
+     ],
+     "blind_bounds": [
+      0,
+      0
+     ]
+    },
+    {
+     "structure": [
+      2,
+      1,
+      5,
+      3,
+      4
+     ],
+     "ext": [
+      4,
+      36
+     ],
+     "descending_cases": 768,
+     "twisted_bounds": [
+      0,
+      0
+     ],
+     "blind_bounds": [
+      0,
+      0
+     ]
+    }
+   ],
+   "koszul_bounds": [
+    0,
+    0
+   ]
+  }
+ }
+}

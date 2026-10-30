@@ -173,12 +173,20 @@ prints either a closed set $B$ violating (b) or an explicit decomposition
 
 \begin{proposition}[Eleven split data]\label{prop:eleven}
 Consider the matrix \eqref{eq:bundle} and the ten rank-five sums of line
-bundles with entries in $[-2,2]$ listed in Table~\ref{tab:eleven}, which are
-the classes, up to permutation of the four factors of $(\PP^1)^4$, found
-by the scan of \cite{Anaxia} to satisfy $c_1(V)=0$, the anomaly inequality,
-the index $-3|G|$ for a free group $G$ of the stated order, a K\"ahler
-class with all slopes zero, and the upstairs spectrum tests of
-Section~\ref{sec:fixedbundle}. With all possibly present singlets
+bundles with entries in $[-2,2]$ listed in Table~\ref{tab:eleven}. Each
+of them has $c_1(V)=0$, the index $\chi(X,V)=-3|G|$ for the stated order
+$|G|$, the anomaly condition $\int_Xc_2(V)J_i\le24=\int_Xc_2(T_X)J_i$ for
+every $i$, $H^2(X,V)=0$ on every smooth tetraquadric by
+\eqref{eq:koszulbound}, and a K\"ahler class at which all five slopes
+vanish, at an explicit algebraic point.\footnote{These properties are
+checked in exact arithmetic by \texttt{code/gamma\_branch.py}; the points
+are $t=(1,1,1,1)$ for \eqref{eq:bundle} and the classes $6$, $8$, the points
+of Table~\ref{tab:twoblocks} for the classes $2$, $7$ and $10$, the point of
+the class $10$ also for the class $9$, and
+$\bigl(1,\tfrac{\sqrt7-1}3,\tfrac{\sqrt7-1}3,1\bigr)$, $(1,\tfrac52,1,1)$,
+$(1,1,\tfrac14,1)$, $(4,4,4,1)$ for the classes $1$, $3$, $4$, $5$. The
+ten sums were found by a computer search, and the list is not claimed to
+contain every sum with these properties.} With all possibly present singlets
 inserted to every order:
 \begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,itemsep=1pt]
 \item for \eqref{eq:bundle} every down-type coupling vanishes on every
@@ -583,25 +591,402 @@ Table~\ref{tab:twoblocks} shows, so by Lemma~\ref{lem:branchfactor} no
 Abelian gauge boson beyond $SU(5)$ is massless at $E$.
 \end{proof}
 
-\begin{remark}[What the branch does and does not give]\label{rem:extscope}
+\begin{remark}[What the branch gives on the cover]\label{rem:extscope}
 Theorem~\ref{thm:twoblocks}(ii) removes the obstruction of
 Theorem~\ref{thm:forced} for six of the eleven data, including the fixed
 datum, at the cost of leaving the split locus: the polystable K\"ahler
 classes of $E$ form a half of the surface $S$, of dimension two, in place
 of the ray of Remark~\ref{rem:forcedfixed}, and the extension classes are
-further moduli. Everything is stated on the cover $X$. For the quotient
-$X/\Gamma$ the K\"ahler class and the two extension classes have to be
-$\Gamma$-invariant, which requires the equivariant structures on the line
-bundles and the invariant parts of the two groups; for the fixed datum the
-group $H^1(L_2L_1^{-1})$ of dimension $12$ has invariant classes by
-Section~\ref{sec:pointfailure}, and the invariant part of $H^1(L_5L_3^{-1})$
-has not been computed. The charged spectrum and the Yukawa couplings
-change along the branch and have not been recomputed; condition C7 is not
-addressed, since $S$ and the extension classes are flat directions of the
-D-terms; and shapes with a block of size three or more, which by
-Lemma~\ref{lem:branchfactor} remove $u$ exactly when $u$ is not constant on
-the large block, are not treated. Proposition~\ref{prop:oneblock} and part
-(i) close the smallest shapes for the classes $1$, $4$, $5$ and $9$; for
-these the Abelian factor can only disappear on a shape with a block of
+further moduli. The theorem is stated on the cover $X$. The next
+subsection descends the branch to $X_\pi/\Gamma$, computes its charged
+spectrum for the fixed datum and bounds its Yukawa matrices for every
+datum that admits the group $\Gamma$. Condition C7 is not addressed there
+either, since $S$ and the extension classes are flat directions of the
+D-terms, and shapes with a block of size three or more, which by
+Lemma~\ref{lem:branchfactor} remove $u$ exactly when $u$ is not constant
+on the large block, are not treated. Proposition~\ref{prop:oneblock} and
+part (i) close the smallest shapes for the classes $1$, $4$, $5$ and $9$;
+for these the Abelian factor can only disappear on a shape with a block of
 size at least three.
+\end{remark}
+
+\subsection{The branch on the quotient}\label{sec:gammabranch}
+We now return to the fixed threefold $X=X_\pi$ of
+Theorem~\ref{thm:fixedquotient}, with the free group $\Gamma=\langle
+a,b\rangle\cong(\Z/2)^2$ and the quotient $Y=X/\Gamma$. On $\cO_X(k)$ the
+untwisted lifts of $a$ and $b$ satisfy $ab=(-1)^{\sum_ik_i}ba$
+(Proposition~\ref{prop:cover}), and two lifts differ by scalars, so
+$\cO_X(k)$ is $\Gamma$-equivariant exactly when $\sum_ik_i$ is even, and
+its equivariant structures are the untwisted one twisted by the four
+characters $\chi$ of $\Gamma$. A three-family quotient by $\Gamma$ needs
+the index $-12$, which singles out the data of Table~\ref{tab:eleven} with
+$|G|=4$: the datum \eqref{eq:bundle} and the classes $2$, $6$, $7$, $8$, $9$
+and $10$. Every row has even sum for \eqref{eq:bundle} and the classes $6$,
+$8$, $9$, $10$; the classes $2$ and $7$ have a row with odd sum, so one of
+their line bundles carries no $\Gamma$-action, and the class $9$ has no
+bundle with two blocks of size two by Theorem~\ref{thm:twoblocks}(i). We
+call the datum \eqref{eq:bundle} and the classes $6$, $8$ and $10$ the
+\emph{$\Gamma$-data}.
+
+For a $\Gamma$-datum and a shape with blocks $\{s_1,q_1\}$, $\{s_2,q_2\}$,
+$\{o\}$, oriented so that $L_{s_i}$ is the subbundle of the $i$-th block, a
+\emph{$\Gamma$-bundle of that shape} is $E=E_1\oplus E_2\oplus L_o$, where
+the line bundles carry equivariant structures with characters
+$\chi_1,\dots,\chi_5$ of product $\mathbf 1$, and $E_i$ is the extension
+$0\to L_{s_i}\to E_i\to L_{q_i}\to0$ of a nonzero invariant class
+$e_i\in H^1(L_{s_i}L_{q_i}^{-1})^\Gamma$. Then $E$ is $\Gamma$-equivariant
+with trivial equivariant determinant and descends to a bundle $E_Y$ on $Y$
+with $c_1=0$. A Wilson line $\rho\colon\Gamma\to\{1,D\}$,
+$D=\operatorname{diag}(1,1,1,-1,-1)$, $\rho\ne1$, determines the nontrivial
+character $\varepsilon$ with $\varepsilon(g)=-1$ exactly when $\rho(g)=D$;
+as in Section~\ref{sec:fixedbundle}, the quark doublets $Q$ lie in
+$H^1(E)^\varepsilon$, the $u^c$ and $e^c$ in $H^1(E)^{\mathbf1}$, the
+$d^c$ in $H^1(\Lambda^2E)^{\mathbf1}$, the lepton and down-type Higgs
+doublets in $H^1(\Lambda^2E)^\varepsilon$, and the up-type Higgs doublets
+$H_u$ in $H^1(\Lambda^3E)^\varepsilon$, the Serre dual of
+$H^2(\Lambda^2E)^\varepsilon$. The Yukawa couplings at large volume are the
+cup products followed by the wedge product into
+$H^3(X,\Lambda^5E)=H^3(X,\cO_X)\cong\C$, $(x,y,h)\mapsto x\cup y\cup h$,
+with $x\in H^1(E)^\varepsilon$, $y\in H^1(E)^{\mathbf1}$,
+$h\in H^1(\Lambda^3E)^\varepsilon$ for the up-type matrix and
+$x\in H^1(E)^\varepsilon$, $y\in H^1(\Lambda^2E)^{\mathbf1}$,
+$h\in H^1(\Lambda^2E)^\varepsilon$ for the down-type matrix; the
+charged-lepton matrix $Y_e$ is the same product on
+$H^1(E)^{\mathbf1}\times H^1(\Lambda^2E)^\varepsilon\times
+H^1(\Lambda^2E)^\varepsilon$. On $Y$ these are the restrictions to the
+invariant parts, up to the factor $|\Gamma|$. For a Higgs class $h$ the
+matrix $Y_u(\cdot,\cdot;h)$ is the bilinear form it defines, and its rank
+is the rank of the up-type Yukawa matrix in any bases; the same holds for
+$Y_d$ and $Y_e$.
+
+\begin{lemma}[Regular representations]\label{lem:regular}
+Let $F$ be a $\Gamma$-equivariant vector bundle on $X$ whose cohomology is
+concentrated in one degree $q$. Then $H^q(X,F)$ is the sum of
+$(-1)^q\chi(X,F)/4$ copies of the regular representation $R_\Gamma$. In
+particular every character occurs in $H^1(L_a)$ with the same multiplicity
+$n_a=-\chi(L_a)/4$, whatever the equivariant structure on $L_a$.
+\end{lemma}
+\begin{proof}
+For $g\ne1$ the automorphism $g$ has no fixed points, and the holomorphic
+Lefschetz formula~\cite{AB68} gives $\sum_p(-1)^p\operatorname{tr}(g\,|\,
+H^p(X,F))=0$, so the character of $H^q(X,F)$ vanishes off the identity.
+A representation of a finite group with this property is a multiple of the
+regular representation.
+\end{proof}
+
+\begin{lemma}[The pieces]\label{lem:pieces}
+For the four $\Gamma$-data, the line bundles $L_a$ and products $L_aL_b$,
+$a<b$, with nonzero cohomology on $X_\pi$ are those of
+Table~\ref{tab:pieces}, with the dimensions shown; all others are acyclic.
+The shapes and orientations allowed by Theorem~\ref{thm:twoblocks} whose
+two extension groups are nonzero on $X_\pi$ are those of
+Table~\ref{tab:gammashapes}.
+\end{lemma}
+
+\begin{table}[t]\small\centering
+\caption{Lemma~\ref{lem:pieces}: the nonzero cohomology of the summands and
+of their products on $X_\pi$, as $h^1$ or $(h^1,h^2)$, and the number $n_a$
+of families in $H^1(L_a)$.}\label{tab:pieces}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{@{}llll@{}}
+\toprule
+datum & $H^1(L_a)$ & $n_a$ & products with nonzero cohomology\\\midrule
+\eqref{eq:bundle} & $L_2$: $8$, $L_5$: $4$ & $0,2,0,0,1$ & $L_2L_4$: $4$, $L_2L_5$: $(3,3)$, $L_4L_5$: $8$\\
+6 & $L_3,L_4,L_5$: $4$ & $0,0,1,1,1$ & $L_1L_2$: $4$, $L_1L_5$: $4$, $L_2L_4$: $4$, $L_2L_5$: $(3,3)$\\
+8 & $L_3,L_4,L_5$: $4$ & $0,0,1,1,1$ & $L_1L_2$: $4$, $L_1L_3$: $8$, $L_2L_4$, $L_2L_5$, $L_4L_5$: $(3,3)$\\
+10 & $L_5$: $12$ & $0,0,0,0,3$ & $L_1L_5$: $8$, $L_2L_4$: $4$, $L_2L_5$: $(3,3)$\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\begin{table}[t]\small\centering
+\caption{Lemma~\ref{lem:pieces}: the shapes $\{s_1,q_1\},\{s_2,q_2\},\{o\}$
+of the $\Gamma$-data whose two extension groups are nonzero on $X_\pi$,
+written $L_{s_1}\to L_{q_1}$, $L_{s_2}\to L_{q_2}$, $L_o$, with the
+dimensions of $H^1(L_{s_i}L_{q_i}^{-1})$, and the bounds of
+Theorem~\ref{thm:gammayukawa}.}\label{tab:gammashapes}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{@{}lllcc@{}}
+\toprule
+datum & shape & $h^1$ & $\rk Y_u\le$ & $\rk Y_d\le$\\\midrule
+\eqref{eq:bundle} & $L_2\to L_1$, $L_5\to L_3$, $L_4$ & $12$, $4$ & $2$ & $0$\\
+ & $L_5\to L_1$, $L_2\to L_3$, $L_4$ & $12$, $20$ & $2$ & $0$\\
+ & $L_2\to L_4$, $L_5\to L_3$, $L_1$ & $12$, $4$ & $2$ & $0$\\
+6 & $L_3\to L_2$, $L_5\to L_4$, $L_1$ & $16$, $12$ & $0$ & $3$\\
+ & $L_2\to L_5$, $L_4\to L_3$, $L_1$ & $3$, $12$ & $1$ & $1$\\
+ & $L_4\to L_1$, $L_5\to L_2$, $L_3$ & $12$, $3$ & $0$ & $1$\\
+ & $L_3\to L_1$, $L_5\to L_2$, $L_4$ & $4$, $3$ & $0$ & $2$\\
+ & $L_4\to L_1$, $L_3\to L_2$, $L_5$ & $12$, $16$ & $0$ & $3$\\
+8 & $L_3\to L_2$, $L_4\to L_5$, $L_1$ & $16$, $3$ & $2$ & $3$\\
+ & $L_3\to L_2$, $L_5\to L_4$, $L_1$ & $16$, $3$ & $2$ & $3$\\
+ & $L_4\to L_1$, $L_5\to L_2$, $L_3$ & $8$, $3$ & $2$ & $3$\\
+ & $L_5\to L_1$, $L_4\to L_2$, $L_3$ & $8$, $3$ & $2$ & $3$\\
+10 & $L_5\to L_1$, $L_4\to L_2$, $L_3$ & $12$, $12$ & $0$ & $0$\\
+ & $L_2\to L_1$, $L_5\to L_3$, $L_4$ & $4$, $36$ & $0$ & $0$\\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\begin{proof}
+The method is that of Theorem~\ref{thm:fixedcohom}: the restriction
+sequence and the K\"unneth formula, which leave at most one nonzero
+ambient group for each multidegree. In all cases but three, one of the two
+ambient groups $H^\ast(A,\cO_A(k))$, $H^\ast(A,\cO_A(k-2\one))$ vanishes or
+they sit in degrees that do not meet in the long exact sequence, and the
+dimensions follow without a rank computation. The three exceptions are
+$L_1L_2$ for \eqref{eq:bundle}, acyclic by the determinant
+\eqref{eq:detcertificate}, the group $H^1(L_2L_4^{-1})$ of the third shape
+of \eqref{eq:bundle}, of dimension $12$, and $L_4L_5$ for the class $8$, of
+cohomology $(3,3)$ in place of the bound $(9,9)$; in the last two the
+multiplication by $F_\theta$ is a map between groups of one degree, and
+its rank over $\Q(\theta)$, which is its rank at the transcendental
+$\pi$, is computed by the program.\footnote{The program
+\texttt{code/gamma\_branch.py} of the repository computes the cohomology
+of every piece on $X_\pi$ by characters, with ranks over $\Q(\theta)$,
+lists the shapes, checks the properties of the eleven data stated in
+Section~\ref{sec:eleven}, and recomputes the bounds of
+Theorem~\ref{thm:gammayukawa} for every equivariant structure and Wilson
+line as maximal matchings; its output is the file
+\texttt{gamma\_branch\_results.json}.} Neither of them enters the proofs
+below except through its being nonzero. The shapes are those of
+\texttt{extension\_branch\_results.json} with both groups nonzero.
+The multiplicities $n_a$ follow from Lemma~\ref{lem:regular}.
+\end{proof}
+
+The Yukawa couplings of a $\Gamma$-bundle obey two selection rules. Let
+$T=(\C^*)^3$ act on $E$ by the scalars $t_1,t_2,t_3$ on $E_1$, $E_2$ and
+$L_o$. These are automorphisms of $E$ commuting with $\Gamma$, so $T$ acts
+on every $H^p(\Lambda^iE)^\chi$, and we write $w(a)\in\Z^3$ for the weight
+of the block containing $a$: $w(s_i)=w(q_i)=\ee_i$, $w(o)=\ee_3$. For
+$I\subset\{1,\dots,5\}$ put $L_I=\bigotimes_{a\in I}L_a$ and
+$w(I)=\sum_{a\in I}w(a)$. Call $S\subset\{1,\dots,5\}$ \emph{closed} when
+$q_i\in S$ implies $s_i\in S$, and let $E_S\subset E$ be the subbundle
+spanned by $L_{s_i}$ when only $s_i$ lies in $S$, by $E_i$ when both members
+of the block do, and by $L_o$ when $o\in S$; it has rank $|S|$, and
+$\Lambda^iE$ has the $T$- and $\Gamma$-stable filtration
+$F^m\Lambda^iE=\operatorname{Im}(\Lambda^mE_S\otimes\Lambda^{i-m}E)$.
+We say that a class of $H^p(\Lambda^iE)$ has \emph{level} at least $m$ for
+$S$ when it lies in the image of $H^p(F^m\Lambda^iE)$.
+
+\begin{lemma}[Selection rules]\label{lem:selection}
+Let $x,y,z$ be classes in $H^{p_1}(\Lambda^{i_1}E)$, $H^{p_2}(\Lambda^{i_2}E)$,
+$H^{p_3}(\Lambda^{i_3}E)$ with $i_1+i_2+i_3=5$ and $p_1+p_2+p_3=3$.
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*,itemsep=1pt]
+\item If $x,y,z$ are $T$-weight vectors whose weights do not add up to
+$(2,2,1)$, then $x\cup y\cup z=0$.
+\item If, for a closed set $S$, the levels of $x,y,z$ are at least
+$l_1,l_2,l_3$ with $l_1+l_2+l_3>|S|$, then $x\cup y\cup z=0$.
+\item The bundle $F^m\Lambda^iE/F^{m+1}\Lambda^iE$ has a filtration whose
+quotients are the $L_I$ with $|I|=i$ and $|I\cap S|=m$, of weight $w(I)$.
+Hence the $T$-weight $w$ part of $H^p(\Lambda^iE)$ vanishes unless
+$H^p(L_I)\ne0$ for some $I$ with $|I|=i$ and $w(I)=w$, and if
+$H^p(L_I)=0$ for every $I$ with $|I|=i$ and $|I\cap S|<m$, then every class
+of $H^p(\Lambda^iE)$ has level at least $m$ for $S$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(a) The product is a $T$-equivariant map into $H^3(\Lambda^5E)$, on which
+$t$ acts through $\det t=t_1^2t_2^2t_3$, of weight $(2,2,1)$; a weight
+vector of another weight maps to zero. (b) The wedge product maps
+$F^{l_1}\otimes F^{l_2}\otimes F^{l_3}$ into $F^{l_1+l_2+l_3}\Lambda^5E$,
+which is zero since $\Lambda^lE_S=0$ for $l>|S|$; the product of the images
+of classes of the three bundles is the image of their product. (c) The
+quotient is $\Lambda^mE_S\otimes\Lambda^{i-m}(E/E_S)$, and $E_S$, $E/E_S$
+are filtered by the sub-line-bundles $L_{s_i}$ with quotients the
+$L_a$, $a\in S$, respectively $a\notin S$. The long exact sequences of
+these filtrations give the first assertion, and those of
+$0\to F^{m'+1}\to F^{m'}\to F^{m'}/F^{m'+1}\to0$ for $m'<m$ show that
+$H^p(F^m\Lambda^iE)\to H^p(\Lambda^iE)$ is onto under the stated vanishing.
+\end{proof}
+
+By (c) and Lemma~\ref{lem:regular}, the weight $\ee_j$ part of
+$H^1(E)^\chi$ has dimension at most $\sum_{a}n_a$ over the summands $a$ of
+the $j$-th block, for every character $\chi$, and the up-type Higgs
+classes have weights $(2,2,1)-w(\{a,b\})$ over the pairs with
+$H^2(L_aL_b)\ne0$. By (a), $Y_u(x,y;h)$ can be nonzero for weight vectors
+$x,y$ of weights $\alpha,\beta$ only if $\alpha+\beta=w(\{a,b\})$ for such
+a pair.
+
+\begin{theorem}[Yukawa matrices on the quotient]\label{thm:gammayukawa}
+Let $E_Y$ be the descent of a $\Gamma$-bundle $E$ of one of the shapes of
+Table~\ref{tab:gammashapes}, with any equivariant structures and any
+invariant extension classes, and let $\rho$ be any Wilson line as above.
+For every Higgs class the large-volume Yukawa matrices satisfy
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,itemsep=1pt]
+\item for the datum \eqref{eq:bundle}: $\rk Y_u\le2$ and $Y_d=Y_e=0$;
+\item for the class $6$: $\rk Y_u\le1$, and $Y_u=0$ except on the shape
+$L_2\to L_5$, $L_4\to L_3$, $L_1$;
+\item for the class $8$: $\rk Y_u\le2$;
+\item for the class $10$: $Y_u=Y_d=Y_e=0$.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Throughout, a summand $L_a$ with $n_a=0$ is acyclic (Table~\ref{tab:pieces}),
+so the weight $\ee_j$ part of $H^1(E)$ is the image of $H^1$ of the members
+of the $j$-th block with $n_a>0$; if that member is the subbundle
+$L_{s_j}$, these classes have level at least $1$ for $S=\{s_j\}$.
+
+(i) Here $n_2=2$, $n_5=1$, and $L_2L_5$ is the only product with $H^2\ne0$.
+In each of the three shapes $L_2$ and $L_5$ are the subbundles of the two
+blocks, so $H^1(E)^\chi$ is the sum of the weight $w(2)$ part, of dimension
+at most two, and the weight $w(5)\ne w(2)$ part, of dimension at most one.
+The only allowed weights are $\alpha+\beta=w(2)+w(5)$, so in bases of weight
+vectors $Y_u=\left(\begin{smallmatrix}0&A\\B&0\end{smallmatrix}\right)$ with
+$A$ of size at most $2\times1$ and $B$ at most $1\times2$, and
+$\rk Y_u\le\rk A+\rk B\le2$. For the down-type and lepton matrices take
+$S=\{2,4,5\}$, which is closed in the three shapes, since $L_4$ is a
+quotient only of $L_2$. By Table~\ref{tab:pieces} the bundles $L_1$, $L_3$
+and every $L_aL_b$ with $\{a,b\}\cap\{1,3\}\ne\varnothing$ are acyclic, so by
+Lemma~\ref{lem:selection}(c) every class of $H^1(E)$ has level at least $1$
+and every class of $H^1(\Lambda^2E)$ level at least $2$. The levels of the
+three classes in $Y_d$ or $Y_e$ add up to at least $5>|S|=3$, and
+Lemma~\ref{lem:selection}(b) gives $Y_d=Y_e=0$. In words, the cohomology of
+$E$ and $\Lambda^2E$ comes from the subbundle $E_S$ of rank three, whose
+fifth exterior power vanishes.
+
+(ii) Here $n_3=n_4=n_5=1$, and $L_2L_5$ is the only product with $H^2\ne0$;
+the up-type Higgs classes have weight $(2,2,1)-w(2)-w(5)$ and lie in
+$H^1$ of the piece $L_1L_3L_4$, so by Lemma~\ref{lem:selection}(c) they have
+level at least $1$ for $S=\{3\}$ whenever this set is closed.
+For the shape $L_2\to L_5$, $L_4\to L_3$, $L_1$ the weight $w(2)+w(5)=2\ee_1$
+is reached only by two classes of weight $\ee_1$, which come from $L_5$, at
+most one in each character, so $\rk Y_u\le1$. For
+$L_3\to L_2$, $L_5\to L_4$, $L_1$ the allowed pairs have one class of
+weight $\ee_1$, from the subbundle $L_3$; with $S=\{3\}$ its level is at
+least $1$, that of $h$ at least $1$, and $1+0+1>1$. For
+$L_4\to L_1$, $L_3\to L_2$, $L_5$ the allowed weights are $\ee_2+\ee_3$, and
+the class of weight $\ee_2$ comes from the subbundle $L_3$; the same
+argument with $S=\{3\}$ applies. For $L_4\to L_1$, $L_5\to L_2$, $L_3$ and
+$L_3\to L_1$, $L_5\to L_2$, $L_4$ the allowed weight is $2\ee_2$, and both
+classes come from the subbundle $L_5$; with $S=\{5\}$ their levels add up to
+$2>1$. Hence $Y_u=0$ on these four shapes.
+
+(iii) Here $n_3=n_4=n_5=1$, and the products with $H^2\ne0$ are $L_2L_4$,
+$L_2L_5$ and $L_4L_5$, none of which contains $L_3$. If $L_3$ is the lone
+summand, the classes of weight $\ee_3$ come from $L_3$, and $\ee_3+\beta$
+has third coordinate at least one while every allowed weight $w(\{a,b\})$
+has third coordinate zero; so these classes pair with nothing. If $L_3$ is
+the subbundle of a block, as in the first two shapes, take $S=\{3\}$: the
+classes from $L_3$ have level at least $1$, and the Higgs classes lie in
+$H^1$ of the complements $L_1L_3L_5$, $L_1L_3L_4$, $L_1L_2L_3$, all
+containing $L_3$, so by Lemma~\ref{lem:selection}(c) they have level at least
+$1$ and the classes from $L_3$ again pair with nothing. In both cases
+$Y_u$ is supported on the classes from $L_4$ and $L_5$, at most two in each
+character, and $\rk Y_u\le2$.
+
+(iv) Here $n_5=3$ and the other $n_a$ vanish, and $L_2L_5$ is the only product
+with $H^2\ne0$. In both shapes $L_2$ and $L_5$ lie in different blocks, so
+$w(2)\ne w(5)$, while every class of $H^1(E)$ has weight $w(5)$ and
+$2w(5)\ne w(2)+w(5)$; hence $Y_u=0$. For $Y_d$ and $Y_e$ take
+$S=\{1,2,4,5\}$, closed in both shapes because $L_3$ is the lone summand
+or a quotient. The bundle $L_3$ and its four products are acyclic, so the
+classes of $H^1(E)$ and $H^1(\Lambda^2E)$ have levels at least $1$ and $2$,
+and $1+2+2>4$.
+\end{proof}
+
+\begin{corollary}[C8 on the $\Gamma$-branch]\label{cor:gammac8}
+Let $E$ be a $\Gamma$-bundle with two blocks of size two built from one of
+the eleven data of Table~\ref{tab:eleven}, polystable of slope zero for some
+K\"ahler class, whose descent to $X_\pi/\Gamma$ has three net families. For
+every equivariant structure, extension classes, Wilson line and Higgs
+class its large-volume Yukawa couplings violate C8$_W$.
+\end{corollary}
+\begin{proof}
+Three net families on the quotient need index $-12$ on the cover, so the
+datum is one of the seven with $|G|=4$. The classes $2$ and $7$ have a line
+bundle without a $\Gamma$-action, so they carry no $\Gamma$-bundle, and the
+class $9$ has no polystable bundle with two blocks of size two by
+Theorem~\ref{thm:twoblocks}(i). For the four $\Gamma$-data a polystable
+bundle has one of the orientations allowed by the slopes and nonzero
+extension classes, so its shape is in Table~\ref{tab:gammashapes}, and
+Theorem~\ref{thm:gammayukawa} gives $\rk Y_u\le2$, while C8$_W$ requires
+rank three.
+\end{proof}
+
+For the fixed datum the branch can be followed further: on its realised
+shape it keeps the spectrum of Theorem~\ref{thm:fixedcohom} and removes
+the gauge boson of Section~\ref{sec:extraU1} on the quotient itself.
+
+\begin{theorem}[The fixed datum on the branch]\label{thm:fixedbranch}
+Let $V$ be the datum \eqref{eq:bundle} on $X_\pi$ with the untwisted
+structures, let $E=E_1\oplus E_2\oplus L_4$ with
+$0\to L_2\to E_1\to L_1\to0$ and $0\to L_5\to E_2\to L_3\to0$, and let
+$J\in S$ be a K\"ahler class of Theorem~\ref{thm:twoblocks}(ii) for this
+shape.
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,itemsep=1pt]
+\item The invariant parts of $H^1(L_2L_1^{-1})$ and $H^1(L_5L_3^{-1})$ have
+dimensions $3$ and $1$. For nonzero invariant classes $E$ is
+$\Gamma$-equivariant, and its descent $E_Y$ is polystable of slope zero
+with respect to the class induced by $J$ on $Y$, has the Chern character
+of $V_Y$, and leaves no massless Abelian gauge boson beyond $SU(5)$.
+\item There are $\Gamma$-equivariant isomorphisms $H^\ast(E)\cong
+H^\ast(V)$ and $H^\ast(\Lambda^2E)\cong H^\ast(\Lambda^2V)$, so with the
+Wilson line of Section~\ref{sec:fixedbundle} the charged spectrum on $Y$ is
+that of Section~\ref{sec:fixedbundle}: three families, one Higgs doublet
+pair, no Higgs triplets and no further charged matter.
+\item $Y_d=Y_e=0$ and $\rk Y_u\le2$ for every choice of the extension classes.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+(i) The multidegrees are $k_2-k_1=(0,-3,2,1)$ and $k_5-k_3=(1,0,1,-2)$.
+In both the source $\cO_A(k-2\one)$ of the restriction sequence has a
+coordinate $-1$ and is acyclic, and the target has only $H^1$, of
+dimensions $1\cdot2\cdot3\cdot2=12$ and $2\cdot1\cdot2\cdot1=4$. By
+Lemma~\ref{lem:regular} the two groups are $3R_\Gamma$ and $R_\Gamma$, with
+invariant parts of dimensions $3$ and $1$. An extension of equivariant
+bundles by an invariant class is equivariant, so $E$ is, and its
+equivariant determinant is that of $V$, which is trivial. The group
+$\Gamma$ preserves every factor of $(\PP^1)^4$ and acts trivially on
+$H^2(X,\R)$, so $J$ is invariant and induces a K\"ahler class $J_Y$ with
+$\pi^*J_Y=J$. By Theorem~\ref{thm:twoblocks}(ii), $E$ is polystable of
+slope zero for $J$. For a subsheaf $F\subset E_Y$ the subsheaf
+$\pi^*F\subset E$ has $\mu_J(\pi^*F)=4\mu_{J_Y}(F)$, since $\pi$ is \'etale
+of degree four, so $E_Y$ is semistable of slope zero. If $F$ is saturated
+of slope zero, $\pi^*F$ is a saturated subsheaf of slope zero of the
+polystable bundle $E$, hence a direct summand. The projections of $E$ onto
+$\pi^*F$ that restrict to the identity form an affine space on which
+$\Gamma$ acts, and the average of one of them over $\Gamma$ is an invariant
+projection, which descends; so $F$ is a direct summand of $E_Y$, both
+summands pull back to direct summands of $E$, and induction on the rank
+shows that $E_Y$ is polystable. The Chern character is that of
+$V_Y$ because $E$ and $V$ have the same graded pieces. The axionic masses
+of Lemma~\ref{lem:branchfactor} are computed from $c_1(E_j)$ in
+$H^2(Y,\R)\cong H^2(X,\R)$, so the argument of that lemma applies on $Y$.
+
+(ii) Let $S=\{2,4,5\}$; here $E_S=L_2\oplus L_5\oplus L_4$ is a split
+subbundle with $E/E_S\cong L_1\oplus L_3$. By Table~\ref{tab:pieces} the
+bundles $L_1$, $L_3$, $L_1L_3$ and $L_aL_1$, $L_aL_3$ for $a\in S$ are
+acyclic. The long exact sequences of $0\to E_S\to E\to E/E_S\to0$ and of
+the filtration $F^2\subset F^1\subset\Lambda^2E$, whose quotients are
+$E_S\otimes(L_1\oplus L_3)$ and $L_1L_3$, give equivariant isomorphisms
+$H^\ast(E_S)\cong H^\ast(E)$ and $H^\ast(\Lambda^2E_S)\cong H^\ast(\Lambda^2E)$.
+The same holds for $V$ with the same $E_S$, so both sides equal
+$H^\ast(L_2)\oplus H^\ast(L_4)\oplus H^\ast(L_5)$ and
+$\bigoplus_{a<b\in S}H^\ast(L_aL_b)$ as representations, and the projection
+of Section~\ref{sec:fixedbundle} applies verbatim.
+
+(iii) is Theorem~\ref{thm:gammayukawa}(i).
+\end{proof}
+
+\begin{remark}[What the quotient branch decides]\label{rem:gammascope}
+Theorem~\ref{thm:fixedbranch} gives, for the first time in this paper, one
+datum on $X_\pi/\Gamma$ satisfying C1 with the qualification of
+Section~\ref{sec:fixedbundle}, C2, C3, C4, C5 and C6 at once, and C8 still
+fails there, now for every value of the extension moduli.
+Corollary~\ref{cor:gammac8} extends the failure of C8 to every $\Gamma$-bundle
+with two blocks of size two from the eleven data. Its scope is the
+large-volume holomorphic coupling, the cup product, which includes every
+order in the singlets that the extension classes represent; worldsheet
+instantons and other nonperturbative contributions carry axionic factors
+that can violate the torus selection rule, and are not covered. Not
+decided here are: the classes $2$ and $7$, which need another free group
+of order four; shapes with a block of size three or more, such as the
+extension of $L_1\oplus L_3$ by $L_2$ of Section~\ref{sec:pointfailure};
+other tetraquadrics, for which the program checks that the bounds of
+Theorem~\ref{thm:gammayukawa} also follow from the bound
+\eqref{eq:koszulbound} alone; the spectrum on the other shapes of the
+fixed datum, where for $L_2\to L_4$, $L_5\to L_3$, $L_1$ the connecting map
+$H^1(L_4L_5)\to H^2(L_2L_5)$ may be nonzero; and C7 and C9.
 \end{remark}

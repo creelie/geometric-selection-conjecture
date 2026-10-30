@@ -5,8 +5,11 @@
 #   it rewrites yukawa_charges_results.json.
 # extension_branch.py: the extension branch of the eleven split data, Section 16.3 (61 checks);
 #   it rewrites extension_branch_results.json.
+# gamma_branch.py: the eleven data and the extension branch on the quotient X_pi / Gamma,
+#   Sections 16.2 and 16.4 (152 checks); it rewrites gamma_branch_results.json.
 set -euo pipefail
 cd "$(dirname "$0")"
 python3 -I mirror_clause.py
 python3 -I yukawa_charges.py
 python3 -I extension_branch.py
+python3 -I gamma_branch.py
