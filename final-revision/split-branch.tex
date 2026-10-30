@@ -1172,7 +1172,103 @@ The removal of the Abelian factor is not the obstruction: for the datum
 Table~\ref{tab:twoblocks} is constant exactly on the sets $\{1,4\}$,
 $\{2,5\}$, $\{3\}$, so by Lemma~\ref{lem:branchfactor} every block meeting two of the sets
 $\{1,4\}$, $\{2,5\}$, $\{3\}$ removes it. The scope is again the
-large-volume cup product. Not covered are deformations of $\bigoplus_aL_a$
-that admit no such filtration, bundles not built from these line bundles,
-other free quotients and worldsheet instantons.
+large-volume cup product. The next subsection removes the assumption
+that the filtration is $\Gamma$-stable and disposes of the classes $2$
+and $7$.
+\end{remark}
+
+\subsection{Filtrations that are not assumed equivariant}\label{sec:nonequivariant}
+A bundle on $Y$ pulls back to a $\Gamma$-equivariant bundle on $X=X_\pi$,
+but a filtration of the pullback by line bundles need not be
+$\Gamma$-stable, and Definition~\ref{def:filtered} asks that it be. We
+show that nothing is lost, and that the two data with an odd row give no
+bundle on $Y$ at all.
+
+\begin{lemma}[Indices modulo four]\label{lem:indexmod4}
+For $v\in\Z^4$, $\chi(\cO_X(v))\equiv2\pmod 4$ when exactly one
+coordinate of $v$ is odd, and $\chi(\cO_X(v))\equiv0\pmod4$ otherwise.
+\end{lemma}
+\begin{proof}
+By Proposition~\ref{prop:cover}, $\chi(\cO_X(v))=2(e_3(v)+e_1(v))$, where
+$e_1$ and $e_3$ are the elementary symmetric functions of the coordinates,
+so its class modulo $4$ is twice the parity of $e_1(v)+e_3(v)$. If $w$
+coordinates of $v$ are odd, then $e_1(v)\equiv w$ and
+$e_3(v)\equiv\binom w3\pmod2$, and $w+\binom w3$ is odd for $w=1$ and
+even for $w=0,2,3,4$.
+\end{proof}
+
+\begin{proposition}[Equivariance comes for free]\label{prop:nonequivariant}
+Let $L_1,\dots,L_5$ be the line bundles of one of the eleven data of
+Table~\ref{tab:eleven}.
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,itemsep=1pt]
+\item For the classes $2$ and $7$ no vector bundle $F$ on $Y$ has
+$\operatorname{ch}(\pi^*F)=\sum_a\operatorname{ch}(L_a)$; in particular
+no bundle on $Y$ pulls back to a bundle filtered by their line bundles,
+whether or not the filtration is $\Gamma$-stable.
+\item For the datum \eqref{eq:bundle} and the classes $6$, $8$, $10$,
+$H^0(L_bL_a^{-1})=0$ for $a\ne b$, and every filtration of a
+$\Gamma$-equivariant bundle $E$ on $X$ with quotients
+$L_{\sigma(1)},\dots,L_{\sigma(5)}$ is $\Gamma$-stable; so $E$ is a
+filtered $\Gamma$-bundle with flag order $\sigma$, with some equivariant
+structures on the $L_a$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+(i) If $\sum_ik_i$ is even, $\cO_X(k)$ carries a $\Gamma$-action
+(Section~\ref{sec:gammabranch}), so $\cO_X(k)=\pi^*M$ for a line bundle
+$M$ on $Y$, and since $\pi$ is \'etale of degree $4$,
+$\chi(X,\pi^*F\otimes\cO_X(k))=4\chi(Y,F\otimes M)$ is divisible by $4$.
+By Riemann--Roch the left side depends only on
+$\operatorname{ch}(\pi^*F)$, so it equals
+$\sum_a\chi(L_a\otimes\cO_X(k))$. For the class $2$ take
+$k=(1,1,0,0)$: the rows of Table~\ref{tab:eleven} plus $k$ have exactly
+one odd coordinate only for $a=5$, so by Lemma~\ref{lem:indexmod4} the
+sum is $2$ modulo $4$ (it is $-22$). For the class $7$ take
+$k=(1,0,1,0)$; again exactly one row plus $k$, the fifth, has one odd
+coordinate, and the sum is $-22$.
+
+(ii) The vanishing is read off as in Lemma~\ref{lem:pieces}; the five
+line bundles of each of these data are distinct. Let
+$0=F_0\subset\dots\subset F_5=E$ be the filtration and
+$M=L_{\sigma(1)}=F_1$. From the filtration,
+$\dim\operatorname{Hom}(M,E)\le\sum_jh^0(M^{-1}L_{\sigma(j)})=1$, so
+$F_1$ is the only subsheaf of $E$ isomorphic to $M$. Each $g\in\Gamma$
+preserves the factors of $(\mathbb P^1)^4$, so $g^*M\cong M$, and the
+equivariant structure $g^*E\cong E$ carries $g^*F_1$ to a subsheaf of $E$
+isomorphic to $M$, that is to $F_1$. Thus $F_1$ is $\Gamma$-stable and
+inherits an equivariant structure; $E/F_1$ is $\Gamma$-equivariant and
+filtered by $L_{\sigma(2)},\dots,L_{\sigma(5)}$, and induction on the
+length gives the claim.
+\end{proof}
+
+\begin{corollary}[C8 for every filtered pullback]\label{cor:nonequivariant}
+On $Y=X_\pi/\Gamma$, condition $\mathrm C8_W$ fails for every vector
+bundle with three families whose pullback to $X_\pi$ admits a filtration,
+$\Gamma$-stable or not, with quotients the line bundles of one of the
+eleven data of Table~\ref{tab:eleven}.
+\end{corollary}
+\begin{proof}
+Three families need the index $-12$, which leaves the data with $|G|=4$,
+and part (i) of Proposition~\ref{prop:nonequivariant} removes the classes
+$2$ and $7$. For the datum \eqref{eq:bundle} and the classes $6$, $8$, $10$,
+part (ii) makes the filtration $\Gamma$-stable, and
+Theorem~\ref{thm:filtered}, which allows any equivariant structures,
+applies. For the class $9$, where $L_3=L_4$, the proof of
+Theorem~\ref{thm:filtered}(iv) uses no group action: the splitting in
+Lemma~\ref{lem:exchange}(a) exists on $X$, so the flag orders and the
+subbundle $E_{\{4,5\}}$ exist for any filtration, and the selection rule
+makes every product of the whole groups $H^1(E)$, $H^1(\Lambda^2E)$,
+$H^1(\Lambda^3E)$ vanish, hence also its restriction to the invariant
+parts. So $Y_u=Y_d=Y_e=0$.
+\end{proof}
+
+\begin{remark}[What remains on this quotient]\label{rem:nonequivariantscope}
+Part (i) uses only the Chern character, so the classes $2$ and $7$ give no
+bundle on $Y$ at all: no deformation of $\bigoplus_aL_a$, stable or not,
+descends. For the five $\Gamma$-data, Corollary~\ref{cor:nonequivariant}
+covers every bundle on $Y$ whose pullback is built by extensions from the
+$L_a$. Not covered are deformations of these bundles whose pullback admits
+no such filtration (a Yukawa rank can rise under deformation, since it is
+lower semicontinuous), bundles with other Chern characters, other free
+quotients and worldsheet instantons.
 \end{remark}

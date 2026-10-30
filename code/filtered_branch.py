@@ -18,6 +18,11 @@ This program computes the links and pieces on X_pi exactly, checks the facts use
 Theorem 16.21, and recomputes its conclusions for all 120 orders sigma and every down-set, with character-blind
 multiplicities (valid for every equivariant structure and Wilson line).
 
+It also checks Lemma 16.24 and Proposition 16.25 (Section 16.6): chi(O_X(v)) = 2 mod 4 exactly when v has one odd
+coordinate; for the classes 2 and 7 the index of E(k) is not divisible by 4 for k = (1,1,0,0), (1,0,1,0), so no
+bundle on X_pi / Gamma pulls back to that Chern character; and H^0(L_b L_a^{-1}) = 0 for a != b in the fixed datum and
+the classes 6, 8, 10, so a filtration of a Gamma-bundle by their line bundles is Gamma-stable.
+
 Output: filtered_branch_results.json.
 """
 import json, os, sys
@@ -25,7 +30,9 @@ from collections import Counter
 from itertools import combinations, permutations
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from gamma_branch import DATA, add, coh, neg, term_rank
+from itertools import product
+
+from gamma_branch import DATA, add, coh, index, neg, term_rank
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 NAMES = ["fixed", "class 6", "class 8", "class 9", "class 10"]
@@ -146,6 +153,36 @@ def main():
             check(not inc[5] and inc[4] == {5}, f"{name}: no link enters L_5 and only L_5 -> L_4 enters L_4")
             check(level_bounds(n, h1pair, h2pair, {3, 4}) == (0, 0), f"{name}: S = {{4,5}} gives Y_u = Y_d = Y_e = 0")
         print(name, "families", n, "links", rec["links"], "bounds", rec["bound_counts"])
+
+    # ---- Section 16.6: filtrations not assumed equivariant
+    for v in product(range(-4, 5), repeat=4):
+        one_odd = sum(x % 2 for x in v) == 1
+        check(index(v) % 4 == (2 if one_odd else 0), f"Lemma 16.24 at {v}")
+    data = {name: K for name, g, K in DATA}
+    witness = {"class 2": (1, 1, 0, 0), "class 7": (1, 0, 1, 0)}
+    rec = {}
+    for name, k in witness.items():
+        K = data[name]
+        check(sum(k) % 2 == 0, f"{name}: the twist {k} has even sum, so O(k) is pulled back from Y")
+        odd_rows = [a + 1 for a in range(5) if sum(K[a]) % 2]
+        check(len(odd_rows) == 2, f"{name}: two rows with odd sum, {odd_rows}")
+        chi = sum(index(add(K[a], k)) for a in range(5))
+        n_one = sum(1 for a in range(5) if sum(x % 2 for x in add(K[a], k)) == 1)
+        check(chi == -22 and n_one % 2 == 1, f"{name}: chi(E({k})) = {chi}, {n_one} rows with one odd coordinate")
+        check(sum(index(K[a]) for a in range(5)) == -12, f"{name}: index -12")
+        rec[name] = dict(twist=list(k), chi=chi, rows_with_one_odd_coordinate=n_one)
+    for name in NAMES:
+        K = data[name]
+        h0 = {(a + 1, b + 1): coh(add(K[b], neg(K[a])))[0][0] for a in range(5) for b in range(5) if a != b}
+        distinct = len(set(map(tuple, K))) == 5
+        if name == "class 9":
+            check(not distinct and K[2] == K[3], "class 9: L_3 = L_4")
+            check({p for p, d in h0.items() if d} == {(3, 4), (4, 3)}, "class 9: H^0(L_b L_a^-1) = 0 unless {a,b} = {3,4}")
+        else:
+            check(distinct and not any(h0.values()), f"{name}: H^0(L_b L_a^-1) = 0 for a != b")
+        for v in K:
+            check(sum(v) % 2 == 0 and index(v) % 4 == 0, f"{name}: L = O{v} has even sum and index divisible by 4")
+    results["section 16.6"] = rec
 
     json.dump(results, open(os.path.join(HERE, "filtered_branch_results.json"), "w"), indent=1)
     print(f"{passed} checks passed, {failed} failed")

@@ -9,36 +9,12 @@ five line bundles with $c_1=0$ keeps a massless Abelian gauge boson. On a
 smooth tetraquadric with a free $(\Z/2)^2$ action, extensions of such sums
 remove it, and one of them descends to the quotient with three families,
 one Higgs pair, no charged exotics and no extra gauge boson. No bundle
-built by extensions from the eleven three-family line-bundle data on this
-quotient has three Yukawa matrices of full rank at large volume. The
+on this quotient whose pullback is built by extensions from the eleven
+three-family line-bundle data has three Yukawa matrices of full rank at
+large volume. The
 conjecture remains unproved.
 \end{abstract}
 \maketitle
-\begingroup\small\noindent
-\textit{Note.} Earlier versions of this work appeared on Hexagon as
-\href{https://hexagonmath.org/2610.00446v1}{2610.00446v1}
-(the spectral calculations on the Dwork pencil),
-\href{https://hexagonmath.org/2610.00493v1}{2610.00493v1} (the mirror clause)
-and \href{https://hexagonmath.org/2610.00493v2}{2610.00493v2}, with the
-archived versions
-\href{https://doi.org/10.5281/zenodo.23567115}{doi:10.5281/zenodo.23567115},
-\href{https://doi.org/10.5281/zenodo.23646340}{doi:10.5281/zenodo.23646340},
-\href{https://doi.org/10.5281/zenodo.23647986}{doi:10.5281/zenodo.23647986},
-\href{https://doi.org/10.5281/zenodo.23682773}{doi:10.5281/zenodo.23682773},
-\href{https://doi.org/10.5281/zenodo.23688897}{doi:10.5281/zenodo.23688897}
-and \href{https://doi.org/10.5281/zenodo.23788190}{doi:10.5281/zenodo.23788190}.
-The second version added Sections~\ref{sec:forced}--\ref{sec:extbranch}
-and Definition~\ref{def:windows}. This version adds
-Sections~\ref{sec:gammabranch} and~\ref{sec:filtered}, on the extension
-branch over the quotient, states the conjecture and its partial mirror in full in
-Section~\ref{sec:selection}, and checks the eleven line-bundle data
-independently, so that no result depends on an unrefereed source.
-The checking programs are in the repository
-\href{https://github.com/creelie/geometric-selection-conjecture}{\texttt{creelie/geometric-selection-conjecture}} on GitHub, release
-\ownrelease{}, concept DOI
-\href{https://doi.org/\ownconceptdoi}{\ownconceptdoi}\ifx\ownversiondoi\empty\else,
-version DOI \href{https://doi.org/\ownversiondoi}{\ownversiondoi}\fi.
-\par\endgroup\medskip
 
 \section{Introduction}\label{sec:intro}
 The physical problem has two distinct levels. One can calculate a
@@ -87,7 +63,11 @@ Corollary~\ref{cor:gammac8}). The same holds for blocks of every size: an
 extension of $L_b$ by $L_a$ can be reordered when
 $H^1(L_aL_b^{-1})=0$, and with this every bundle on the quotient filtered
 by the line bundles of the eleven data has a Yukawa matrix of rank at most
-two (Theorem~\ref{thm:filtered}, Corollary~\ref{cor:filteredc8}).
+two (Theorem~\ref{thm:filtered}, Corollary~\ref{cor:filteredc8}). The
+filtration need not be assumed $\Gamma$-stable, and the two data with an
+odd row give no bundle on the quotient at all, by an index count modulo
+four (Proposition~\ref{prop:nonequivariant},
+Corollary~\ref{cor:nonequivariant}).
 Definition~\ref{def:windows} fixes the acceptance windows of C7--C9, so
 that the conjecture is the definite statement GSC$(W)$ of
 Conjecture~\ref{conj:gscw}; the negative results do not depend on the
@@ -2236,7 +2216,8 @@ fixed zero-singlet point, and no singlet insertion restores $Y_d$
 (Proposition~\ref{prop:eleven}); on the branch $\operatorname{rank}Y_u\le2$
 and $Y_d=Y_e=0$ for every extension class (Theorem~\ref{thm:gammayukawa}),
 and $Y_d=Y_e=0$ for every bundle filtered by the same line bundles, of any
-shape (Theorem~\ref{thm:filtered}(i));
+shape, $\Gamma$-stable or not (Theorem~\ref{thm:filtered}(i),
+Corollary~\ref{cor:nonequivariant});
 normalization cannot repair rank, and C8$_W$ fails for every window.\\
 C9&Not certified&No supersymmetry-breaking sector has been constructed;
 at the fixed point all F- and D-terms vanish, so the first clause of
@@ -2489,12 +2470,15 @@ while two rank-two extensions do so for the fixed datum and for five of
 the ten further data, on the cover and on one side of a stability wall,
 and cannot do so for the other four. On the quotient the branch of the
 fixed datum keeps the three-family spectrum and passes C1--C6 at once,
-but no bundle on $X_\pi/\Gamma$ built from the eleven data by extensions,
-with blocks of any size, has three Yukawa matrices of full rank, so C8
-fails on the whole extension branch at the level of the cup product;
+but no bundle on $X_\pi/\Gamma$ whose pullback is built from the eleven
+data by extensions, with blocks of any size and filtrations that need not
+be $\Gamma$-stable, has three Yukawa matrices of full rank, so C8 fails on
+the whole extension branch at the level of the cup product, and the two
+data with an odd row give no bundle on the quotient;
 nothing here lifts the flat directions of C7$_W$.
-The open routes to C8 on this manifold are bundles that are not filtered
-by these line bundles, other free groups for the classes $2$ and $7$, and
+The open routes to C8 on this manifold are deformations whose pullback
+is not filtered by these line bundles, bundles with other Chern
+characters, other free groups for the classes $2$ and $7$, and
 nonperturbative contributions to the couplings. With the windows of
 Definition~\ref{def:windows} the conjecture is a definite statement, and
 every failure recorded here is independent of them.
@@ -2524,13 +2508,25 @@ polystable points of Theorem~\ref{thm:twoblocks} with the permutation
 matrices of Lemma~\ref{lem:genericvanishing}, the properties of the
 eleven data, the equivariant cohomology and Yukawa bounds of
 Section~\ref{sec:gammabranch}, and the links and down-set bounds of
-Section~\ref{sec:filtered}. Each program emits a machine-readable result with its scope.
+Sections~\ref{sec:filtered} and~\ref{sec:nonequivariant}. Each program emits a machine-readable result with its scope.
 They are in the repository
 \href{https://github.com/creelie/geometric-selection-conjecture}{\texttt{creelie/geometric-selection-conjecture}} on GitHub (release
 \ownrelease{}, concept DOI \href{https://doi.org/\ownconceptdoi}{\ownconceptdoi}).
 Finite algebra checks do not certify string corrections, stabilize moduli,
 or supply a proof of all nine conditions; no statement of the paper rests
 on them alone.
+
+\smallskip\noindent\textit{Earlier versions.} Earlier versions of this
+work appeared on Hexagon as
+\href{https://hexagonmath.org/2610.00446v1}{2610.00446v1},
+\href{https://hexagonmath.org/2610.00493v1}{2610.00493v1} and
+\href{https://hexagonmath.org/2610.00493v2}{2610.00493v2}, and are
+archived under the concept DOI
+\href{https://doi.org/\ownconceptdoi}{\ownconceptdoi}\ifx\ownversiondoi\empty\else;
+this version is
+\href{https://doi.org/\ownversiondoi}{\ownversiondoi}\fi. This version
+adds Sections~\ref{sec:gammabranch}--\ref{sec:nonequivariant} and checks
+the eleven line-bundle data independently.
 
 \smallskip\noindent\textit{Funding.} This research received no external
 funding.

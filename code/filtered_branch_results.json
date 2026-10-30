@@ -7927,5 +7927,27 @@
     ]
    }
   ]
+ },
+ "section 16.6": {
+  "class 2": {
+   "twist": [
+    1,
+    1,
+    0,
+    0
+   ],
+   "chi": -22,
+   "rows_with_one_odd_coordinate": 1
+  },
+  "class 7": {
+   "twist": [
+    1,
+    0,
+    1,
+    0
+   ],
+   "chi": -22,
+   "rows_with_one_odd_coordinate": 1
+  }
  }
 }
