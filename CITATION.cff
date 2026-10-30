@@ -9,12 +9,15 @@ authors:
   - family-names: Bhattacharya
     given-names: Ushashi
     orcid: "https://orcid.org/0009-0002-2254-3914"
-version: "3.2.0"
+version: "3.3.0"
 url: "https://github.com/creelie/geometric-selection-conjecture"
-abstract: "Spectral calculations on the Dwork and weighted Fermat pencils, the mirror clause of the Geometric Selection Conjecture, and one explicit heterotic datum on a free quotient of a tetraquadric audited against the nine conditions. Every rank-five split bundle on a threefold with at most four Kahler parameters keeps an Abelian gauge boson massless, and two rank-two extensions remove it for six of eleven three-family data. New in this version: the extension branch descended to the quotient. For the fixed datum it keeps three families, one Higgs pair and no triplets with no extra gauge boson, so the first six conditions hold together, while for every polystable bundle on the quotient with two blocks of size two built from those data the up-type Yukawa matrix has rank at most two. The eleven data are checked independently and no unrefereed preprint is used. The conjecture is not proved."
+abstract: "Explicit heterotic data tested against the Geometric Selection Conjecture: the generations, couplings and mass maps of the Dwork and weighted Fermat pencils, and the exclusion of three-family standard-embedding quotients of thirteen hypergeometric families. Every polystable sum of five line bundles with c_1 = 0 on a threefold with at most four Kahler parameters keeps a massless Abelian gauge boson; on a tetraquadric with a free (Z/2)^2 action extensions remove it, and one descends to the quotient with three families, one Higgs pair, no charged exotics and no extra gauge boson. No bundle built by extensions from the eleven three-family line-bundle data on this quotient has three Yukawa matrices of full rank at large volume. The conjecture is not proved."
 date-released: "2026-10-30"
 doi: "10.5281/zenodo.23567114"
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23788190"
+    description: "Version DOI of release 3.2.0."
   - type: doi
     value: "10.5281/zenodo.23688897"
     description: "Version DOI of release 3.1.0."
